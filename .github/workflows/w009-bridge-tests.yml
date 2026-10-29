@@ -1,0 +1,24 @@
+name: W009 bridge template tests (no secrets)
+on:
+  pull_request:
+    paths:
+      - 'bridge-template/**'
+      - '.github/workflows/w009-bridge-tests.yml'
+  push:
+    paths:
+      - 'bridge-template/**'
+      - '.github/workflows/w009-bridge-tests.yml'
+permissions:
+  contents: read
+jobs:
+  bridge-tests:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: bridge-template
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm test
