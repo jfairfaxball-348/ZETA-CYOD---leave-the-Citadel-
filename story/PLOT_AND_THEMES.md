@@ -11,6 +11,9 @@
 - **CANON (thematic design) — DEC-0014/0015:** Most antagonists experience their choices as free, while a few may suspect otherwise; one conspicuously inexplicable incident in Act III hints at constrained agency. It is *not* an answer about how ZETA works. Do not let a speculative lack of agency erase culpability or local vindication.
 - **OPEN:** Named protagonist, three precise flaws and investigations, how departure is compelled, antagonists' actions and confrontation, exact evidence/incidents/endings.
 
+## W010 approved inciting premise (DEC-0024)
+- The apprentice's **discovery**, rather than the apprentice's innate existence or mark alone, challenges what the Citadel claims to know. Authorities invoke an unjust judgement to expel the apprentice. The anomaly's nature, how it is uncovered, its relation to the three mark-specific claims and the exiling authority's motive remain open. The previously drafted example dialogue is a **proposal**, not approved manuscript prose.
+
 ## Motifs available to explore, NOT canon
 - Mathematical *necessity*, balance, proof, contradiction, consistent assumptions and constraint satisfaction could force departure. These are possible narrative engines, **not** established explanations.
 - Act I as a road, with encounters, companions, discoveries, objects and meaningful choices, is a **PROPOSAL** within the approved shared-journey constraint.
