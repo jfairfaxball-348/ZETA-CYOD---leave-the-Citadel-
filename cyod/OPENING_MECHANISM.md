@@ -19,7 +19,7 @@ The above quotes record the owner's preferred **working words and sequence**, no
 | --- | --- | --- | --- |
 | A **single-digit numeral** (specific digit OPEN) | **102** | Number-theory territory (Citadel is within it, but this route does not mean staying in Citadel) | A **specific arithmetic/number-theory basis** for necessary departure (OPEN) |
 | An **impossible/interlocking knot, surface or topologically interesting structure** (exact diagram OPEN) | **203** | **Topologia** | A **specific topological basis** for necessary departure (OPEN) |
-| Binomial coefficient **`\\binom{n}{k}`** rendered as a mathematical image | **304** | **The Combinatorium** | A **specific combinatorial basis** for necessary departure (OPEN) |
+| Binomial coefficient **`\binom{n}{k}`** rendered as a mathematical image | **304** | **The Combinatorium** | A **specific combinatorial basis** for necessary departure (OPEN) |
 
 Each of the three early passages must:
 1. Be a **single, substantive block** furnishing the corresponding mathematical reason that the protagonist must leave.

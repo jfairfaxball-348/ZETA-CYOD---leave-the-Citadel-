@@ -11,7 +11,7 @@ Read `AGENTS.md`, `authoritative/START_HERE.md`, `authoritative/STATE.md`, `auth
 
 ## Frozen foundations — do not redesign without asking
 - The opening starts immediately with only the instruction **“…leave The Citadel”**, the obligation to obey, and the protagonist looking at their **right wrist**.
-- The reader sees **three images**, no explanatory descriptions: a single-digit numeral → draft page **102** (number theory); a topological knot/interlocking surface → **203** (Topologia); binomial symbol `\\binom{n}{k}` → **304** (Combinatorium).
+- The reader sees **three images**, no explanatory descriptions: a single-digit numeral → draft page **102** (number theory); a topological knot/interlocking surface → **203** (Topologia); binomial symbol `\binom{n}{k}` → **304** (Combinatorium).
 - Each numbered passage is a substantial block explaining a **different mathematical necessity** to leave; the only continuation is **“Turn to page 2.”** Shared Act I begins there, after departure.
 - The mark does not branch Act I; it **later** determines Act II's substantive regional experience. Act I's shared outward journey occurs in the number-theory territory (Citadel is within it, but not the same as it); Act II explores one of the three regions; Act III **returns to the Citadel** with route-conditioned consequences.
 - The world should be imaginative, philosophical, beautiful, science-fictional and varied; regions may feel like different worlds. Dominant early emotion: disquiet that accepted truths might be wrong.

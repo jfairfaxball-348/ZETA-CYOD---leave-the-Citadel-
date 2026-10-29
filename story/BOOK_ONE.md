@@ -5,7 +5,7 @@
 
 ## Opening
 - Absolutely minimal pre-choice context: an instruction beginning **“...leave The Citadel”** and a look down at the protagonist's **right wrist**; then **three illustrated options**. No introductory worldbuilding or descriptive option labels are required.
-- Illustrations: single digit → draft page **102**; topologically suggestive knot or interlocking surface → **203**; binomial symbol `\\binom{n}{k}` → **304**. These are temporary *page destinations*, not final node numbers.
+- Illustrations: single digit → draft page **102**; topologically suggestive knot or interlocking surface → **203**; binomial symbol `\binom{n}{k}` → **304**. These are temporary *page destinations*, not final node numbers.
 - Each choice passage delivers one **different mathematically grounded reason** departure is obligatory, then its only option is **turn to page 2**.
 - The protagonist departs the Citadel; the converged story begins Act I. Who speaks, how reasons function, what the exact marks are and what each passage says are **OPEN**.
 

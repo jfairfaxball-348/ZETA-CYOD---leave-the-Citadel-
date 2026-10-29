@@ -23,7 +23,7 @@
 - The opening query is **“What do you see?”** It presents **three illustrations rather than prose descriptions**:
   1. A **single-digit numeral** → draft page **102** → number-theory territory in Act II.
   2. An **impossible/topological knot or interlocking surface** → draft page **203** → Topologia in Act II.
-  3. **Binomial coefficient** `\\binom{n}{k}` → draft page **304** → the Combinatorium in Act II.
+  3. **Binomial coefficient** `\binom{n}{k}` → draft page **304** → the Combinatorium in Act II.
 - Each corresponding opening passage is one substantial block telling a **different mathematical reason why the protagonist must leave**, then has **only one onward choice, “Turn to page 2”**.
 - All enter a *shared Act I* on draft page 2; the mark is filed away and has **no branch effect on Act I**. It returns as the determinant of Act II destination.
 - No final printed page assignments, graph IDs, images or explanatory prose are asserted as complete (DEC-0007/0008).

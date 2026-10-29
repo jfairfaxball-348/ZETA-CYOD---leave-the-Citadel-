@@ -1,6 +1,6 @@
 # CYOD — Story graph and route registry
 
-**Status: High-level topology frozen in W001 (DEC-0006–0009), but **no actual story nodes/edges or stable N-/C- IDs allocated**.**
+**Status:** High-level topology frozen in W001 (DEC-0006–0009), but **no actual story nodes/edges or stable N-/C- IDs allocated**.**
 
 ## Approved architecture (schematic only)
 ```text

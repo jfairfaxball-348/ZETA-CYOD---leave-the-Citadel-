@@ -9,7 +9,7 @@
 - ZETA extends beyond the Citadel; the first book is CYOD; mathematical inspiration is lived through strikingly different regions.
 - Three Book One destinations are the **number-theory territory** (working name **Arithen**, not approved), **Topologia**, and **the Combinatorium**. The Citadel is within the number-theory territory but does not define all of it.
 - Three broad acts (~thirds): immediate departure plus shared outward first act; substantial second-act life in one of the three regions, predetermined by the opening wrist observation; third-act return to the Citadel with consequences differing by route.
-- Opening has only the instruction to leave and an illustrated right-wrist question before the first choice. Printed draft choices: a single digit → page 102, a knot/interlocking topological image → page 203, `\\binom{n}{k}` → page 304.
+- Opening has only the instruction to leave and an illustrated right-wrist question before the first choice. Printed draft choices: a single digit → page 102, a knot/interlocking topological image → page 203, `\binom{n}{k}` → page 304.
 - Each opening destination provides a **different mathematical reason** departure is necessary, then only one instruction to **turn to page 2**; shared Act I follows. Opening mark conditions the later regional choice and is not revisited as a free choice at the Act II boundary.
 - The common first act takes place after departure within the number-theory territory; it is principally a journey and story-development vessel, **not a full regional deep-dive**. Specific road, encounters, inventory, and dialogue remain open.
 - The central reader feeling is unsettling doubt that what the protagonist has been taught about reality may be wrong.

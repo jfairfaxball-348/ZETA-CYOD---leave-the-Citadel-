@@ -1,15 +1,16 @@
 # ZETA — Mathematical traditions
 
-**PROVISIONAL design direction:** Different regions or civilizations may have distinct mathematical traditions with lived, cultural or material expression. This is literary inspiration, not a claim about real mathematics.
+**CANON (creative direction) — DEC-0004/0005:** Mathematics inspires the profound differences between ZETA's regions, while their people, societies, histories and values must be compelling in their own right. The **number-theory territory**, **Topologia** and **the Combinatorium** are approved destinations for *Book One*, but **their actual mathematical world-laws are not**.
 
-## Exploratory examples (not fixed world facts)
-| Tradition / association | Status | Creative opportunity | Boundary |
+| Place / association | Status | Design opportunity | What is still open |
 | --- | --- | --- | --- |
-| Topology / Topologia | PROPOSAL | Place, connectedness, surfaces, change without rupture | Do not invent fixed physical laws or definitive country |
-| Combinatorics / Combinatorium | PROPOSAL | Choice, arrangement, counting, collective pattern | Do not invent fixed aerial mechanics or institutions |
-| Mathematical puzzles associated with the Citadel | PROVISIONAL | A place of inquiry and mystery, one part of the universe | Do not equate the whole world with RH or any single theorem |
-| Other traditions | OPEN | Genuine variety beyond one branch of mathematics | No required catalogue or fixed factions |
+| Number-theory territory / primes and arithmetic | CANON as Book One region; thematic details PROVISIONAL | Questions of necessity, number, order, composition and apparent permanence | Fantasy name, physical laws, settlements, social life, connection to the Citadel beyond location |
+| Topologia / topology | CANON as Book One region; thematic details PROVISIONAL | Connectness, boundaries, knots, continuity, identity and transformations | Exact geography, institutions, world-laws and the topological wrist figure |
+| The Combinatorium / combinatorics | CANON as Book One region; thematic details PROVISIONAL | Choosing, arrangement, consequences, pattern and branching possibilities | Technology, society, structure and the meaning of the binomial mark |
+| Other traditions or distant regions | OPEN | Vast future stories, potentially extremely unfamiliar realities | No required catalogue, territories or literal mathematical laws |
 
-For later development, ask: How is this tradition *experienced* by characters? What cultural consequences follow? How does it create story rather than lectures? What does it suggest without asserting a mathematical proof?
+**Not accepted:** Earlier examples of Topologia as a particular country or the Combinatorium as a sky city. Those remain PROPOSALS, not descriptions. The Citadel is **within** the number-theory region (DEC-0005), not equivalent to all of it; do not reduce ZETA to RH or any single real mathematical conjecture.
 
-**Scientific integrity:** In-world impossibilities or fictional developments never mean a real open conjecture has been settled. See [laws](FOUNDATIONAL_LAWS.md), [geography](GEOGRAPHY.md), [mystery](OVERARCHING_MYSTERY.md) and [canon policy](../authoritative/CANON_POLICY.md).
+For future workshops, ask what people eat, fear, desire, celebrate, disagree about and misunderstand, and only then how mathematics shapes their circumstances. Fictional impossibilities must never be claimed as proofs or disproofs of real-world mathematical problems.
+
+See [World Bible](WORLD_BIBLE.md), [Geography](GEOGRAPHY.md), [Foundational laws](FOUNDATIONAL_LAWS.md), [Book One](../story/BOOK_ONE.md).
