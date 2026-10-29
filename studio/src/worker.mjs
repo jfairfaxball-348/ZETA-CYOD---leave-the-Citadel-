@@ -84,7 +84,7 @@ async function save(db,document,expectedRevision,restoredFrom=null){
     // INSERT OR IGNORE here: if the snapshot cannot be written, D1 must roll
     // back the head update rather than leaving an unversioned manuscript.
     // A stale editor updates zero rows; the SELECT below then inserts zero rows.
-    db.prepare("INSERT INTO zeta_revision(revision,document,created_at,restored_from) SELECT revision,document,updated_at,? FROM zeta_manuscript WHERE id='book-one' AND revision=?")
+    db.prepare("INSERT INTO zeta_revision(revision,document,created_at,restored_from) SELECT revision,document,updated_at,? FROM zeta_manuscript WHERE id='book-one' AND revision=? AND changes()=1")
       .bind(restoredFrom,next)
   ]);
   if(changed[0]?.meta?.changes!==1)fail(409,"REVISION_CONFLICT");
