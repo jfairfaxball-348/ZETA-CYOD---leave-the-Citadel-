@@ -64,7 +64,7 @@ function enterScene(id){
  activeSceneId=id;selection=null;
  // Keep the broad map intact, but show just the chosen scene in detail.
  for(const item of doc.scenes)item.collapsed=item.id!==id;
- persist();render();focusScene(id);
+ render();focusScene(id);
 }
 function backToOverview(){
  activeSceneId=null;selection=null;render();
