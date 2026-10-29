@@ -1,38 +1,32 @@
-# ZETA Writing Studio — W004 proof of concept
+# Leave the Citadel — Writing Studio (W004 POC)
 
-A browser-based interactive manuscript canvas for **Leave the Citadel**, designed as a companion to the authoritative ZETA repository. This is a **tool demonstration**, not an approval of any new fictional canon or final manuscript paragraph.
+A deliberately simple way to **write the novel inside its branching structure**. This is a private-authoring concept, not published fiction or a change to the project's approved canon.
 
-## Run / deploy
+## Start with three things
 
-Static HTML/CSS/JavaScript, intentionally with **no package manager, build step, framework, or database**. To run locally, open `index.html` in a browser (or run `python3 -m http.server 8000` from this folder). For Vercel, create a project connected to the ZETA GitHub repository with **Root Directory = `studio`**, **Framework Preset = Other**, and no build command. Deployments then follow commits to the repository.
+1. **Choose a scene** from the Act I / Act II / Act III overview.
+2. **Choose a passage** on the small connected map. A spacious writing panel opens; edit the title and prose there.
+3. **Read** to experience the existing branches as the reader would.
 
-## What works
+The canvas still supports moving, zooming and connecting passages. Add a scene from its Act column, add a passage while inside a scene, and find less-frequent tools behind the **•••** menu.
 
-- Infinite draggable/zoomable canvas, Act background frames, scene cards containing passage nodes
-- Expand/collapse scene groups; move scenes and individual passages
-- Select/edit passage title, full manuscript text, editorial status and internal notes
-- Add scenes, passages, and choices; edit destinations; remove links
-- Launch a simple playable reading view from the opening or current passage
-- Remember the initial right-wrist selection and route via the Act I → Act II mark gate; the opening mark **does not** change the shared Act I text
-- Check for missing destinations, unreachable passages, draft placeholders and loops
-- Automatic browser-local saving, import and export of the full JSON project
-- Explicitly stable internal passage identifiers distinct from final reader passage labels or printed pages
+The prose editor deliberately keeps planning and technical features secondary. A passage can hold multiple prose paragraphs. Each passage has a stable internal ID that is separate from final printed paragraph and page numbers.
 
-## Important limitations / safety
+## Preview / deploy
 
-1. **Not shared/cloud storage.** Manuscript data is stored in the browser's `localStorage`, and a private/incognito session or browser reset may delete it. Export JSON backups frequently. Import replaces current browser data after confirmation.
-2. **Not an authenticated editor.** Deployment protection/access control must be set in Vercel before private authoring. The POC ships with **no server-side storage** or secrets, and the starter text is only approved structure plus conspicuous placeholders. Do not store confidential draft prose on an unprotected shared workstation.
-3. No real printed page/paragraph numbering, prose typesetting or numerical-jump engine yet; the working draft references 102/203/304/2 are **not final addresses**.
-4. The current test router handles the opening mark only; more advanced story flags, proof/evidence gates, bounded jump validation and publication export are future engineering.
-5. The sample passage graph demonstrates W001–W003 **structural requirements only**. Every explanatory passage, region investigation, and confrontation remains unwritten. The number-theory region's final fantasy name remains undecided.
-6. The app is intentionally standalone: it does not edit authoritative markdown, push automatic commits, or claim editorial approval.
+The site is static HTML, CSS and vanilla JavaScript. No build process, framework or external services are necessary.
 
-## Recommended next engineering milestone
+- Open `studio/index.html` in a browser, or run `python3 -m http.server 8000` from `studio/`.
+- For the linked Vercel project **zeta-writing-studio**, set **Root Directory = `studio`** and **Framework Preset = Other**.
+- The preview build does not publish an actual manuscript or invent new canon. The existing initial scene placeholders demonstrate previously agreed routing only.
 
-Private authentication + durable server persistence and commit-backed snapshots; richer scene templates; gate/flag formalisation with automated tests; manuscript export; a verified print numbering/placement pipeline. Keep the authoring tool separate from canon approval decisions.
+Tests: `cd studio && npm install && npm test`. The test dependencies are for verification, not the deployed site.
 
-## Data schema
+## Limitations
 
-One JSON document with `version`, `acts`, `scenes`, `passages`, `start` and `sequence`. A scene contains positional and grouping data; a passage has stable `id`, `scene`, `title`, `body`, `status`, `notes`, `x`, `y`, and `edges`. Each edge has `id`, `to`, `label` and optional `setMark` or `requiresMark`. Gate passage transitions are evaluated automatically from the remembered mark. No field equates a passage ID with a physical page number.
+- Your editing data is saved to **this browser only** using `localStorage`, not automatically synced to GitHub or a cloud database. Use **••• → Export manuscript** to back it up. Import replaces your current local copy after confirmation.
+- The PoC is not authenticated itself; use Vercel Deployment Protection when making a lasting private deployment. Do not place unpublished prose on an unprotected shared device.
+- Page/paragraph numbering, full protected numerical transitions, rich story state, collaborative editing, durable storage, and print export are **not implemented**.
+- The starter graph is just an illustrative representation of W001–W003 architectural canon; accusations, regional discoveries, character details and endings remain open.
 
-This folder is an isolated app; `authoritative/`, `lore/`, `story/` and `cyod/` remain unchanged by this proof of concept.
+The studio lives independently in `studio/`; `authoritative/`, `lore/`, `story/` and `cyod/` have not been modified by this proof of concept.
