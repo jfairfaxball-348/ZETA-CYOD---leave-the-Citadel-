@@ -27,3 +27,5 @@ jobs:
         run: npm run cf:local-migrate
       - name: Verify Cloudflare Worker asset bundle
         run: npx wrangler deploy --dry-run --outdir .wrangler/dry-run
+      - name: Confirm local Wrangler D1 database saves and restores over HTTP
+        run: node tests/d1-http.cjs
