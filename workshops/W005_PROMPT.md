@@ -1,3 +1,5 @@
+> **Execution update (2026-10-29):** W005 has now been run at implementation/test scope. See [W005_PROGRESS](W005_PROGRESS.md). Live provider setup and verification remain open for W005A. The original prompt below is retained as the historical authorization brief.
+
 # ZETA — W005: Durable Authoring Infrastructure (FUTURE / NOT EXECUTED)
 
 **Status:** INSTALLED / PREPARED / NOT EXECUTED. The owner must explicitly instruct you to run W005. Installing this prompt is not permission to provision paid services, store unpublished prose in third-party systems, merge code, or edit fictional canon.
