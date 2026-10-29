@@ -1,6 +1,6 @@
 # ZETA — W009: Private AI Manuscript Authoring Bridge
 
-**Status, 2026-10-29: INSTALLED IN OWNER'S PRIVATE REPOSITORY; PRIVATE CI PASSED; LIVE SYNC AND SAVE PENDING.** The author requested execution. The public template is in [bridge-template](../bridge-template/README.md); it contains no credentials or unpublished novel text.
+**Status, 2026-10-29: PRIVATE SYNC AND FIRST AUTHOR-APPROVED D1 WRITE VERIFIED.** The author requested execution. The public template is in [bridge-template](../bridge-template/README.md); it contains no credentials or unpublished novel text.
 
 ## Implemented
 
@@ -34,3 +34,8 @@ Detailed schema, safety limits, and setup: [bridge-template README](../bridge-te
 - The private repo's Actions [safety test run 40942078327](https://github.com/jfairfaxball-348/ZETA-private-authoring/actions/runs/40942078327) **passed**. The bridge runner itself has not been executed against production D1.
 - **Remaining owner action:** add secret `ZETA_STUDIO_OWNER_TOKEN` in the private repository's [Actions Secrets](https://github.com/jfairfaxball-348/ZETA-private-authoring/settings/secrets/actions) using the same existing key used in Writing Studio. Do not disclose key to chat or commits. After that, run [ZETA private manuscript bridge](https://github.com/jfairfaxball-348/ZETA-private-authoring/actions/workflows/authoring-bridge.yml) with mode `sync`. Verify snapshot files privately; no D1 write occurs on sync.
 - Only then test an author-approved disposable existing-passage edit; confirm receipt `applied` and independent D1 read-back. Until that passes, ChatGPT-to-D1 writes remain **not live**.
+
+## First verified production publishing — 2026-10-29
+The owner explicitly approved an opening prose replacement for private manuscript passage P-0001. The private bridge [Actions run 40944095983](https://github.com/jfairfaxball-348/ZETA-private-authoring/actions/runs/40944095983) completed successfully. Private receipt `opening-first-draft-20261029` reported **applied**, advancing D1 revision **3 → 4** at **2026-10-29T19:53:26.584Z**. Independent connector fetch of the fresh private snapshot confirmed that P-0001's body exactly matched the approved private request, its three outgoing edges remained intact, and the other nine passage-body digests were unchanged. Only the passage was edited; no fiction or secrets were copied to the PUBLIC repository.
+
+**Operational handoff:** W009 can now read and save approved bodies of EXISTING passages via the private connected GitHub repository. Each subsequent edit requires explicit approval of the exact text, a fresh revision/hash precondition, Action success, a private receipt, and independent snapshot verification. Do not claim any later revision until checked. The next creative workshop is [W010](W010_OPENING_NARRATIVE_WORKSHOP.md); illustrations remain deferred.
