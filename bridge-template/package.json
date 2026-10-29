@@ -1,0 +1,12 @@
+{
+  "name": "zeta-private-authoring-bridge",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Private GitHub Actions bridge for author-approved single-passage Cloudflare D1 saves",
+  "scripts": {
+    "test": "node --check scripts/bridge.cjs && node --test tests/bridge.test.cjs"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
