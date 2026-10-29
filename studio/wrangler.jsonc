@@ -1,9 +1,10 @@
 {
   "$schema": "./node_modules/wrangler/config-schema.json",
-  "name": "zeta-writing-studio",
+  "name": "zeta-cyod---leave-the-citadel",
   "main": "src/worker.mjs",
   "compatibility_date": "2026-10-28",
   "workers_dev": true,
+  "previews": {},
   "assets": {
     "directory": "./dist",
     "binding": "ASSETS",

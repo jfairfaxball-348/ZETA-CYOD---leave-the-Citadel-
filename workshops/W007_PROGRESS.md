@@ -33,3 +33,11 @@ No Cloudflare account mutation, D1 provisioning, remote migration, Access change
 ## Next
 
 [W007B — Live Cloudflare validation and writing-ready durability](W007B_LIVE_VALIDATION_PROMPT.md). No fiction or canon was changed.
+
+## W007 follow-up: root cause found from owner-supplied Cloudflare build log
+
+At 16:43 UTC, the Cloudflare preview build for PR #7 failed on **`npx wrangler preview`** with `Your Wrangler configuration is missing a previews block`. This is a branch Preview build, not a production deployment. Cloudflare's documented `npx wrangler preview` command requires `previews: {}` or a populated preview config. The log fetched `wrangler@4.155.0` via `npx` rather than installing the repo's devDependency, so the Worker build **may be running from repository root instead of `studio`**; this must be checked in the Cloudflare dashboard.
+
+**Fix committed on W007 PR #7:** `studio/wrangler.jsonc` now has `previews: {}` and `name: zeta-cyod---leave-the-citadel`, which matches the existing service; `studio/package.json` requires a preview-capable Wrangler and runs a config regression test. This fixes the proven configuration omission **if Cloudflare is actually using the `studio` root**. It does not grant Cloudflare account access, attach a real D1 UUID, configure owner-only Access, or prove the PR preview or production build succeeds.
+
+**Owner-side dashboard action:** **Worker → Settings → Build**: root directory `studio`; build `npm run build`; deploy `npx wrangler deploy` for `main`; preview `npx wrangler preview` for feature branches. Verify the PR preview check after Cloudflare rebuilds and resolve any further errors before merging. Never use `npx wrangler deploy` merely to make an untrusted PR preview pass. Preview must not receive the production manuscript DB or owner key.
