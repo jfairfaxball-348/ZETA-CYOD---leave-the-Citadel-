@@ -1,3 +1,7 @@
+**ARCHIVE NOTE (2026-10-29):** This is the originally installed historical W004 agenda. W004 has now been executed and closed **at the narrow workflow/Studio POC scope**; see [W004 closeout](W004_CLOSEOUT.md). Historical “FUTURE” phrasing below describes the document when first written. **The current next session is [W005](W005_PROMPT.md), still unexecuted.**
+
+---
+
 # ZETA — W004: From Worldbuilding to Writing (AUTHORITATIVE NEXT WORKSHOP PROMPT)
 
 **Status:** FUTURE / PREPARED / NOT EXECUTED. Requires a fresh owner instruction. This is a collaborative *practical authoring and structural design* workshop; no automatic prose production, full graph build, branch modification or canon additions are authorised by installing this prompt.

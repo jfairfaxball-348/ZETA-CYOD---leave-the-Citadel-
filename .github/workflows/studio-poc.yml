@@ -1,0 +1,25 @@
+name: ZETA Writing Studio POC
+on:
+  pull_request:
+    paths:
+      - 'studio/**'
+      - '.github/workflows/studio-poc.yml'
+  push:
+    paths:
+      - 'studio/**'
+      - '.github/workflows/studio-poc.yml'
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: studio
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Install test-only dependencies
+        run: npm install --no-audit --no-fund
+      - name: Check syntax and reader paths
+        run: npm test

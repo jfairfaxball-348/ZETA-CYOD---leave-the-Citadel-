@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f8f7f2">
+<title>Leave the Citadel — Writing Studio</title>
+<link rel="stylesheet" href="./styles.css">
+<script defer src="./app.js"></script>
+</head>
+<body>
+<div class="app">
+  <header class="topbar">
+    <div class="identity"><span class="emblem" aria-hidden="true">Ζ</span><div><span class="eyebrow">ZETA · THE WRITING ROOM</span><strong>Leave the Citadel</strong></div></div>
+    <div class="top-actions"><span id="saveIndicator" class="save-state">Saved on this device</span><button class="button-light" id="playBtn">▶ Read</button><details class="more-menu"><summary>•••</summary><div class="menu-popover">
+      <button id="addSceneBtn">＋ New scene</button>
+      <button id="auditBtn">Check links</button>
+      <button id="exportBtn">Export manuscript</button>
+      <button id="importBtn">Import manuscript</button>
+      <input id="importFile" type="file" accept=".json,application/json" hidden>
+      <p>Experimental writing is saved in this browser. Export to keep a backup.</p>
+    </div></details></div>
+  </header>
+  <main class="stage">
+    <div class="stage-heading">
+      <button id="backBtn" class="back-button" hidden>← All acts</button>
+      <div><span id="stageKicker" class="eyebrow">YOUR STORY</span><h1 id="canvasTitle">Where would you like to write?</h1><p id="stageHint">Choose a scene. Open its passages. Write one at a time.</p></div>
+      <button id="addPassageBtn" class="button-dark" hidden>＋ Passage</button>
+    </div>
+    <div id="overview" class="overview"></div>
+    <div id="viewport" class="viewport" hidden aria-label="Drag to pan and scroll to zoom the story graph">
+      <div id="world" class="world"></div>
+    </div>
+    <div id="canvasTools" class="canvas-tools" hidden>
+      <button id="zoomOutBtn" aria-label="Zoom out">−</button>
+      <span id="zoomLabel">100%</span>
+      <button id="zoomInBtn" aria-label="Zoom in">+</button>
+      <button id="fitBtn">Fit scene</button>
+    </div>
+    <div id="outline" hidden></div>
+  </main>
+</div>
+<div id="drawerBackdrop" class="drawer-backdrop" hidden></div>
+<aside id="inspector" class="inspector" aria-label="Passage writing editor">
+  <div class="drawer-top"><span class="eyebrow">WRITING DESK</span><button id="closeEditor" aria-label="Close editor">✕</button></div>
+  <div id="inspectorContent"></div>
+</aside>
+<div id="modalRoot"></div>
+<div id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

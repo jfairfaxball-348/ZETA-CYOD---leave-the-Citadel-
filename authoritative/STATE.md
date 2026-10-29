@@ -1,22 +1,29 @@
 # ZETA — Current project state
 
 **As of:** 2026-10-29
-**Latest workshop:** W003 — The Mathematical Journey **CLOSED with owner-approved print/gamebook design principles**.
-**Repository lineage:** S000 scaffold → W001 foundation freeze → W002 story freeze → W003 journey and mechanics direction freeze.
-**Next workshop:** W004 — From Worldbuilding to Writing (**prepared; requires fresh owner invocation**). [Prompt](../workshops/W004_PROMPT.md).
+**Latest executed workshop:** W004 — workflow/authoring POC **CLOSED AT SPECIFIC SCOPE**; W001–W003 original creative architecture remains frozen.
+**Repository lineage:** S000 → W001 → W002 → W003 → W004 simplified studio POC.
+**Next session:** [W005 — Durable Authoring Infrastructure](../workshops/W005_PROMPT.md) (**prepared, NOT executed; fresh owner instruction required**).
 
 ## Approved creative architecture
 - **W001 / DEC-0001–0010:** Vast mathematically inspired ZETA, Citadel inside wider number-theory territory (fantasy name OPEN), Topologia, Combinatorium. Minimal command “…leave The Citadel”, illustrated right-wrist choice (digit→draft page 102, knot/interlocking form→203, binomial mark→304); each different reason ends ONLY “Turn to page 2”; all join common Act I and mark persists as determinant of Act II destination without branching shared Act I. Three acts ~one third each; Act III returns to Citadel.
 - **W002 / DEC-0011–0015:** Wrongful exile under three distinct, invalid judgements; regional Act II exploration discovers refutation for selected judgement; Act III return/confrontation/vindication with route-sensitive consequences. Authorities knowingly participate in deception; most believe they exercise free agency, some may suspect otherwise; one strange Act III incident suggests possible constraint without answering universe-level mystery.
-- **W003 / DEC-0016–0020:** Blend **River** (Act I predominately forward branching), **Atlas** (Act II exploration/revisits) and **Living Book** (Act III layered interaction with printed book). Physical pages, ordered numbered passages and occasional calculated jumps coexist; all content and destinations are preauthored, with protected narrative gateway safety and testability. Keep novel voice free of explicit “maths”/“mathematics” terminology in reader-facing prose; guided discovery rather than classroom explanation. No combat/roll-for-luck or equipment/provisions/stat/resource RPG; suspense and risk come from meaningful choices. Chance is possible in purposeful, bounded interactions, not a mandatory success gate.
+- **W003 / DEC-0016–0020:** Blend **River** (Act I predominately forward branching), **Atlas** (Act II exploration/revisits) and **Living Book** (Act III layered printed-book interaction). Physical pages, ordered numbered passages and occasional calculated jumps coexist; all content and destinations are preauthored, with protected narrative gateway safety and testability. Keep novel voice free of explicit “maths”/“mathematics” terminology in reader-facing prose. No combat/roll-for-luck/equipment/provisions/stat/resource RPG; meaningful choice drives danger. Chance can support purposeful bounded navigation, not mandatory random progress.
+
+## W004 completed: authoring workflow and prototype (not story canon)
+- **Approved workflow:** Iterative scene-and-choice **vertical slices (C)**, and one underlying navigable graph with **collapsible scene groups (B)**. Broad story structure exists without requiring all passage nodes to be predetermined.
+- **Approved UI direction:** Extremely light interface; start on an overview of three Acts and their scenes, drill into one local scene's passages, click a passage to write. Hide distracting infrastructure controls.
+- **Built:** Standalone static no-build app in [studio/](../studio/), including local save, JSON export/import, reader routing, scene and passage creation, linking and smoke tests.
+- **Critical limitation:** Manuscript is **not yet persisted remotely**. Save is `localStorage` tied to a browser; deleting site data, using a different device or a private window can lose writing. Until W005's durability/backup tests pass, export JSON manually. Do not claim server backups, account sync or revision history exist.
+- **Vercel:** `zeta-writing-studio` linked to GitHub with root `studio/`; owner controls deployment. A GitHub Actions green test and a Vercel build-rate failure are different statuses.
 
 ## Status boundaries
-- **CANON (design scope):** Approved decisions DEC-0001–0020. The W003 structural / style constraints do **not** mean nodes, final printed directions, proprietary rules, world physics or actual story passages now exist.
-- **PROPOSAL only:** A Collatz-labelled button initiating a deterministic bounded hailstone traversal; random walks, modular computed jumps, weighted dice, region-specific mathematical rules and hidden number patterns. No actual mechanic, puzzle, ruleset, secret or page label approved.
-- **OPEN:** Final layout, authoring/graph workflow, first prose drafting plan, detailed story routes, proof/revelation scenes, protagonist/antagonist identities, any numeric address scheme, tracking of narrative flags, final endings, printing constraints and validation strategy.
-- **OPEN COSMOLOGY:** Whether apparent agency constraints exist; simulation theory is one speculative explanation, not established fact. A later π idea is PROPOSAL only.
+- **CANON:** DEC-0001–0020 only at stated creative/design scope. W004 chose a process and authoring tool, **not** plot, actual passages, numbered print references, approved accusations, proof scenes, or a new world law.
+- **PROPOSAL only:** Collatz/hailstone travel, random walks, modular computed jumps, chance mechanics, region-specific numeric rules or hidden patterns.
+- **OPEN:** Final layout and real novel content; all plot scenes, antagonist/protagonist identities, exact motives and accusations/refutations, reader numbering, state flags, narrative gates, ending detail, print workflow, durable manuscript backend and backup policy.
+- **OPEN COSMOLOGY:** Whether agency constraints exist; simulation is not fact; later π discovery is speculative.
 
 ## Next work and permissions
-**W004** is a *practical writing/design workshop*: compare workflow choices; organise a compact story spine, scene/choice records, branching prose, protected route/gateway logic, a small vertical slice and playtest/revision cadence. Start with workflow options and one decision. **W004 is not executed** just because its prompt is installed. Do not modify repository further without owner authorization.
+**W005** is a future infrastructure execution session: secure persistence, authorization, autosave confirmation, safe local-draft migration, revision history, backup/restore and verification without complicating the studio UI. Its installation is **not execution** and does not authorize paid provisioning. Keep the approved fiction untouched.
 
-References: [W003 closeout](../workshops/W003_CLOSEOUT.md) · [W004 prompt](../workshops/W004_PROMPT.md) · [Decisions](DECISIONS.md) · [Open Questions](OPEN_QUESTIONS.md).
+References: [W004 closeout](../workshops/W004_CLOSEOUT.md) · [W005 prompt](../workshops/W005_PROMPT.md) · [Decisions](DECISIONS.md) · [Open Questions](OPEN_QUESTIONS.md).

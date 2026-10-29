@@ -27,7 +27,9 @@ Stable IDs are retained. Resolved-at-scope questions reference the dated decisio
 | Q-0021 | PARTIALLY ANSWERED | River/Atlas/Living Book by act and separate stable node IDs/paragraph labels/physical pages are approved in principle (DEC-0016/0017), with protected destinations and route-preservation. Exact graph, flags, numbering and proof of reachability remain OPEN. | CYOD | W004 |
 | Q-0022 | PROPOSAL ONLY | A future π-computation discovery may suggest a relationship between digits and choices; how to make it mathematically coherent and unlike the 1998 film *Pi* is future work, NOT Book One canon. | Wider lore | Later |
 
-| Q-0023 | OPEN | How should writing proceed practically: story beats, scene cards, source passages, choice links, branching/convergence, iterative vertical slices, manuscript revisions and editorial ownership? | Story / CYOD | **W004** |
+| Q-0023 | PARTIALLY ANSWERED | W004 approved iterative vertical slices, a collapsible scene graph and a stripped-back writing studio. Actual prose drafting rhythm, complete story spine, production-grade route editing and editorial revisions still OPEN. | Story / CYOD | [W004](../workshops/W004_CLOSEOUT.md), later |
 | Q-0024 | OPEN | How will authors verify and typeset print navigation, numerical gates, region evidence reachability, meaningful consequences, reader memory and blind playtest outcomes without overbuilding a custom engine? | Production / CYOD | **W004+** |
+
+| Q-0025 | OPEN | How will the Writing Studio preserve every edit, draft passage and choice securely across browsers, refreshes, devices and deployments, with safe migration, revision history and verified independent backups? Browser-local autosave is inadequate. | Infrastructure | **[W005](../workshops/W005_PROMPT.md)** |
 
 No open status is permission to infer an answer. See [W001 freeze](../workshops/W001_CLOSEOUT.md) and [W002](../workshops/W002_PROMPT.md).
