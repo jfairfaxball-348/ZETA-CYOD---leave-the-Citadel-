@@ -37,11 +37,11 @@ function seed(){
 }
 function valid(d){return !!(d&&d.version===1&&Array.isArray(d.acts)&&Array.isArray(d.scenes)&&Array.isArray(d.passages)&&typeof d.start==="string"&&typeof d.sequence==="number"&&d.acts.length>0&&d.scenes.length>0&&d.passages.length>0&&d.passages.every(p=>p.id&&p.scene&&Array.isArray(p.edges)));}
 function load(){try{const raw=localStorage.getItem(KEY);if(raw){const d=JSON.parse(raw);if(valid(d))return d;}}catch(err){console.warn("Could not restore studio data",err);}return seed();}
-let doc=load(),selection=null,view={x:20,y:40,z:.65},drag=null,reading=null,toastTimer=0;
+let doc=load(),selection=null,activeSceneId=null,view={x:20,y:40,z:.65},drag=null,reading=null,toastTimer=0;
 function scene(id){return doc.scenes.find(x=>x.id===id);}
 function passage(id){return doc.passages.find(x=>x.id===id);}
 function act(id){return doc.acts.find(x=>x.id===id);}
-function persist(){try{localStorage.setItem(KEY,JSON.stringify(doc));$("saveIndicator").textContent="● Saved in this browser";}catch(err){$("saveIndicator").textContent="! Save unavailable — export now";console.warn(err);}}
+function persist(){try{localStorage.setItem(KEY,JSON.stringify(doc));$("saveIndicator").textContent="● Saved on this device";}catch(err){$("saveIndicator").textContent="Save failed — export a backup";console.warn(err);}}
 function toast(message){const node=$("toast");node.textContent=message;node.classList.add("visible");clearTimeout(toastTimer);toastTimer=setTimeout(()=>node.classList.remove("visible"),2600);}
 function posStyle(o){return "left:"+o.x+"px;top:"+o.y+"px;width:"+o.w+"px;height:"+o.h+"px";}
 function sel(type,id){selection={type,id};render();}
@@ -57,6 +57,45 @@ function renderOutline(){
  }
  $("outline").innerHTML=out;
  $("outline").querySelectorAll("[data-focus]").forEach(b=>b.addEventListener("click",()=>{const id=b.dataset.focus;sel("scene",id);focusScene(id);}));
+}
+
+function enterScene(id){
+ const s=scene(id);if(!s)return;
+ activeSceneId=id;selection=null;
+ // Keep the broad map intact, but show just the chosen scene in detail.
+ for(const item of doc.scenes)item.collapsed=item.id!==id;
+ persist();render();focusScene(id);
+}
+function backToOverview(){
+ activeSceneId=null;selection=null;render();
+}
+function renderOverview(){
+ const overview=$("overview"),inScene=!!activeSceneId;
+ overview.hidden=inScene;$("viewport").hidden=!inScene;
+ $("canvasTools").hidden=!inScene;$("backBtn").hidden=!inScene;
+ $("addPassageBtn").hidden=!inScene;
+ if(inScene){
+  const s=scene(activeSceneId);
+  $("stageKicker").textContent=(act(s?.act)?.title||"STORY")+" · SCENE";
+  $("canvasTitle").textContent=s?.title||"Scene";
+  $("stageHint").textContent="Choose a passage to write, or add another.";
+  return;
+ }
+ $("stageKicker").textContent="YOUR STORY";
+ $("canvasTitle").textContent="Where would you like to write?";
+ $("stageHint").textContent="Choose a scene. Open its passages. Write one at a time.";
+ const labels={a1:"Exile",a2:"Exploration",a3:"Return"};
+ overview.innerHTML=doc.acts.map(a=>{
+  const tiles=doc.scenes.filter(s=>s.act===a.id).map(s=>{
+   const ps=doc.passages.filter(p=>p.scene===s.id);
+   const worked=ps.filter(p=>p.status==="reviewed"||((p.status==="draft")&&p.body.trim()&&!p.body.includes("[UNWRITTEN"))).length;
+   const pct=ps.length?Math.round(worked*100/ps.length):0;
+   return '<button class="scene-tile" data-open-scene="'+html(s.id)+'"><span class="scene-title">'+html(s.title)+'</span><span class="scene-meta">'+ps.length+' '+(ps.length===1?"passage":"passages")+'<span class="scene-go">↗</span></span><span class="scene-progress"><span style="width:'+pct+'%"></span></span></button>';
+  }).join("");
+  return '<section class="act-column"><div class="act-label">'+html(a.title)+'</div><h2 class="act-title">'+html(labels[a.id]||a.subtitle)+'</h2><p class="act-description">'+html(a.subtitle)+'</p>'+tiles+'<button class="add-scene-tile" data-act-add="'+html(a.id)+'">＋ Add a scene</button></section>';
+ }).join("");
+ overview.querySelectorAll("[data-open-scene]").forEach(b=>b.addEventListener("click",()=>enterScene(b.dataset.openScene)));
+ overview.querySelectorAll("[data-act-add]").forEach(b=>b.addEventListener("click",()=>addScene(b.dataset.actAdd)));
 }
 function endPoint(p){
  const s=scene(p.scene);
@@ -101,7 +140,7 @@ function renderWorld(){
   el.querySelector(".collapse-btn").addEventListener("pointerdown",event=>event.stopPropagation());
   el.querySelector(".collapse-btn").addEventListener("click",event=>{event.stopPropagation();s.collapsed=!s.collapsed;persist();render();});
   el.querySelector(".scene-header").addEventListener("pointerdown",(event)=>beginDrag(event,"scene",s.id));
-  el.addEventListener("click",()=>{if(selection?.id!==s.id)sel("scene",s.id);});
+  el.addEventListener("click",()=>{if(s.collapsed){enterScene(s.id);}else if(selection?.id!==s.id)sel("scene",s.id);});
   if(!s.collapsed){
    for(const p of doc.passages.filter(p=>p.scene===s.id)){
     const card=document.createElement("div");
@@ -119,7 +158,9 @@ function renderWorld(){
  $("zoomLabel").textContent=Math.round(view.z*100)+"%";
 }
 function renderInspector(){
- const area=$("inspector");
+ const area=$("inspectorContent");
+ document.body.classList.toggle("editor-open",!!selection);
+ $("drawerBackdrop").hidden=!selection;
  if(!selection){area.innerHTML='<div class="inspector-empty"><span class="empty-symbol">✎</span><h2>The page is yours.</h2><p>Select a passage on the canvas to begin writing.</p><p class="muted">Your changes are saved only in this browser.</p></div>';return;}
  if(selection.type==="scene"){
   const s=scene(selection.id);if(!s){selection=null;renderInspector();return;}
@@ -160,7 +201,7 @@ function edgeEditor(edge,i){
  const options=[["","Ordinary link"],...Object.keys(MARKS).map(m=>["set:"+m,"Choose mark: "+MARKS[m]]),...Object.keys(MARKS).map(m=>["require:"+m,"Require mark: "+MARKS[m]])];
  return '<div class="edge-edit" data-edge-index="'+i+'"><div class="fields"><small>'+html(edge.id)+'</small><input class="edge-label" aria-label="Choice label" placeholder="Continue / choice text" value="'+html(edge.label||"")+'"><select class="edge-destination" aria-label="Destination">'+doc.passages.map(q=>'<option value="'+html(q.id)+'"'+(edge.to===q.id?" selected":"")+'>'+html(q.id+" · "+q.title)+'</option>').join("")+'</select><select class="edge-mark" aria-label="Mark behaviour">'+options.map(item=>'<option value="'+item[0]+'"'+(marker===item[0]?" selected":"")+'>'+html(item[1])+"</option>").join("")+"</select></div><button class=\"remove\" aria-label=\"Remove connection\">×</button></div>";
 }
-function render(){renderOutline();renderWorld();renderInspector();}
+function render(){renderOutline();renderWorld();renderInspector();renderOverview();}
 function beginDrag(event,type,id){
  if(event.button!==0)return;
  if(event.target.closest("button"))return;
@@ -185,21 +226,21 @@ function transform(){const root=$("world");root.style.transform="translate("+vie
 function zoomAt(factor,x,y){const next=Math.max(.2,Math.min(1.6,view.z*factor)),ratio=next/view.z;view.x=x-(x-view.x)*ratio;view.y=y-(y-view.y)*ratio;view.z=next;transform();}
 function focusScene(id){const s=scene(id),rect=$("viewport").getBoundingClientRect();if(!s)return;view.z=Math.min(.9,(rect.width-80)/(s.collapsed?370:s.w+200),(rect.height-110)/(s.collapsed?350:s.h+130));view.z=Math.max(.32,view.z);view.x=rect.width/2-(s.x+(s.collapsed?125:s.w/2))*view.z;view.y=rect.height/2-(s.y+(s.collapsed?67:s.h/2))*view.z;transform();}
 function fitAll(){const rect=$("viewport").getBoundingClientRect(),z=Math.max(.2,Math.min(.7,(rect.width-55)/3900,(rect.height-110)/1010));view.z=z;view.x=(rect.width-3900*z)/2;view.y=(rect.height-1030*z)/2-110*z;transform();}
-function addScene(){
+function addScene(actId){
  const title=prompt("Name the new scene:","Untitled scene");if(title===null)return;
- const a=selection?.type==="scene"?scene(selection.id)?.act:selection?.type==="passage"?scene(passage(selection.id)?.scene)?.act:"a1";
+ const a=typeof actId==="string"?actId:selection?.type==="scene"?scene(selection.id)?.act:selection?.type==="passage"?scene(passage(selection.id)?.scene)?.act:"a1";
  doc.sceneSequence=(doc.sceneSequence||doc.scenes.length)+1;
  const id="s-custom-"+doc.sceneSequence, actObj=act(a)||doc.acts[0];
  const s={id,act:actObj.id,title:title.trim()||"Untitled scene",x:actObj.x+120,y:actObj.y+250,w:340,h:330,collapsed:false,notes:""};
- doc.scenes.push(s);persist();sel("scene",id);focusScene(id);toast("Scene added");
+ doc.scenes.push(s);persist();enterScene(id);toast("Scene added");
 }
 function addPassage(sceneId){
- const s=scene(sceneId|| (selection?.type==="scene"?selection.id:selection?.type==="passage"?passage(selection.id)?.scene:"s-opening"))||doc.scenes[0];
+ const s=scene(typeof sceneId==="string"?sceneId:selection?.type==="scene"?selection.id:selection?.type==="passage"?passage(selection.id)?.scene:activeSceneId||"s-opening")||doc.scenes[0];
  doc.sequence=Math.max(doc.sequence||0,...doc.passages.map(p=>Number(p.id.replace("P-",""))||0))+1;
  const id="P-"+String(doc.sequence).padStart(4,"0"),count=doc.passages.filter(p=>p.scene===s.id).length;
  const y=80+count*160;s.h=Math.max(s.h,y+190);s.w=Math.max(s.w,320);s.collapsed=false;
  doc.passages.push({id,scene:s.id,title:"Untitled passage",body:"",status:"planned",notes:"",kind:"passage",x:27,y,edges:[]});
- persist();sel("passage",id);focusScene(s.id);toast("Passage "+id+" added");
+ persist();enterScene(s.id);sel("passage",id);toast("Passage added");
 }
 function addEdge(p){
  const target=doc.passages.find(q=>q.id!==p.id);if(!target){toast("Add another passage before linking");return;}
@@ -274,7 +315,7 @@ function exportData(){
 function importData(file){if(!file)return;const reader=new FileReader();reader.onload=()=>{
  try{const parsed=JSON.parse(String(reader.result));if(!valid(parsed))throw Error("Unrecognised studio JSON version/schema");
   if(!confirm("Import this manuscript? It will replace the current browser copy. Export a backup first if needed."))return;
-  doc=parsed;selection=null;persist();render();fitAll();toast("Manuscript imported");
+  doc=parsed;selection=null;activeSceneId=null;persist();render();toast("Manuscript imported");
  }catch(err){alert("Import failed: "+err.message);}
  };reader.readAsText(file);}
 function install(){
@@ -287,7 +328,11 @@ function install(){
  $("importFile").addEventListener("change",e=>{importData(e.target.files[0]);e.target.value="";});
  $("zoomInBtn").addEventListener("click",()=>{const r=$("viewport").getBoundingClientRect();zoomAt(1.25,r.width/2,r.height/2);});
  $("zoomOutBtn").addEventListener("click",()=>{const r=$("viewport").getBoundingClientRect();zoomAt(.8,r.width/2,r.height/2);});
- $("fitBtn").addEventListener("click",fitAll);
+ $("fitBtn").addEventListener("click",()=>{if(activeSceneId)focusScene(activeSceneId);else fitAll();});
+ $("backBtn").addEventListener("click",backToOverview);
+ const closeEditor=()=>{selection=null;render();};
+ $("closeEditor").addEventListener("click",closeEditor);
+ $("drawerBackdrop").addEventListener("click",closeEditor);
  const viewport=$("viewport");
  viewport.addEventListener("wheel",e=>{e.preventDefault();const r=viewport.getBoundingClientRect();zoomAt(e.deltaY<0?1.12:.89,e.clientX-r.left,e.clientY-r.top);},{passive:false});
  let pan=null;
@@ -296,7 +341,7 @@ function install(){
  const release=()=>{pan=null;viewport.classList.remove("grabbing");};
  viewport.addEventListener("pointerup",release);viewport.addEventListener("pointercancel",release);
  window.addEventListener("keydown",e=>{if(e.key==="Escape"&&$("modalRoot").innerHTML){$("modalRoot").innerHTML="";reading=null;}});
- render();requestAnimationFrame(()=>focusScene("s-opening"));persist();
+ render();persist();
 }
 install();
 })();
