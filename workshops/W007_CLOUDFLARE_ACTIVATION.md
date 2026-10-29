@@ -1,3 +1,5 @@
+> **2026-10-29 checkpoint:** Owner invoked W007 and reports a green Cloudflare service `zeta-cyod---leave-the-citadel`. The live URL and durability checks remain unverified. See [W007_PROGRESS](W007_PROGRESS.md) and [W007B next prompt](W007B_LIVE_VALIDATION_PROMPT.md). The original checklist below is preserved for provenance.
+
 # ZETA W007 — Activate and Prove Cloudflare Writing Studio (FUTURE / NOT EXECUTED)
 
 **Mission:** Finish the owner-approved migration from Vercel to Cloudflare Workers + D1. No fiction-writing or worldbuilding work, no new costs without explicit owner approval.

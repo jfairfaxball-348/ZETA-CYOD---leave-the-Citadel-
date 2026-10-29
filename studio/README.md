@@ -9,12 +9,22 @@ One platform serves the static writing UI and a persistent SQL database, without
 
 Cloudflare Access can require your email/sign-in to reach both preview and production Worker URLs. The writing API still independently requires its long random owner key. The key is held only in the unlocked tab memory; the server never serves it to the browser.
 
+## W007: locate the green deployment (29 October 2026)
+
+The owner reports a green deployment of Cloudflare Worker **`zeta-cyod---leave-the-citadel`**. This is a build/deployment report, **not a verified public URL, app response or persistent manuscript save**.
+
+1. Open that Worker in the Cloudflare Dashboard, select **Domains** (or **Settings → Domains & Routes** in an older layout), and find the active `workers.dev` hostname under **Domains and routes**. If it has no `workers.dev` route, enable it. Copy the actual **Visit** link; do not invent a hostname from the dashboard URL.
+2. Check that the deployed Git repository and **root directory `studio`**, build command `npm run build`, and deploy command `npx wrangler deploy` match the intended source. The repository's `wrangler.jsonc` currently names the Worker **`zeta-writing-studio`**, whereas the dashboard service named by the owner is **`zeta-cyod---leave-the-citadel`**. Before a further deployment, reconcile the service name to avoid publishing to a second Worker.
+3. Once the owner has a real D1 database binding, applied remote migration, encrypted `STUDIO_OWNER_TOKEN`, and owner-only Cloudflare Access, verify the application at the actual URL. An unauthenticated API request should be denied (401 with backend configured; Access may intercept it earlier). A 503 `NOT_CONFIGURED` means persistence is not yet ready. Test a **disposable** passage through save, refresh, another browser and history restore before substantial writing.
+
+**Do not paste tokens into chat or commit them.** Do not treat a Cloudflare green badge or Github CI run as a confirmed manuscript backup. Detailed activation status: [W007 progress](../workshops/W007_PROGRESS.md).
+
 ## First deployment — owner controls the Cloudflare account
 
-There is currently **no Cloudflare account connection, no live Worker, no bound D1 database, and no owner key provisioned**. Nothing has been billed, deployed or imported.
+A Worker deployment has been **reported green by the owner**, but there is no authorised read of its full live settings here. The D1 UUID in the committed configuration is still a placeholder; the real D1 binding, owner secret, Access policy and remote manuscript durability are **not yet verified**. No extra spend or manuscript import has been undertaken in this session.
 
 1. Sign up for or sign into [Cloudflare Dashboard](https://dash.cloudflare.com/), and select the **Free** Workers plan; do not choose an upgrade unless you separately approve the cost.
-2. Connect this GitHub repository `jfairfaxball-348/ZETA-CYOD---leave-the-Citadel-` to **Workers & Pages → Create → Import Git repository**. Set project **Root Directory: `studio`**, **Build command: `npm run build`**, and **Deploy command: `npx wrangler deploy`**. Deployment requires the D1 setup first.
+2. For an existing Worker, **do not create another**: verify the GitHub repository `jfairfaxball-348/ZETA-CYOD---leave-the-Citadel-` is connected to that service, with **Root Directory: `studio`**, **Build command: `npm run build`**, and **Deploy command: `npx wrangler deploy`**. Reconcile the service name with `wrangler.jsonc` before deploying again. For a brand-new installation only, use **Workers & Pages → Create → Import Git repository**.
 3. Create a D1 database named `zeta-manuscript` from the Cloudflare dashboard, preferably in Western Europe, or from a terminal after `npm install` with `npx wrangler d1 create zeta-manuscript --location weur`. Copy the issued UUID into `studio/wrangler.jsonc`, replacing the all-zero placeholder. **Do not deploy until the binding is a real D1 database**. The UUID is an identifier, not a secret.
 4. Run `cd studio && npm install && npx wrangler d1 migrations apply zeta-manuscript --remote` to create the current manuscript and historical revision tables. Apply before first use. The migration never imports, replaces or deletes any W004 browser drafts.
 5. Generate a unique owner secret locally, e.g. `openssl rand -base64 48`, then set it in Cloudflare Workers **Settings → Variables and Secrets** as an **encrypted secret** named `STUDIO_OWNER_TOKEN`. Or run `npx wrangler secret put STUDIO_OWNER_TOKEN` from an authenticated machine. Never paste secrets in GitHub, public source or chat.
@@ -48,4 +58,4 @@ The dev Worker must have a local `.dev.vars` containing a generated `STUDIO_OWNE
 
 The former Vercel API and Neon-oriented source files remain archived under `api/` and `lib/` for rollback but are **not bundled as public Cloudflare assets**. `npm run build` copies only `index.html`, `app.js`, `cloud.js` and `styles.css` to `dist/`. GitHub source and deployments do **not** contain unpublished manuscript text or server credentials. The old Vercel project is not required for the Cloudflare service; it may be disconnected later after successful live verification.
 
-**Status:** Cloudflare code and CI prepared; production deployment, account configuration, real cross-device persistence and independent offsite restore remain to be proven before declaring the Writing Studio durable.
+**Status (W007 checkpoint):** owner reports a green Cloudflare Worker deployment. Actual URL, deployed asset version, D1 migration/secret/Access configuration, real cross-device persistence and independent offsite restore remain unverified. Do not write valuable prose without exporting JSON first.

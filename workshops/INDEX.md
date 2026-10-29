@@ -11,6 +11,7 @@ Owner-led creative design and authorised implementation. An installed agenda alo
 | W005 | 2026-10-29 | **CODE IMPLEMENTED / MOCK TESTS GREEN; LIVE ACTIVATION OPEN** | Secure revision API, client autosave/recovery and private backup automation | [Implementation record](W005_PROGRESS.md) · [original prompt](W005_PROMPT.md) · [studio](../studio/README.md) |
 | W005A | Superseded by W007 | **REPLACED — NOT EXECUTED** | Old Vercel/Neon activation plan; preserved for provenance | [Original activation prompt](W005A_ACTIVATION_PROMPT.md) |
 | W006 | 2026-10-29 | **CLOUDFLARE MIGRATION CODED / CI TESTED** | Replace Vercel dependency with Workers + D1; retain protected save protocol | [Migration record](W006_CLOUDFLARE_MIGRATION.md) · [deployment guide](../studio/README.md) |
-| W007 | Future, owner invocation | **PREPARED — NOT EXECUTED** | Provision Cloudflare Free D1/Access and prove real manuscript durability | [Activation prompt](W007_CLOUDFLARE_ACTIVATION.md) |
+| W007 | 2026-10-29 | **INVOKED / PARTIAL — owner reports green Worker; URL and storage unverified** | Inspect Cloudflare activation, identify route and remaining gates | [Checkpoint](W007_PROGRESS.md) · [original prompt](W007_CLOUDFLARE_ACTIVATION.md) |
+| W007B | Future, owner invocation | **PREPARED — NOT EXECUTED** | Verify actual URL and Worker settings; activate D1, owner-only access and prove saves/backup | [Next prompt](W007B_LIVE_VALIDATION_PROMPT.md) |
 
 See [START_HERE](../authoritative/START_HERE.md), [DECISIONS](../authoritative/DECISIONS.md), [OPEN_QUESTIONS](../authoritative/OPEN_QUESTIONS.md). The editor is an implementation and workflow choice, not fiction canon. No new accusations, exact book nodes, publication pagination or cosmological facts have been ratified.
