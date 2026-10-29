@@ -12,7 +12,7 @@
 ## W010 approved voice and opening staging (DEC-0021–0023)
 - **Voice:** Second-person (`you`) throughout reader-facing prose; concise, descriptive, forward-moving gamebook narration. Avoid extended psychological introspection or fixed first-person narration.
 - **Player:** A young apprentice of approximately 25. The player's name, gender, detailed apprenticeship and personal backstory remain open.
-- **Inciting discovery (DEC-0024):** As an apprentice, the player uncovered something inconsistent with the Citadel's accepted understanding. The authorities knowingly use an unjustified judgement to expel them rather than face the challenge. The exact discovery and whether it is shared or mark-specific remain open.
+- **Inciting discovery (DEC-0024; owner-approved W010 detail):** As an apprentice, the player accidentally discovers an inconsistency during ordinary archival duties, rather than conducting a deliberate investigation. The authorities knowingly use an unjustified judgement to expel them rather than face the challenge. The author has approved three route-specific discoveries and three memory passages; their complete novel prose is saved privately at D1 revision 9. Exact mathematical refutations remain for Act II.
 - **Chapter Elder Luiz:** The player's trusted mentor, who earlier told them to “...leave The Citadel.” The opening words are a **memory**, not speech arriving at the gate. Each wrist-mark branch can elaborate a different version of that conversation and its judgement; the three exact judgements remain OPEN.
 - **Present scene:** The player stands alone near the **outermost Citadel exit**, inward door shut, outward door standing open into the surrounding number-theory territory. The region's fantasy name remains undecided; **Arithen** is a proposal only. Each memory branch still rejoins the single shared page 2; no content for the branch is approved yet.
 
@@ -34,3 +34,6 @@
 - **PROPOSAL only:** Mathematical balance, proof, contradiction, constraint and simulation theory as possible explanatory inspirations; no specific mechanism accepted.
 
 See [Opening mechanism](../cyod/OPENING_MECHANISM.md), [Story graph](../cyod/STORY_GRAPH.md), [Plot and themes](PLOT_AND_THEMES.md), [Revelation budget](REVELATION_BUDGET.md) and [W001 freeze](../workshops/W001_CLOSEOUT.md).
+
+## W010 completed opening slice (2026-10-29)
+Five author-approved opening passage bodies (P-0001–P-0005) have been saved and verified privately, D1 revision 4 → 9. Their branch structure remains opening mark → one remembered judgement → shared draft page 2; the three remembered speeches end with “...leave The Citadel.” The first shared gate proposes main road versus outer-wall footprints. **Its two new route nodes and page targets are not yet implemented.** See [W010 closeout](../workshops/W010_CLOSEOUT.md) and [W011 installed workshop](../workshops/W011_BEYOND_THE_GATE_WRITING_WORKSHOP.md); do not place unpublished passage text in this public file.
