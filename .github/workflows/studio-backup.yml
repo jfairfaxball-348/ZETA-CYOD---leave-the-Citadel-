@@ -1,0 +1,26 @@
+name: ZETA private manuscript backup
+on:
+  schedule:
+    - cron: '17 02 * * *'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  archive:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: studio
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Install runtime dependencies
+        run: npm install --omit=dev --no-audit --no-fund
+      - name: Copy current revision to separate private repository
+        env:
+          DATABASE_URL: ${{ secrets.ZETA_BACKUP_DATABASE_URL }}
+          GITHUB_BACKUP_TOKEN: ${{ secrets.ZETA_BACKUP_GITHUB_TOKEN }}
+          GITHUB_BACKUP_REPO: ${{ secrets.ZETA_BACKUP_GITHUB_REPO }}
+        run: node scripts/private-backup.cjs
