@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0c1220">
+  <title>ZETA — Writing Studio</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script defer src="./app.js"></script>
+</head>
+<body>
+  <div class="app">
+    <header class="topbar">
+      <div class="brand"><span class="sigil">Ζ</span><div><span class="brand-label">ZETA / AUTHOR'S WORKSPACE</span><strong>Leave the Citadel</strong></div></div>
+      <div class="top-meta"><span class="pill small-pill">W004 · PROOF OF CONCEPT</span><span class="save-indicator" id="saveIndicator">● Saved in this browser</span></div>
+      <nav class="toolbar">
+        <button class="tool-button" id="addSceneBtn" title="Add scene">＋ Scene</button>
+        <button class="tool-button" id="addPassageBtn" title="Add passage">＋ Passage</button>
+        <button class="tool-button" id="auditBtn" title="Audit links">◇ Check</button>
+        <button class="tool-button primary" id="playBtn">▶ Read</button>
+      </nav>
+    </header>
+    <main class="workspace">
+      <aside class="sidebar">
+        <div class="sidehead"><span class="eyebrow">MANUSCRIPT MAP</span><h2>Story outline</h2><p>Three acts. One underlying graph.</p></div>
+        <div class="outline" id="outline"></div>
+        <div class="side-bottom">
+          <div class="storage-note"><span class="note-icon">i</span><div><strong>Local prototype</strong><p>Your writing saves in this browser only. Export a backup before switching devices.</p></div></div>
+          <div class="file-actions"><button id="exportBtn">↓ Export JSON</button><button id="importBtn">↑ Import</button><input type="file" id="importFile" accept=".json,application/json" hidden></div>
+        </div>
+      </aside>
+      <section class="canvas-shell" aria-label="Interactive story graph canvas">
+        <div class="canvas-head"><div><span class="eyebrow">LIVE CANVAS</span><h2 id="canvasTitle">The whole journey</h2></div><span class="canvas-hint">Drag background to pan · Scroll to zoom · Select a passage to write</span></div>
+        <div class="viewport" id="viewport">
+          <div class="world" id="world"></div>
+        </div>
+        <div class="canvas-tools"><button id="zoomOutBtn" title="Zoom out">−</button><span id="zoomLabel">100%</span><button id="zoomInBtn" title="Zoom in">＋</button><button id="fitBtn" title="Fit all">Fit all</button></div>
+        <div class="canvas-legend"><span><i class="legend-dot drafted"></i>Draft</span><span><i class="legend-dot planned"></i>Planned</span><span><i class="legend-dot reviewed"></i>Reviewed</span></div>
+      </section>
+      <aside class="inspector" id="inspector">
+        <div class="inspector-empty"><span class="empty-symbol">✎</span><h2>The page is yours.</h2><p>Select a passage on the canvas to start writing, or select a scene to plan its purpose.</p><p class="muted">The nodes shown here are structural working placeholders, not approved new story canon.</p></div>
+      </aside>
+    </main>
+  </div>
+  <div id="modalRoot"></div>
+  <div id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
