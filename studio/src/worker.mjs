@@ -80,9 +80,11 @@ async function save(db,document,expectedRevision,restoredFrom=null){
   const changed=await db.batch([
     db.prepare("UPDATE zeta_manuscript SET revision=revision+1, document=?, updated_at=? WHERE id='book-one' AND revision=?")
       .bind(serialized,updatedAt,expectedRevision),
-    // INSERT OR IGNORE lets us check the update result; concurrent stale writers cannot
-    // change either head or historical snapshot. The batch is a single D1 transaction.
-    db.prepare("INSERT OR IGNORE INTO zeta_revision(revision,document,created_at,restored_from) SELECT revision,document,updated_at,? FROM zeta_manuscript WHERE id='book-one' AND revision=?")
+    // Keep the snapshot in the same D1 transaction as the head update. Do NOT use
+    // INSERT OR IGNORE here: if the snapshot cannot be written, D1 must roll
+    // back the head update rather than leaving an unversioned manuscript.
+    // A stale editor updates zero rows; the SELECT below then inserts zero rows.
+    db.prepare("INSERT INTO zeta_revision(revision,document,created_at,restored_from) SELECT revision,document,updated_at,? FROM zeta_manuscript WHERE id='book-one' AND revision=?")
       .bind(restoredFrom,next)
   ]);
   if(changed[0]?.meta?.changes!==1)fail(409,"REVISION_CONFLICT");
