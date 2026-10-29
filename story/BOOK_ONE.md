@@ -12,6 +12,7 @@
 ## W010 approved voice and opening staging (DEC-0021–0023)
 - **Voice:** Second-person (`you`) throughout reader-facing prose; concise, descriptive, forward-moving gamebook narration. Avoid extended psychological introspection or fixed first-person narration.
 - **Player:** A young apprentice of approximately 25. The player's name, gender, detailed apprenticeship and personal backstory remain open.
+- **Inciting discovery (DEC-0024):** As an apprentice, the player uncovered something inconsistent with the Citadel's accepted understanding. The authorities knowingly use an unjustified judgement to expel them rather than face the challenge. The exact discovery and whether it is shared or mark-specific remain open.
 - **Chapter Elder Luiz:** The player's trusted mentor, who earlier told them to “...leave The Citadel.” The opening words are a **memory**, not speech arriving at the gate. Each wrist-mark branch can elaborate a different version of that conversation and its judgement; the three exact judgements remain OPEN.
 - **Present scene:** The player stands alone near the **outermost Citadel exit**, inward door shut, outward door standing open into the surrounding number-theory territory. The region's fantasy name remains undecided; **Arithen** is a proposal only. Each memory branch still rejoins the single shared page 2; no content for the branch is approved yet.
 
