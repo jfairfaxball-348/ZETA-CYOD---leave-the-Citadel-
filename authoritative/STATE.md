@@ -1,9 +1,9 @@
 # ZETA — Current project state
 
 **As of:** 2026-10-29
-**Latest executed workshop:** W004 — workflow/authoring POC **CLOSED AT SPECIFIC SCOPE**; W001–W003 original creative architecture remains frozen.
-**Repository lineage:** S000 → W001 → W002 → W003 → W004 simplified studio POC.
-**Next session:** [W005 — Durable Authoring Infrastructure](../workshops/W005_PROMPT.md) (**prepared, NOT executed; fresh owner instruction required**).
+**Latest executed workshop:** W005 — secure durable-authoring **code implemented and simulated tests green; live service activation still OPEN**. W001–W003 creative architecture unchanged.
+**Repository lineage:** S000 → W001 → W002 → W003 → W004 simplified studio POC → W005 persistence implementation.
+**Next session:** [W005A — Activate and Verify Durable Writing](../workshops/W005A_ACTIVATION_PROMPT.md) (**prepared, NOT executed; owner service/secret approval needed**).
 
 ## Approved creative architecture
 - **W001 / DEC-0001–0010:** Vast mathematically inspired ZETA, Citadel inside wider number-theory territory (fantasy name OPEN), Topologia, Combinatorium. Minimal command “…leave The Citadel”, illustrated right-wrist choice (digit→draft page 102, knot/interlocking form→203, binomial mark→304); each different reason ends ONLY “Turn to page 2”; all join common Act I and mark persists as determinant of Act II destination without branching shared Act I. Three acts ~one third each; Act III returns to Citadel.
@@ -17,6 +17,12 @@
 - **Critical limitation:** Manuscript is **not yet persisted remotely**. Save is `localStorage` tied to a browser; deleting site data, using a different device or a private window can lose writing. Until W005's durability/backup tests pass, export JSON manually. Do not claim server backups, account sync or revision history exist.
 - **Vercel:** `zeta-writing-studio` linked to GitHub with root `studio/`; owner controls deployment. A GitHub Actions green test and a Vercel build-rate failure are different statuses.
 
+## W005 executed at implementation scope (NOT live durability closeout)
+- **Built:** transactional and authorized manuscript API; expected-revision conflict protection; version history/restore; quiet cloud autosave; browser recovery and non-destructive local-vs-cloud selection; private scheduled backup workflow. See [W005 record](../workshops/W005_PROGRESS.md) and [studio runbook](../studio/README.md).
+- **Tests:** API security, revision and recovery protocol using a mock backend, plus second-browser jsdom simulation. GitHub CI does not prove the database, provider backup or Vercel deployment.
+- **Not yet done:** no external PostgreSQL, Vercel env keys, backup repo/token or live deployment configured; no real cross-device/save/restore verification. Until W005A, manually export valuable prose.
+- **Important:** Existing W004 browser data is preserved and the three-Act overview is unchanged. No story canon changes.
+
 ## Status boundaries
 - **CANON:** DEC-0001–0020 only at stated creative/design scope. W004 chose a process and authoring tool, **not** plot, actual passages, numbered print references, approved accusations, proof scenes, or a new world law.
 - **PROPOSAL only:** Collatz/hailstone travel, random walks, modular computed jumps, chance mechanics, region-specific numeric rules or hidden patterns.
@@ -24,6 +30,6 @@
 - **OPEN COSMOLOGY:** Whether agency constraints exist; simulation is not fact; later π discovery is speculative.
 
 ## Next work and permissions
-**W005** is a future infrastructure execution session: secure persistence, authorization, autosave confirmation, safe local-draft migration, revision history, backup/restore and verification without complicating the studio UI. Its installation is **not execution** and does not authorize paid provisioning. Keep the approved fiction untouched.
+**W005A** is the future provider activation/real durability validation session. Provisioning and any spending require explicit owner action; no backend is live until then. Keep the approved fiction untouched.
 
 References: [W004 closeout](../workshops/W004_CLOSEOUT.md) · [W005 prompt](../workshops/W005_PROMPT.md) · [Decisions](DECISIONS.md) · [Open Questions](OPEN_QUESTIONS.md).

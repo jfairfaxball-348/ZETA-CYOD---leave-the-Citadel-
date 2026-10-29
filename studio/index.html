@@ -6,19 +6,23 @@
 <meta name="theme-color" content="#f8f7f2">
 <title>Leave the Citadel — Writing Studio</title>
 <link rel="stylesheet" href="./styles.css">
+<script defer src="./cloud.js"></script>
 <script defer src="./app.js"></script>
 </head>
 <body>
 <div class="app">
   <header class="topbar">
     <div class="identity"><span class="emblem" aria-hidden="true">Ζ</span><div><span class="eyebrow">ZETA · THE WRITING ROOM</span><strong>Leave the Citadel</strong></div></div>
-    <div class="top-actions"><span id="saveIndicator" class="save-state">Saved on this device</span><button class="button-light" id="playBtn">▶ Read</button><details class="more-menu"><summary>•••</summary><div class="menu-popover">
+    <div class="top-actions"><span id="saveIndicator" class="save-state">Local draft</span><button class="button-light" id="playBtn">▶ Read</button><details class="more-menu"><summary>•••</summary><div class="menu-popover">
       <button id="addSceneBtn">＋ New scene</button>
       <button id="auditBtn">Check links</button>
       <button id="exportBtn">Export manuscript</button>
       <button id="importBtn">Import manuscript</button>
+      <button id="connectBtn">Connect cloud saves</button>
+      <button id="historyBtn">Cloud history / restore</button>
+      <button id="recoveryBtn">Download local recovery</button>
       <input id="importFile" type="file" accept=".json,application/json" hidden>
-      <p>Experimental writing is saved in this browser. Export to keep a backup.</p>
+      <p>Until connected, writing is local. “Saved” means server-confirmed.</p>
     </div></details></div>
   </header>
   <main class="stage">
