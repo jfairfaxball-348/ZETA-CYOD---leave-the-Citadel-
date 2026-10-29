@@ -7,20 +7,20 @@
 - Absolutely minimal pre-choice context: an instruction beginning **“...leave The Citadel”** and a look down at the protagonist's **right wrist**; then **three illustrated options**. No introductory worldbuilding or descriptive option labels are required.
 - Illustrations: single digit → draft page **102**; topologically suggestive knot or interlocking surface → **203**; binomial symbol `\binom{n}{k}` → **304**. These are temporary *page destinations*, not final node numbers.
 - Each choice passage delivers one **different mathematically grounded reason** departure is obligatory, then its only option is **turn to page 2**.
-- The protagonist departs the Citadel; the converged story begins Act I. Who speaks, how reasons function, what the exact marks are and what each passage says are **OPEN**.
+- **CANON (W002):** Each route's asserted mathematical necessity is ultimately *unjustified*, despite being presented as compulsory in the opening; the precise flawed premise/deception and how departure is enforced remain OPEN. The protagonist departs the Citadel; the converged story begins Act I. Who speaks, how reasons function, what the exact marks are and what each passage says remain OPEN.
 
 ## Three-act story
 | Act | Approximately | Approved architecture | Still open |
 | --- | --- | --- | --- |
-| **I — Departure and shared journey** | 0–1/3 | Out of the Citadel and initially within the number-theory territory; shared narrative journey introducing the world, stakes and people; not deep exploration of NT; follows page-2 convergence. | Road, encounters, choices, items, companions, specific plot beats. |
-| **II — Regional experience** | 1/3–2/3 | A substantial, distinct arc set in **one** of three regions: number-theory territory (beyond Citadel), Topologia or the Combinatorium. The opening wrist selection determines this arc, not a fresh late choice. | Character/plot/world differences, reveal timing, pacing, scenes. |
-| **III — Return to the Citadel** | 2/3–end | The story returns to the Citadel with a broadly converging central destination and **route-conditioned conclusions**, preserving consequences from Act II. | Exact conflicts, revelations, ending count and form. |
+| **I — Exile and shared journey** | 0–1/3 | Wrongful mathematical exile from the Citadel followed by a shared outward journey through the wider number-theory territory, not a deep regional exploration. | Command's speaker/enforcement, encounters, choices, items, companions, specific beats. |
+| **II — Exploration and investigation** | 1/3–2/3 | Deep regional experience and investigation in one opening-mark-selected region. The protagonist finds route-specific grounds, by Act II's conclusion, demonstrating why the Citadel's exile justification was false. | Three actual mathematical claims/refutations; pacing, evidence, relationships, culture and scenes. |
+| **III — Return and vindication** | 2/3–end | The protagonist returns with evidence to confront the knowingly deceptive antagonists and vindicate the unjustified exile; route-conditioned conclusions matter. An unmistakably strange, unexplained incident suggests constrained agency without settling it. | Exact confrontation, incident, emotional outcome, ending count and form. |
 
 ## Creative promise
 - **CANON — DEC-0010:** The dominant emotional experience begins as unsettling suspicion that the protagonist's accepted worldview may be wrong.
 - Mathematical ideas underpin lived fiction rather than provide lessons or clichés.
 - The three regions can feel deeply unlike one another, while the wider ZETA mythology connects them in ways not yet resolved.
-- **OPEN:** Protagonist's name, appearance, gender, role, personhood, agency, relationships and personal stakes.
+- **OPEN:** Protagonist's name, appearance, gender, role, personhood, agency, relationships and personal stakes. The antagonists' motives, individual knowledge, alleged proofs and possible actual constraints on choice are also OPEN.
 - **PROPOSAL only:** Mathematical balance, proof, contradiction, constraint and simulation theory as possible explanatory inspirations; no specific mechanism accepted.
 
 See [Opening mechanism](../cyod/OPENING_MECHANISM.md), [Story graph](../cyod/STORY_GRAPH.md), [Plot and themes](PLOT_AND_THEMES.md), [Revelation budget](REVELATION_BUDGET.md) and [W001 freeze](../workshops/W001_CLOSEOUT.md).

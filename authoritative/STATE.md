@@ -1,29 +1,25 @@
 # ZETA — Current project state
 
 **As of:** 2026-10-29
-**Latest workshop:** W001 — The World and the Story, **closed with an owner-approved foundation freeze**.
-**Repository lineage:** S000 scaffold → W001 decision freeze, intended as a linear fast-forward on `main`; inspect GitHub live for current commit and branches.
-**Next session:** W002 — Why the protagonist must leave (prepared, **NOT executed**).
+**Latest workshop:** W002 — Why Must They Leave? **CLOSED with owner-approved story foundations**.
+**Repository lineage:** S000 scaffold → W001 foundation freeze → W002 narrative freeze. Verify GitHub `main` before any session.
+**Next workshop:** W003 — Mathematical CYOD mechanics and journey/node structure (**prepared, NOT EXECUTED**). [Prompt](../workshops/W003_PROMPT.md).
 
-## Frozen at approved scope
-- ZETA extends beyond the Citadel; the first book is CYOD; mathematical inspiration is lived through strikingly different regions.
-- Three Book One destinations are the **number-theory territory** (working name **Arithen**, not approved), **Topologia**, and **the Combinatorium**. The Citadel is within the number-theory territory but does not define all of it.
-- Three broad acts (~thirds): immediate departure plus shared outward first act; substantial second-act life in one of the three regions, predetermined by the opening wrist observation; third-act return to the Citadel with consequences differing by route.
-- Opening has only the instruction to leave and an illustrated right-wrist question before the first choice. Printed draft choices: a single digit → page 102, a knot/interlocking topological image → page 203, `\binom{n}{k}` → page 304.
-- Each opening destination provides a **different mathematical reason** departure is necessary, then only one instruction to **turn to page 2**; shared Act I follows. Opening mark conditions the later regional choice and is not revisited as a free choice at the Act II boundary.
-- The common first act takes place after departure within the number-theory territory; it is principally a journey and story-development vessel, **not a full regional deep-dive**. Specific road, encounters, inventory, and dialogue remain open.
-- The central reader feeling is unsettling doubt that what the protagonist has been taught about reality may be wrong.
+## Approved creative architecture
+- **W001 / DEC-0001–0010:** ZETA is a vast mathematically inspired universe. Book One has three substantial regions (number-theory territory, Topologia, Combinatorium); the Citadel lies inside the number-theory territory (fantasy name OPEN; Arithen merely PROPOSAL).
+- **W001 opening:** Minimal command “...leave The Citadel”; protagonist observes right wrist; reader chooses three illustrated marks: a digit (draft page 102), knot/interlocking topological image (203), binomial coefficient (304). Each short explanation ends with ONLY “Turn to page 2”. They reconverge into shared Act I. Opening mark persists to determine one of the three Act II locations; it does not change shared Act I.
+- **W001 act-level shape:** Approximately thirds: departure/shared journey within the number-theory territory but outside Citadel; a deep Act II within the selected region; return to the Citadel with route-conditioned consequences. Emotional goal: unsettling doubt about accepted reality.
+- **W002 / DEC-0011–0012:** Story purpose is **exile → exploration and investigation → return and vindication**. On *all three routes*, the Citadel's justification is false, but in different mathematically grounded ways. By the end of Act II the protagonist has discovered their route's basis for challenging it. Act III confronts the exiling antagonists. Specific mathematical mechanisms and evidence remain OPEN.
+- **W002 / DEC-0013–0015:** Those responsible for exile are antagonists knowingly participating in unjustified deception. Most believe themselves free to decide; a minority may suspect otherwise. Book One includes one unmistakably strange, unexplained Act III incident suggesting constrained agency. It neither resolves cosmology nor undoes local vindication.
 
-## Preserved uncertainties
-- Exact name of the number-theory region; actual design of digit and topological illustration; physical form/meaning of marks.
-- Three explanations of forced departure, their cause/effect vs revelation relationship, who gives the instruction, protagonist identity, interpersonal stakes, mechanics and concrete scenes.
-- Regional world-laws and precise distances, detailed Act II routes, and Act III outcomes.
-- Overarching mystery answer: **OPEN**. Simulation theory: **PROPOSAL**, not a settled truth.
+## Status boundaries
+- **CANON (at exact design scope):** Approved statements in DEC-0001–0015 and W001/W002 closeouts; not final prose, physical laws or a complete node graph.
+- **PROPOSAL:** Number-theoretic invariant/constraint, topological false assumption about connectedness or dimension, combinatorial omitted valid configuration. These are illustrative distinct error families, **not selected explanations**.
+- **PROPOSAL for a distant book:** Highly advanced π computation and a non-accidental, reproducible pattern relevant to future choices. Avoid similarity to the film *Pi*; this is not a committed book plot. Mathematical caution: digits of π are deterministic and pattern-finding alone would not demonstrate predetermination.
+- **OPEN:** Protagonist identity and backstory; who issues/enforces the command; precise three mathematical accusations and refutations; marks' nature; antagonists' motives; causal mechanism of compulsion; roads, encounters, side choices, endings and exact strange incident.
+- **OPEN COSMOLOGY:** Whether apparent constraints on free will actually exist, and whether reality is a simulation. Simulation remains a speculative reading, never established fact.
 
-## Navigation
-- [W001 closeout](../workshops/W001_CLOSEOUT.md)
-- [W002 prompt](../workshops/W002_PROMPT.md)
-- [DECISIONS](DECISIONS.md), [OPEN_QUESTIONS](OPEN_QUESTIONS.md)
-- [BOOK_ONE](../story/BOOK_ONE.md), [OPENING_MECHANISM](../cyod/OPENING_MECHANISM.md)
+## Next tasks / boundaries
+W003 is a **structural design workshop, not execution**: physical paragraph/page choices, graph design and potentially mathematically resonant reader mechanics (dice, probability, random walks, modular routing, invariants). Preserve W001 delayed destination choice and shared Act I; maintain player agency, print usability and original expression. Do not write full node graph, print pages or manuscript prematurely. Do not execute W003 automatically. No repository changes without owner authorization.
 
-No chapters, full node graph, final illustrations, or executable choice engine have been created.
+References: [W002 closeout](../workshops/W002_CLOSEOUT.md) · [W003 prompt](../workshops/W003_PROMPT.md) · [Decisions](DECISIONS.md) · [Open Questions](OPEN_QUESTIONS.md).

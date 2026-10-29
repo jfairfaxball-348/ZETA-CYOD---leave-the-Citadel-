@@ -1,6 +1,6 @@
 # ZETA — W002: Why Must They Leave? (AUTHORITATIVE NEXT WORKSHOP PROMPT)
 
-**Status:** FUTURE / NOT EXECUTED. A separate explicit owner invocation is required. **Do not auto-author canon or modify GitHub during discussion without permission.**
+**Status:** ARCHIVED AGENDA — W002 executed and closed 2026-10-29. This file preserves the *pre-workshop* questions, not current project state. Read [W002_CLOSEOUT.md](W002_CLOSEOUT.md) and [STATE](../authoritative/STATE.md). **Do not re-execute or treat unresolved agenda wording as current decisions.**
 
 Act as my collaborative creative director, fantasy and science-fiction worldbuilder, novelist, narrative designer and constructive critic. We are continuing development of **ZETA** and Book One, *Leave the Citadel*, after the W001 foundation freeze.
 

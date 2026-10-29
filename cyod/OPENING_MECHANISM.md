@@ -21,6 +21,8 @@ The above quotes record the owner's preferred **working words and sequence**, no
 | An **impossible/interlocking knot, surface or topologically interesting structure** (exact diagram OPEN) | **203** | **Topologia** | A **specific topological basis** for necessary departure (OPEN) |
 | Binomial coefficient **`\binom{n}{k}`** rendered as a mathematical image | **304** | **The Combinatorium** | A **specific combinatorial basis** for necessary departure (OPEN) |
 
+**W002 narrative condition (DEC-0011/0012):** The three opening claims must feel mathematically compelling *to the Citadel*, but each is eventually shown to be an unjustified basis for exile. Their different errors are still OPEN and the reader should not know the eventual refutation immediately. Do not assert that a valid real-world theorem is false.
+
 Each of the three early passages must:
 1. Be a **single, substantive block** furnishing the corresponding mathematical reason that the protagonist must leave.
 2. End with **one and only one** continuation: **Turn to page 2**.
@@ -35,6 +37,6 @@ From draft page **2**, Act I is a shared adventure outside the Citadel. The sele
 - The reader must be able to remember the initial mark; the physical wrist depiction may itself serve as the visible reminder, with more explicit print tracking considered only if useful.
 
 ## What remains OPEN
-Whether the opening choice **reveals** a pre-existing necessity or **causes** it; the command speaker; what specifically compels departure; the object's reality, possible changing marks, whether reasons contradict, and how three regional traditions relate. In particular, never infer that the single digit is **7** or the geometric image is a mere polyhedron.
+Whether the opening choice **reveals** a pre-existing alleged necessity or **causes** its institutional enforcement; the command speaker; what specifically compels departure despite the false claim; the object's reality, possible changing marks, which assumptions fail, and how three regional traditions relate. In particular, never infer that the single digit is **7** or the geometric image is a mere polyhedron.
 
 See [Book One](../story/BOOK_ONE.md), [Story Graph](STORY_GRAPH.md), [State Model](STATE_MODEL.md), [W002 prompt](../workshops/W002_PROMPT.md).

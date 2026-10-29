@@ -12,7 +12,7 @@ FIRST STORY TEXT: "...leave The Citadel"
        |         |         |
    print 102  print 203  print 304
        |         |         |
-   different mathematically grounded explanations
+   different mathematical claims later shown unjustified
        \         |         /
       ONLY CONTINUATION: print page 2
                     |
@@ -25,7 +25,8 @@ FIRST STORY TEXT: "...leave The Citadel"
     territory       |           |
            \         |          /
          ACT III RETURN TO CITADEL
-    (route-conditioned knowledge/consequences)
+    (vindication, route-conditioned consequences;
+     one unexplained hint about antagonist agency)
 ```
 
 ## Important invariants
@@ -33,7 +34,7 @@ FIRST STORY TEXT: "...leave The Citadel"
 2. The initial mark selection persists; there is no free Act II destination vote in the first version of the structure.
 3. Initial choice **does not alter shared Act I's text/route**; it may shape what the character already knows from their initial explanatory paragraph.
 4. Shared Act I may contain additional genuine choices (exact consequences remain OPEN), and must serve character, story and discovery.
-5. Act II is three substantial different experiences; Act III returns to the Citadel but need not be identical across routes.
+5. Act II is three substantial different experiences, each producing a distinct refutation of a false exile judgement by its conclusion. Act III returns to the Citadel for confrontation/vindication with route-conditioned consequences and an unexplained agency anomaly; this is thematic structure, not extra graph nodes.
 
 ## Not yet authored
 No opening narrative paragraphs, edges with actual stable IDs, choices beyond the initial one, graph validations, endings, or state implementation. Earlier empty-graph language is superseded **only at architecture level**; no false claims of a completed graph.

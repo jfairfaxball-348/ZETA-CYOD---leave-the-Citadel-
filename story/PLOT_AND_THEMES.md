@@ -3,7 +3,13 @@
 ## Established design (W001)
 - **CANON (story architecture) — DEC-0006–0009:** A minimal instruction and three right-wrist choices open the book; each short branch states a distinct mathematical reason for being forced to leave and converges at draft page 2. A largely shared Act I takes the protagonist away from the Citadel through the wider number-theory territory. The stored opening choice controls the deep Act II region. Act III returns to the Citadel, with route-sensitive conclusions.
 - **CANON (emotional target) — DEC-0010:** The protagonist—and reader—should feel troubling doubt about the truth of received knowledge.
-- **OPEN:** The precise reason for leaving (three variants), why the instruction is enforceable, the command's source, personal stakes, inciting aftermath, human relationships, antagonists, concrete road events and third-act reckoning.
+- **OPEN:** The precise reason for leaving (three variants), why the instruction is enforceable, the command's source, personal stakes, inciting aftermath, human relationships, antagonists' identities/motives, concrete road events and third-act reckoning.
+
+## W002-approved dramatic engine
+- **CANON — DEC-0011/0012:** Wrongful exile → exploration of one of three mathematically themed regions, gathering route-specific refutation by end Act II → return to seek vindication. The Citadel is wrong *every time* but via different arguments. This is an in-world false judgement, not the falsity of actual mathematical theorems.
+- **CANON — DEC-0013:** Exiling authorities function as antagonists; there is intentional deception/injustice. Their personal motives, ranks, and total understanding remain open.
+- **CANON (thematic design) — DEC-0014/0015:** Most antagonists experience their choices as free, while a few may suspect otherwise; one conspicuously inexplicable incident in Act III hints at constrained agency. It is *not* an answer about how ZETA works. Do not let a speculative lack of agency erase culpability or local vindication.
+- **OPEN:** Named protagonist, three precise flaws and investigations, how departure is compelled, antagonists' actions and confrontation, exact evidence/incidents/endings.
 
 ## Motifs available to explore, NOT canon
 - Mathematical *necessity*, balance, proof, contradiction, consistent assumptions and constraint satisfaction could force departure. These are possible narrative engines, **not** established explanations.
