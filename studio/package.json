@@ -1,15 +1,16 @@
 {
   "name": "zeta-writing-studio-poc",
   "private": true,
-  "version": "0.2.0",
-  "description": "Durable Writing Studio",
+  "version": "0.3.0",
+  "description": "Leave the Citadel private Writing Studio — Cloudflare Workers and D1",
   "scripts": {
-    "test": "node --check app.js && node --check cloud.js && node --check scripts/private-backup.cjs && node --check api/manuscript.js && node --check lib/repository.cjs && node --test tests/persistence.cjs && node tests/smoke.cjs && node tests/cloud-browser.cjs"
+    "test": "node --check app.js && node --check cloud.js && node --check src/worker.mjs && node --check scripts/private-backup.cjs && node --check scripts/build.cjs && node --test tests/persistence.cjs tests/worker.cjs && node tests/smoke.cjs && node tests/cloud-browser.cjs && npm run build",
+    "build": "node scripts/build.cjs",
+    "cf:local-migrate": "wrangler d1 migrations apply zeta-manuscript --local",
+    "cf:deploy": "npm run build && wrangler deploy"
   },
   "devDependencies": {
-    "jsdom": "^27.0.0"
-  },
-  "dependencies": {
-    "@neondatabase/serverless": "^1.2.0"
+    "jsdom": "^27.0.0",
+    "wrangler": "^4.0.0"
   }
 }

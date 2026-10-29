@@ -1,9 +1,9 @@
 # ZETA — Current project state
 
 **As of:** 2026-10-29
-**Latest executed workshop:** W005 — secure durable-authoring **code implemented and simulated tests green; live service activation still OPEN**. W001–W003 creative architecture unchanged.
-**Repository lineage:** S000 → W001 → W002 → W003 → W004 simplified studio POC → W005 persistence implementation.
-**Next session:** [W005A — Activate and Verify Durable Writing](../workshops/W005A_ACTIVATION_PROMPT.md) (**prepared, NOT executed; owner service/secret approval needed**).
+**Latest executed workshop:** W006 — migration to Cloudflare Workers + D1 **implemented and CI tested; live Cloudflare account, D1 and deployment remain OPEN**. W001–W003 fiction canon unchanged.
+**Repository lineage:** S000 → W001 → W002 → W003 → W004 simplified POC → W005 persistent-save protocol → W006 Cloudflare hosting implementation.
+**Next session:** [W007 — Activate Cloudflare Writing Studio](../workshops/W007_CLOUDFLARE_ACTIVATION.md) (**prepared, NOT executed; owner Cloudflare account / secrets required**).
 
 ## Approved creative architecture
 - **W001 / DEC-0001–0010:** Vast mathematically inspired ZETA, Citadel inside wider number-theory territory (fantasy name OPEN), Topologia, Combinatorium. Minimal command “…leave The Citadel”, illustrated right-wrist choice (digit→draft page 102, knot/interlocking form→203, binomial mark→304); each different reason ends ONLY “Turn to page 2”; all join common Act I and mark persists as determinant of Act II destination without branching shared Act I. Three acts ~one third each; Act III returns to Citadel.
@@ -23,6 +23,12 @@
 - **Not yet done:** no external PostgreSQL, Vercel env keys, backup repo/token or live deployment configured; no real cross-device/save/restore verification. Until W005A, manually export valuable prose.
 - **Important:** Existing W004 browser data is preserved and the three-Act overview is unchanged. No story canon changes.
 
+## W006 executed at Cloudflare migration-code scope, not live activation
+- **Owner instruction:** Vercel is optional; owner chose an alternative. The target is now **Cloudflare Workers with D1 SQLite storage**, using one hosting provider. Source: [W006 record](../workshops/W006_CLOUDFLARE_MIGRATION.md) and [studio deployment guide](../studio/README.md).
+- **Built:** Worker implementation of the existing authenticated manuscript API, D1 transactional revision history and restore, Wrangler configuration, SQL migration, safe client-only static bundle, remote-API private-backup workflow, tests and local migration/dry-run checks.
+- **Not deployed:** No Cloudflare service, D1 UUID, secret, Access policy, offsite backup credentials or real-browser end-to-end test. No new payment commitments. The previous Vercel project and legacy code remain rollback-only.
+- **Safe interim rule:** Export browser manuscript JSON before substantial prose. The cloud "Saved" indicator must not appear without a real server-confirmed revision.
+
 ## Status boundaries
 - **CANON:** DEC-0001–0020 only at stated creative/design scope. W004 chose a process and authoring tool, **not** plot, actual passages, numbered print references, approved accusations, proof scenes, or a new world law.
 - **PROPOSAL only:** Collatz/hailstone travel, random walks, modular computed jumps, chance mechanics, region-specific numeric rules or hidden patterns.
@@ -30,6 +36,6 @@
 - **OPEN COSMOLOGY:** Whether agency constraints exist; simulation is not fact; later π discovery is speculative.
 
 ## Next work and permissions
-**W005A** is the future provider activation/real durability validation session. Provisioning and any spending require explicit owner action; no backend is live until then. Keep the approved fiction untouched.
+**W007** is the future Cloudflare account/D1/Access activation and real durability/backup-verification session. W005A's former Vercel/Neon provider setup is superseded. No backend is live until owner setup and tests pass; no paid resource may be provisioned without explicit approval.
 
 References: [W004 closeout](../workshops/W004_CLOSEOUT.md) · [W005 prompt](../workshops/W005_PROMPT.md) · [Decisions](DECISIONS.md) · [Open Questions](OPEN_QUESTIONS.md).

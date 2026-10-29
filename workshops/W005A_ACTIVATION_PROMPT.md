@@ -1,3 +1,5 @@
+> **SUPERSEDED 2026-10-29:** The owner selected a Vercel alternative. Do not execute this prior provider plan. Use [W007 — Cloudflare activation](W007_CLOUDFLARE_ACTIVATION.md) instead. This file remains historical.
+
 # ZETA — W005A: Activate and Verify Durable Writing (FUTURE / NOT EXECUTED)
 
 **Status:** PREPARED, not an executed session. Requires the owner's explicit instruction. Follow W005 implementation record and studio README.
