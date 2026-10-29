@@ -8,7 +8,7 @@ function database(){
   prepare(sql){
    const item={
     sql,args:[],
-    bind(...values){return {...item,args:values};},
+    bind(...values){item.args=values;return item;},
     async first(){
      if(sql.startsWith("SELECT revision,document,updated_at FROM zeta_manuscript"))return {...head};
      if(sql.startsWith("SELECT revision,document,created_at FROM zeta_revision"))return history.get(item.args[0])||null;
