@@ -23,8 +23,11 @@ Stable IDs are retained. Resolved-at-scope questions reference the dated decisio
 | Q-0017 | OPEN | What are the **three distinct mathematical accusations and decisive refutations** (number theory, topology, combinatorics), each narratively credible without declaring real mathematics false? | Story/Lore | W003 or later |
 | Q-0018 | OPEN | Who are the exiling antagonists, what is gained by the deception, and what does each believe? Is the suspicion about agency distributed among a few? | Story | Later |
 | Q-0019 | OPEN | What is the Act III unmistakably strange incident hinting that a decision was constrained, without proving simulation/predetermination or undercutting vindication? | Story/Mystery | Later |
-| Q-0020 | OPEN | What mathematical CYOD mechanics suit **printed paragraph references and reader choices**? Dice/probability, graph walks, modular rules, inventory, replayability and fair choices remain PROPOSALS. | CYOD | **W003** |
-| Q-0021 | OPEN | How can act-level convergence/route memory, page/paragraph numbering, genuine choice and mathematically themed interactions coexist in a readable, testable print graph? | CYOD | **W003** |
+| Q-0020 | PARTIALLY ANSWERED | Hybrid physical page and ascending-numbered passages with authored numeric jumps; guided discovery and bounded protection/validation principles APPROVED (DEC-0017/0020). Exact random walks, dice, transforms, puzzles, region rules and hidden patterns OPEN/PROPOSAL. | CYOD | W004+ |
+| Q-0021 | PARTIALLY ANSWERED | River/Atlas/Living Book by act and separate stable node IDs/paragraph labels/physical pages are approved in principle (DEC-0016/0017), with protected destinations and route-preservation. Exact graph, flags, numbering and proof of reachability remain OPEN. | CYOD | W004 |
 | Q-0022 | PROPOSAL ONLY | A future π-computation discovery may suggest a relationship between digits and choices; how to make it mathematically coherent and unlike the 1998 film *Pi* is future work, NOT Book One canon. | Wider lore | Later |
+
+| Q-0023 | OPEN | How should writing proceed practically: story beats, scene cards, source passages, choice links, branching/convergence, iterative vertical slices, manuscript revisions and editorial ownership? | Story / CYOD | **W004** |
+| Q-0024 | OPEN | How will authors verify and typeset print navigation, numerical gates, region evidence reachability, meaningful consequences, reader memory and blind playtest outcomes without overbuilding a custom engine? | Production / CYOD | **W004+** |
 
 No open status is permission to infer an answer. See [W001 freeze](../workshops/W001_CLOSEOUT.md) and [W002](../workshops/W002_PROMPT.md).
