@@ -21,5 +21,9 @@ jobs:
           node-version: '24'
       - name: Install test-only dependencies
         run: npm install --no-audit --no-fund
-      - name: Check syntax and reader paths
+      - name: Check Cloudflare backend, recovery and reader paths
         run: npm test
+      - name: Verify local Cloudflare D1 migration
+        run: npm run cf:local-migrate
+      - name: Verify Cloudflare Worker asset bundle
+        run: npx wrangler deploy --dry-run --outdir .wrangler/dry-run
