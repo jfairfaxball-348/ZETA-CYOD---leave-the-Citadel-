@@ -16,6 +16,7 @@ Owner-led creative design and authorised implementation. An installed agenda alo
 | W008 | 2026-10-29 | **ACTIVE — WRITING** | Write the manuscript one passage at a time using D1 saving and owner-accepted residual risk | [W008 prompt](W008_FIRST_WRITING_SESSION.md) |
 
 | W009 | 2026-10-29 | **LIVE PRIVATE D1 WRITE VERIFIED** | Private author-approved existing-passage writing bridge; first saved passage P-0001 at D1 revision 4 | [W009 record](W009_AI_WRITING_BRIDGE.md) · [bridge template](../bridge-template/README.md) |
-| W010 | Next session | **INSTALLED — NOT YET EXECUTED** | Author-led opening story workshop, draft/approve prose together; publish approved passages via private W009 bridge at close | [W010 workshop](W010_OPENING_NARRATIVE_WORKSHOP.md) |
+| W010 | 2026-10-29 | **CLOSED — FIVE PRIVATE D1 CHUNKS VERIFIED** | Opening and three remembered judgements; converged shared gate; private D1 revisions 5–9 | [W010 closeout](W010_CLOSEOUT.md) · [Workshop](W010_OPENING_NARRATIVE_WORKSHOP.md) |
+| W011 | Next session | **INSTALLED — OWNER INVOCATION REQUIRED** | Shared Act I beyond the gate: road versus footprints, new passage chunks and linking | [W011 workshop](W011_BEYOND_THE_GATE_WRITING_WORKSHOP.md) |
 
 See [START_HERE](../authoritative/START_HERE.md), [DECISIONS](../authoritative/DECISIONS.md), [OPEN_QUESTIONS](../authoritative/OPEN_QUESTIONS.md). The editor is an implementation and workflow choice, not fiction canon. No new accusations, exact book nodes, publication pagination or cosmological facts have been ratified.
