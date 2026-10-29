@@ -16,6 +16,9 @@
 | **II — Exploration and investigation** | 1/3–2/3 | Deep regional experience and investigation in one opening-mark-selected region. The protagonist finds route-specific grounds, by Act II's conclusion, demonstrating why the Citadel's exile justification was false. | Three actual mathematical claims/refutations; pacing, evidence, relationships, culture and scenes. |
 | **III — Return and vindication** | 2/3–end | The protagonist returns with evidence to confront the knowingly deceptive antagonists and vindicate the unjustified exile; route-conditioned conclusions matter. An unmistakably strange, unexplained incident suggests constrained agency without settling it. | Exact confrontation, incident, emotional outcome, ending count and form. |
 
+## W003 approved experience and print-facing voice
+**CANON (design) — DEC-0016–0020:** Make the three acts a single, coherent hybrid gamebook: directed River exploration in Act I, richer Atlas interconnections in Act II, and more inventive Living Book navigation in Act III. Use a mix of physical page jumps and ascending-numbered paragraph labels; numeric destinations must be explicitly authored and protected against plot bypasses. Concrete puzzles, numbers and locations remain OPEN. The novel's reader-facing prose and in-world instructions must never explicitly use “maths” or “mathematics”. Danger and consequences come primarily from meaningful choices, not dice-driven combat, RPG equipment, provisions or hit-point/luck stats. Guided discovery trumps expository rules teaching.
+
 ## Creative promise
 - **CANON — DEC-0010:** The dominant emotional experience begins as unsettling suspicion that the protagonist's accepted worldview may be wrong.
 - Mathematical ideas underpin lived fiction rather than provide lessons or clichés.
