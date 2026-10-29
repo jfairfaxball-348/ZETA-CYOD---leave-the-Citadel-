@@ -13,6 +13,7 @@ function download(data,name){
  a.href=url;a.download=name;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);
 }
 function schedule(ms=900){clearTimeout(timer);if(token&&!blocked)timer=setTimeout(()=>void flush(),ms);}
+function stable(value){return JSON.stringify(value,(_key,item)=>item&&typeof item==="object"&&!Array.isArray(item)?Object.keys(item).sort().reduce((o,k)=>(o[k]=item[k],o),{}):item);}
 function persist(document){
  pending=true;changes++;
  if(buffer(document,true))status(token?(blocked?"Conflict — local changes kept":"Saving…"):"Local only — export backup");
@@ -50,7 +51,7 @@ async function connect(key){
   if(!confirm("Create first cloud manuscript from this browser? Original local data will not be removed.")){token="";status("Local only — export backup");return;}
   revision=0;pending=true;blocked=false;buffer(local,true);await flush();return;
  }
- if(JSON.stringify(remote.document)===JSON.stringify(local)){
+ if(stable(remote.document)===stable(local)){
   revision=remote.revision;pending=false;blocked=false;buffer(local,false);status("✓ Saved");return;
  }
  if(copy?.pending&&copy.baseRevision===remote.revision){
