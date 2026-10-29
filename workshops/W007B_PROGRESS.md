@@ -60,3 +60,6 @@ The owner's Cloudflare D1 Console query returned revision 1, timestamp 2026-10-2
 
 ## Cross-browser recovery milestone — 29 October 2026
 Owner successfully saved a disposable TEST passage from one browser, opened a wholly different browser (Safari) starting from a blank local state and retrieved the same cloud-saved passage. Together with the D1 SQL proof of revision 1 and the editor Saved acknowledgement, the production remote save and separate-browser recovery gates now PASS. This does not yet verify history rollback, owner-only Access or a private independent offsite backup; W008 remains locked pending these safeguards. No unpublished manuscript text or secret was copied to GitHub.
+
+## Owner decision: begin writing (29 October 2026)
+The author declines more history/backup tests as a prerequisite. Confirmed live D1 persistence and recovery from a different browser (Safari) are sufficient for W008 to begin. Further Access/backup/history hardening remains possible but non-blocking. W008 marked ACTIVE. A direct cloud ChatGPT database writer is not connected yet; see W009 plan.

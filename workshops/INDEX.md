@@ -12,7 +12,9 @@ Owner-led creative design and authorised implementation. An installed agenda alo
 | W005A | Superseded by W007 | **REPLACED — NOT EXECUTED** | Old Vercel/Neon activation plan; preserved for provenance | [Original activation prompt](W005A_ACTIVATION_PROMPT.md) |
 | W006 | 2026-10-29 | **CLOUDFLARE MIGRATION CODED / CI TESTED** | Replace Vercel dependency with Workers + D1; retain protected save protocol | [Migration record](W006_CLOUDFLARE_MIGRATION.md) · [deployment guide](../studio/README.md) |
 | W007 | 2026-10-29 | **INVOKED / PARTIAL — owner reports green Worker; URL and storage unverified** | Inspect Cloudflare activation, identify route and remaining gates | [Checkpoint](W007_PROGRESS.md) · [original prompt](W007_CLOUDFLARE_ACTIVATION.md) |
-| W007B | 2026-10-29 | **PRODUCTION SAVE + SAFARI RECOVERY VERIFIED; FINAL SAFEGUARDS OPEN** | Cloudflare D1 persistence and independent Safari retrieval confirmed; Access, revision restore and private backup remain open | [Prompt](W007B_LIVE_VALIDATION_PROMPT.md) · [PR #8](https://github.com/jfairfaxball-348/ZETA-CYOD---leave-the-Citadel-/pull/8) |
-| W008 | Future — LOCKED until W007B verified | **PREPARED, NOT READY TO RUN** | First actual passage writing once secure cloud save and backup are proven | [W008 prompt](W008_FIRST_WRITING_SESSION.md) |
+| W007B | 2026-10-29 | **D1 SAVE + SAFARI RECOVERY VERIFIED; WRITING AUTHORIZED** | Cloudflare D1 persistence and independent Safari retrieval confirmed; Access, revision restore and private backup remain open | [Prompt](W007B_LIVE_VALIDATION_PROMPT.md) · [PR #8](https://github.com/jfairfaxball-348/ZETA-CYOD---leave-the-Citadel-/pull/8) |
+| W008 | 2026-10-29 | **ACTIVE — WRITING** | Write the manuscript one passage at a time using D1 saving and owner-accepted residual risk | [W008 prompt](W008_FIRST_WRITING_SESSION.md) |
+
+| W009 | Future — optional | **AI WRITING BRIDGE PROPOSED** | Enable cloud ChatGPT passage saves without sharing secrets in chat | [W009 design](W009_AI_WRITING_BRIDGE.md) |
 
 See [START_HERE](../authoritative/START_HERE.md), [DECISIONS](../authoritative/DECISIONS.md), [OPEN_QUESTIONS](../authoritative/OPEN_QUESTIONS.md). The editor is an implementation and workflow choice, not fiction canon. No new accusations, exact book nodes, publication pagination or cosmological facts have been ratified.

@@ -1,9 +1,9 @@
 # ZETA — Current project state
 
 **As of:** 2026-10-29
-**Latest invoked workshop:** W007B — **production D1 manuscript revision 1 VERIFIED; cross-browser recovery VERIFIED; owner-only Access, revision restore and private backup remain OPEN**. W007 confirmed the production URL and UI. Connected Cloudflare dashboard reports active version `d492231a` at 100% traffic; browser displays `Local only — export backup`. W006 GitHub main CI is green. D1 binding, Access, manuscript save/restore and independent backup remain unverified. W001–W003 fiction canon unchanged.
+**Latest invoked workshop:** W008 — **ACTUAL WRITING ACTIVE by owner decision**. Production D1 save and independent Safari recovery VERIFIED; optional Access, history restore and external backup remain open. W007 confirmed the production URL and UI. Connected Cloudflare dashboard reports active version `d492231a` at 100% traffic; browser displays `Local only — export backup`. W006 GitHub main CI is green. D1 binding, Access, manuscript save/restore and independent backup remain unverified. W001–W003 fiction canon unchanged.
 **Repository lineage:** S000 → W001 → W002 → W003 → W004 simplified POC → W005 persistent-save protocol → W006 Cloudflare hosting implementation.
-**Next session:** Continue W007B until real Cloudflare D1, owner protection and independent backup are proven; [W008 first writing session](../workshops/W008_FIRST_WRITING_SESSION.md) is prepared but LOCKED until those checks pass. See [W007 checkpoint](../workshops/W007_PROGRESS.md).
+**Current stage:** [W008 — actual writing](../workshops/W008_FIRST_WRITING_SESSION.md). Optional [W009 AI cloud-writing bridge](../workshops/W009_AI_WRITING_BRIDGE.md) is designed but not installed. See [W007 checkpoint](../workshops/W007_PROGRESS.md).
 
 ## Approved creative architecture
 - **W001 / DEC-0001–0010:** Vast mathematically inspired ZETA, Citadel inside wider number-theory territory (fantasy name OPEN), Topologia, Combinatorium. Minimal command “…leave The Citadel”, illustrated right-wrist choice (digit→draft page 102, knot/interlocking form→203, binomial mark→304); each different reason ends ONLY “Turn to page 2”; all join common Act I and mark persists as determinant of Act II destination without branching shared Act I. Three acts ~one third each; Act III returns to Citadel.
@@ -54,3 +54,6 @@ Live D1 `zeta-manuscript` returned `book-one` revision 1, last updated `2026-10-
 
 ## Cross-browser retrieval VERIFIED — 2026-10-29
 The owner wrote and saved a disposable `TEST` passage in one browser. Opening ZETA Writing Studio in a different browser (Safari) with an initially blank local state and connecting to the same cloud manuscript successfully retrieved that test passage. This verifies cross-browser read-back of production D1 manuscript data independently of the original browser's local storage. Previous notes saying cross-browser recovery was unverified are historical. Still required before declaring W008 ready: verified history restore, owner-only Cloudflare Access and private independent offsite backup with recovery test. Do not commit manuscript text or credentials.
+
+## W008 owner authorisation (29 October 2026)
+Author explicitly ends the extra persistence-test gate and starts prose drafting. A live D1 document was retrieved in Safari from a blank state after saving in another browser. Manual JSON export remains a prudent backup, not a blocking prerequisite. Manuscript prose stays in the private Writing Studio, not the public code repository. A cloud ChatGPT-to-D1 writer is not yet connected; see W009.
