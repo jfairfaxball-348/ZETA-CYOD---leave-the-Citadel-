@@ -4,8 +4,7 @@
 const {spawn}=require("node:child_process"),assert=require("node:assert/strict"),path=require("node:path");
 const root=path.resolve(__dirname,".."),base="http://127.0.0.1:8789";
 const token="ci-local-only-owner-token-0123456789-abcdefgh";
-const proc=spawn(process.platform==="win32"?"npx.cmd":"npx",[
- "wrangler","dev","--local","--ip","127.0.0.1","--port","8789",
+const proc=spawn(process.execPath,[path.join(root,"node_modules","wrangler","bin","wrangler.js"),"dev","--local","--ip","127.0.0.1","--port","8789",
  "--var","STUDIO_OWNER_TOKEN:"+token,"--log-level","error"
 ],{cwd:root,env:{...process.env,CI:"true"},stdio:["ignore","pipe","pipe"]});
 let logs="";
@@ -48,5 +47,5 @@ async function call(method="GET",body,withKey=true){
   assert.deepEqual((await history.json()).history.map(v=>v.revision),[3,2,1]);
   console.log("PASS: real local D1 save, read, authorization, stale-tab conflict and historical restore");
  }catch(e){console.error(e);console.error(logs.slice(-7000));process.exitCode=1;}
- finally{proc.kill("SIGTERM");}
+ finally{proc.kill("SIGKILL");proc.stdout.destroy();proc.stderr.destroy();}
 })();
