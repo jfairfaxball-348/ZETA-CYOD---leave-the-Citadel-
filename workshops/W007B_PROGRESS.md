@@ -57,3 +57,6 @@ Do not merge while database ID is placeholder. Do not mark W007B closed until au
 
 ## Verified production D1 write (29 October 2026)
 The owner's Cloudflare D1 Console query returned revision 1, timestamp 2026-10-29T18:45:15.234Z, and a stored document length of 5,159 bytes for book-one. The connected Writing Studio displayed the Saved indicator. This confirms real D1 persistence. PR #7 has been merged to main and its Cloudflare build succeeded. Still pending: retrieval in a fresh browser, owner-only Access, revision restore and independent private backup. W008 stays locked. Earlier entries are historical checkpoints.
+
+## Cross-browser recovery milestone — 29 October 2026
+Owner successfully saved a disposable TEST passage from one browser, opened a wholly different browser (Safari) starting from a blank local state and retrieved the same cloud-saved passage. Together with the D1 SQL proof of revision 1 and the editor Saved acknowledgement, the production remote save and separate-browser recovery gates now PASS. This does not yet verify history rollback, owner-only Access or a private independent offsite backup; W008 remains locked pending these safeguards. No unpublished manuscript text or secret was copied to GitHub.
