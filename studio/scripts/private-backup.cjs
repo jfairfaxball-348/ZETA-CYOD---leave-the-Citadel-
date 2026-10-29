@@ -37,7 +37,7 @@ async function archive(env=process.env,fetcher=fetch){
   if(!response.ok)throw Error("Cannot read back private backup (HTTP "+response.status+")");
   const item=await response.json();
   if(item.encoding!=="base64"||typeof item.content!=="string"||
-     Buffer.from(item.content.replace(/\\s/g,""),"base64").toString("utf8")!==content)
+     Buffer.from(item.content.replace(/\s/g,""),"base64").toString("utf8")!==content)
    throw Error("Private backup verification failed: stored snapshot differs from server revision "+latest.revision);
  };
  const existing=await fetcher(target,{headers});
