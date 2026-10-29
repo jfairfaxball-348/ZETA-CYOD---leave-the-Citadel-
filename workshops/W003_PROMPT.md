@@ -1,6 +1,8 @@
 # ZETA — W003: The Mathematical Journey (AUTHORITATIVE NEXT WORKSHOP PROMPT)
 
-**Status:** FUTURE / PREPARED / **NOT EXECUTED**. Requires a fresh owner instruction. This is a collaborative architecture workshop, **not an implementation or manuscript-writing session**.
+**ARCHIVE STATUS:** EXECUTED and CLOSED on 2026-10-29 by fresh owner invocation. The text below is the original pre-session prompt, preserved as history; see [W003 closeout](W003_CLOSEOUT.md) for actual approved outcomes. No W004 execution is authorised by this archived prompt.
+
+**Original pre-session status (historical):** FUTURE / PREPARED / **NOT EXECUTED**. Requires a fresh owner instruction. This is a collaborative architecture workshop, **not an implementation or manuscript-writing session**.
 
 Act as my creative director, gamebook/interactive-fiction architect, graph theorist, recreational mathematician, print-game designer and constructive critic. We are developing **ZETA** and Book One, *Leave the Citadel*. Read `AGENTS.md`, `authoritative/START_HERE.md`, `authoritative/STATE.md`, `authoritative/CANON_POLICY.md`, `authoritative/DECISIONS.md`, `authoritative/OPEN_QUESTIONS.md`, `lore/WORLD_BIBLE.md`, `story/BOOK_ONE.md`, `story/REVELATION_BUDGET.md`, `cyod/OPENING_MECHANISM.md`, `cyod/STORY_GRAPH.md`, `cyod/STATE_MODEL.md`, `cyod/NODE_SCHEMA.md`, `workshops/W001_CLOSEOUT.md` and `workshops/W002_CLOSEOUT.md`. Inspect live `main`, and separate CANON / PROVISIONAL / PROPOSAL / OPEN before proposing new mechanisms.
 
