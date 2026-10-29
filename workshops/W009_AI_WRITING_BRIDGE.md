@@ -1,6 +1,6 @@
 # ZETA — W009: Private AI Manuscript Authoring Bridge
 
-**Status, 2026-10-29: IMPLEMENTED AND LOCALLY TESTED; PRIVATE INSTALLATION AND LIVE SAVE PENDING.** The author requested execution. The public template is in [bridge-template](../bridge-template/README.md); it contains no credentials or unpublished novel text.
+**Status, 2026-10-29: INSTALLED IN OWNER'S PRIVATE REPOSITORY; PRIVATE CI PASSED; LIVE SYNC AND SAVE PENDING.** The author requested execution. The public template is in [bridge-template](../bridge-template/README.md); it contains no credentials or unpublished novel text.
 
 ## Implemented
 
@@ -27,3 +27,10 @@ Local Node tests use mocked Cloudflare APIs and disposable text to cover snapsho
 6. Only after live receipt verification should W009 be described as active. W008 browser-based writing remains active throughout.
 
 Detailed schema, safety limits, and setup: [bridge-template README](../bridge-template/README.md). No additional Worker, Cloudflare database, broad graph editing, bulk overwrites or public manuscript publication is included.
+
+## Private repository activation update — 2026-10-29
+- The author created [ZETA-private-authoring](https://github.com/jfairfaxball-348/ZETA-private-authoring) and GitHub confirmed the repo is **private**. The existing ChatGPT GitHub connection has read/write access to it.
+- Installed the W009 bridge code, Actions workflow and isolated safety-test workflow in **private** `main`, commit `46a6f5d35d51dc4a1382bb535b2db3419564ee02`. The transfer contained only template code and empty directory placeholders, **no actual manuscript data or owner key**.
+- The private repo's Actions [safety test run 40942078327](https://github.com/jfairfaxball-348/ZETA-private-authoring/actions/runs/40942078327) **passed**. The bridge runner itself has not been executed against production D1.
+- **Remaining owner action:** add secret `ZETA_STUDIO_OWNER_TOKEN` in the private repository's [Actions Secrets](https://github.com/jfairfaxball-348/ZETA-private-authoring/settings/secrets/actions) using the same existing key used in Writing Studio. Do not disclose key to chat or commits. After that, run [ZETA private manuscript bridge](https://github.com/jfairfaxball-348/ZETA-private-authoring/actions/workflows/authoring-bridge.yml) with mode `sync`. Verify snapshot files privately; no D1 write occurs on sync.
+- Only then test an author-approved disposable existing-passage edit; confirm receipt `applied` and independent D1 read-back. Until that passes, ChatGPT-to-D1 writes remain **not live**.

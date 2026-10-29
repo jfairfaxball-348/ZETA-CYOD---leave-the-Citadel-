@@ -1,7 +1,7 @@
 # ZETA — Current project state
 
 **As of:** 2026-10-29
-**Latest invoked workshop:** W009 — **PRIVATE AI AUTHORING BRIDGE IMPLEMENTATION**. W008 real writing remains active; production D1 save and independent Safari retrieval were demonstrated earlier. W009 bridge code and tests are ready, but its separate private repository, Actions secret, and live ChatGPT-originated D1 write are NOT configured or verified. Cloudflare Access, history restore and independent recovery remain optional/open. W001–W003 creative canon is unchanged.
+**Latest invoked workshop:** W009 — **PRIVATE BRIDGE INSTALLED / TESTED**. W008 browser writing remains active; production D1 save and Safari cross-browser retrieval were previously demonstrated. W009 is now installed in a confirmed private repo with GitHub CI green. Its Actions owner secret, first read-only sync and ChatGPT-to-D1 live write have NOT been verified. Cloudflare Access, history restore and independent recovery remain optional/open. W001–W003 creative canon is unchanged.
 **Repository lineage:** S000 → W001 → W002 → W003 → W004 simplified POC → W005 persistent-save protocol → W006 Cloudflare hosting implementation.
 **Current stage:** [W008 — actual writing](../workshops/W008_FIRST_WRITING_SESSION.md) remains active. [W009 private authoring bridge](../workshops/W009_AI_WRITING_BRIDGE.md) is implemented and locally tested, awaiting private repo creation, connected GitHub app access, private Actions secret and a verified live write. See [W007 checkpoint](../workshops/W007_PROGRESS.md).
 
@@ -60,3 +60,6 @@ Author explicitly ends the extra persistence-test gate and starts prose drafting
 
 ## W009 bridge implementation checkpoint, 2026-10-29
 The public [bridge-template](../bridge-template/README.md) and secret-free template-test CI were implemented. It uses a private-only repo guard, per-passage author approval, D1 revision and old-body-hash conditions, read-back verification and metadata-only receipts. There are no public unpublished manuscript texts or credentials. The separate private repo and GitHub Actions secret have not yet been installed; no remote authoring bridge save can be claimed. W008 browser writing continues. Older infrastructure checkpoints above are retained as historical evidence and superseded by later D1 milestones where contradictory.
+
+## W009 private deployment checkpoint (2026-10-29)
+Private repository `jfairfaxball-348/ZETA-private-authoring` was confirmed `visibility=private` with GitHub connection read/write access. Private `main` commit `46a6f5d35d51dc4a1382bb535b2db3419564ee02` installed the script, workflow, tests and empty manuscript directories. Private GitHub Actions safety tests [passed](https://github.com/jfairfaxball-348/ZETA-private-authoring/actions/runs/40942078327). No manuscript data or owner key was copied. Owner must set private Actions secret `ZETA_STUDIO_OWNER_TOKEN`, run read-only `sync` and confirm subsequent approved disposable save against D1. **W009 is not live yet**; no direct manuscript mutation claimed. See [W009 record](../workshops/W009_AI_WRITING_BRIDGE.md).
