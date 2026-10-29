@@ -33,3 +33,10 @@ Do not merge while database ID is placeholder. Do not mark W007B closed until au
 - GitHub config regression checks now reject all-zero/invalid UUIDs, and prohibit preview bindings from referring to the production D1 resource. Empty `previews: {}` means Preview receives no D1 binding, which is deliberate until a separate staging D1 is provisioned; its manuscript API must remain unavailable.
 - Safe next owner actions: apply `studio/migrations/0001_manuscript.sql` to the existing D1 database (ideally `npx wrangler d1 migrations apply zeta-manuscript --remote`), attach that database under the exact Worker binding name `DB`, and set the encrypted `STUDIO_OWNER_TOKEN` directly in Cloudflare. Keep production deployment unchanged until these are verified.
 - The independent private GitHub backup and authenticated cross-browser D1 round-trip remain outstanding. W008 is still locked.
+
+## Verified Cloudflare D1 dashboard state (owner's connected browser)
+- Account's D1 dashboard shows **`zeta-manuscript`** at **`3ab9afed-9fe2-4c05-99e8-162c3d1cc5f2`**. This establishes the UUID-to-database-name mapping independently of the owner's message.
+- The D1 metrics page reported **0 tables, 0 queries, 0 rows written** when inspected. Thus the migration is still unperformed at that checkpoint; no remote manuscript schema or saving can be claimed.
+- W007B staging commit `e712b88030eaa038c0c898604582c6e8a20291d8` updated the Wrangler UUID and added a non-placeholder/preview-isolation regression test. Both GitHub smoke checks on that commit passed.
+- The next minimal account action is to execute the existing `studio/migrations/0001_manuscript.sql` against this D1 database and confirm that `zeta_manuscript` and `zeta_revision` are present. Prefer the Wrangler migrations command to retain migration bookkeeping; Cloudflare D1 Console is an alternative for a user without a terminal.
+- Cloudflare Access/owner secret, production Worker binding, live save and recovery tests and private independent backup remain separate requirements; leave PR #7 open meanwhile.
