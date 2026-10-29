@@ -11,9 +11,9 @@ Cloudflare Access can require your email/sign-in to reach both preview and produ
 
 ## W007: locate the green deployment (29 October 2026)
 
-The owner reports a green deployment of Cloudflare Worker **`zeta-cyod---leave-the-citadel`**. This is a build/deployment report, **not a verified public URL, app response or persistent manuscript save**.
+**Production website confirmed live:** [ZETA Writing Studio](https://zeta-cyod---leave-the-citadel.jfairfaxball.workers.dev/) — connected browser showed the real three-Act/scene/passage editor. Cloudflare's Deployments tab showed the existing Worker **`zeta-cyod---leave-the-citadel`** serving version **`d492231a`** at **100%** traffic. **Manuscript cloud saving and backup remain unverified.**
 
-1. Open that Worker in the Cloudflare Dashboard, select **Domains** (or **Settings → Domains & Routes** in an older layout), and find the active `workers.dev` hostname under **Domains and routes**. If it has no `workers.dev` route, enable it. Copy the actual **Visit** link; do not invent a hostname from the dashboard URL.
+1. **Completed:** Production URL and static editor were opened successfully. Do not create another Worker or change the existing domain; use the confirmed [production URL](https://zeta-cyod---leave-the-citadel.jfairfaxball.workers.dev/).
 2. In **Settings → Build**, set the **Root directory** to `studio`, **Build command** to `npm run build`, **Deploy command** to `npx wrangler deploy`, **Preview command** to `npx wrangler preview`, and production branch to `main`. A 2026-10-29 pull-request build ran `npx wrangler preview` without detecting the local Wrangler dependency, indicating that the root directory may not be `studio`. W007's branch aligns the Wrangler `name` with the existing Cloudflare service **`zeta-cyod---leave-the-citadel`**, adds the required empty `previews` block and updates Wrangler to a preview-capable version. After fixing the dashboard root setting, rerun the PR preview; **do not substitute `deploy` for `preview` on a PR branch**.
 3. Once the owner has a real D1 database binding, applied remote migration, encrypted `STUDIO_OWNER_TOKEN`, and owner-only Cloudflare Access, verify the application at the actual URL. An unauthenticated API request should be denied (401 with backend configured; Access may intercept it earlier). A 503 `NOT_CONFIGURED` means persistence is not yet ready. Test a **disposable** passage through save, refresh, another browser and history restore before substantial writing.
 
@@ -21,7 +21,7 @@ The owner reports a green deployment of Cloudflare Worker **`zeta-cyod---leave-t
 
 ## First deployment — owner controls the Cloudflare account
 
-A Worker deployment has been **reported green by the owner**, but there is no authorised read of its full live settings here. The D1 UUID in the committed configuration is still a placeholder; the real D1 binding, owner secret, Access policy and remote manuscript durability are **not yet verified**. No extra spend or manuscript import has been undertaken in this session.
+The live Worker and static UI are **confirmed working**, but there is no authorised read of its full live D1/secret/Access configuration here. The D1 UUID in the committed configuration is still a placeholder; the real D1 binding, owner secret, Access policy and remote manuscript durability are **not yet verified**. No extra spend or manuscript import has been undertaken in this session.
 
 1. Sign up for or sign into [Cloudflare Dashboard](https://dash.cloudflare.com/), and select the **Free** Workers plan; do not choose an upgrade unless you separately approve the cost.
 2. For an existing Worker, **do not create another**: verify the GitHub repository `jfairfaxball-348/ZETA-CYOD---leave-the-Citadel-` is connected to that service, with **Root Directory: `studio`**, **Build command: `npm run build`**, and **Deploy command: `npx wrangler deploy`**. Reconcile the service name with `wrangler.jsonc` before deploying again. For a brand-new installation only, use **Workers & Pages → Create → Import Git repository**.
@@ -58,4 +58,4 @@ The dev Worker must have a local `.dev.vars` containing a generated `STUDIO_OWNE
 
 The former Vercel API and Neon-oriented source files remain archived under `api/` and `lib/` for rollback but are **not bundled as public Cloudflare assets**. `npm run build` copies only `index.html`, `app.js`, `cloud.js` and `styles.css` to `dist/`. GitHub source and deployments do **not** contain unpublished manuscript text or server credentials. The old Vercel project is not required for the Cloudflare service; it may be disconnected later after successful live verification.
 
-**Status (W007 checkpoint):** owner reports a green Cloudflare Worker deployment. Actual URL, deployed asset version, D1 migration/secret/Access configuration, real cross-device persistence and independent offsite restore remain unverified. Do not write valuable prose without exporting JSON first.
+**Status (W007 checkpoint):** production URL, correct static UI and active Cloudflare production version are verified. D1 migration/secret/Access configuration, real cross-device persistence and independent offsite restore remain unverified. Browser banner is `Local only — export backup`. Do not write valuable prose without exporting JSON first.

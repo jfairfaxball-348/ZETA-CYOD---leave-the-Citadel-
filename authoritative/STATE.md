@@ -1,7 +1,7 @@
 # ZETA — Current project state
 
 **As of:** 2026-10-29
-**Latest invoked workshop:** W007 — **owner reports green Cloudflare deployment, activation only partially verified**. W006 GitHub main CI is green, but actual URL, D1 binding, Access, manuscript save/restore, and independent backup have not yet been proven. W001–W003 fiction canon unchanged.
+**Latest invoked workshop:** W007 — **Cloudflare production URL and correct Writing Studio UI verified live; cloud persistence still unproven**. Connected Cloudflare dashboard reports active version `d492231a` at 100% traffic; browser displays `Local only — export backup`. W006 GitHub main CI is green. D1 binding, Access, manuscript save/restore and independent backup remain unverified. W001–W003 fiction canon unchanged.
 **Repository lineage:** S000 → W001 → W002 → W003 → W004 simplified POC → W005 persistent-save protocol → W006 Cloudflare hosting implementation.
 **Next session:** [W007B — Live Cloudflare validation](../workshops/W007B_LIVE_VALIDATION_PROMPT.md) (**installed, NOT executed; account-side activation still required**). See [W007 checkpoint](../workshops/W007_PROGRESS.md).
 
@@ -26,7 +26,7 @@
 ## W006 executed at Cloudflare migration-code scope, not live activation
 - **Owner instruction:** Vercel is optional; owner chose an alternative. The target is now **Cloudflare Workers with D1 SQLite storage**, using one hosting provider. Source: [W006 record](../workshops/W006_CLOUDFLARE_MIGRATION.md) and [studio deployment guide](../studio/README.md).
 - **Built:** Worker implementation of the existing authenticated manuscript API, D1 transactional revision history and restore, Wrangler configuration, SQL migration, safe client-only static bundle, remote-API private-backup workflow, tests and local migration/dry-run checks.
-- **At W006 closeout:** No Cloudflare service, D1 UUID, secret, Access policy, offsite backup credentials or real-browser end-to-end test. **W007 update:** owner subsequently reported a green Cloudflare deployment of `zeta-cyod---leave-the-citadel`; deployed app content and URL have not been independently verified. Live D1 durability, Access protection and offsite backup remain unproven. The previous Vercel project and legacy code remain rollback-only.
+- **At W006 closeout:** No Cloudflare service, D1 UUID, secret, Access policy, offsite backup credentials or real-browser end-to-end test. **W007 update:** owner subsequently reported a green Cloudflare deployment of `zeta-cyod---leave-the-citadel`; live production URL and correct static editor have since been verified via the connected browser. Live D1 durability, Access protection and offsite backup remain unproven. The previous Vercel project and legacy code remain rollback-only.
 - **Safe interim rule:** Export browser manuscript JSON before substantial prose. The cloud "Saved" indicator must not appear without a real server-confirmed revision.
 
 ## Status boundaries
@@ -36,6 +36,6 @@
 - **OPEN COSMOLOGY:** Whether agency constraints exist; simulation is not fact; later π discovery is speculative.
 
 ## Next work and permissions
-**W007B** resumes the incomplete Cloudflare activation: verify actual domain, live Worker name and build root, provision/verify D1 migration, Access and secret, then prove cross-device manuscript durability and independent backup. W005A's Vercel/Neon setup is superseded. A green deployment alone does not prove any of these gates; no paid resources without explicit approval.
+**W007B** resumes the incomplete Cloudflare activation: retain confirmed live domain, verify Worker build root, provision/verify D1 migration, Access and secret, then prove cross-device manuscript durability and independent backup. W005A's Vercel/Neon setup is superseded. A green deployment alone does not prove any of these gates; no paid resources without explicit approval.
 
 References: [W004 closeout](../workshops/W004_CLOSEOUT.md) · [W005 prompt](../workshops/W005_PROMPT.md) · [Decisions](DECISIONS.md) · [Open Questions](OPEN_QUESTIONS.md).
