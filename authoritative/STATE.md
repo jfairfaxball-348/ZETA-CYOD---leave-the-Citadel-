@@ -1,9 +1,9 @@
 # ZETA — Current project state
 
 **As of:** 2026-10-29
-**Latest invoked workshop:** W007 — **Cloudflare production URL and correct Writing Studio UI verified live; cloud persistence still unproven**. Connected Cloudflare dashboard reports active version `d492231a` at 100% traffic; browser displays `Local only — export backup`. W006 GitHub main CI is green. D1 binding, Access, manuscript save/restore and independent backup remain unverified. W001–W003 fiction canon unchanged.
+**Latest invoked workshop:** W007B — **Cloudflare saving hardening in progress; account-side activation required and real D1 persistence UNVERIFIED**. W007 confirmed the production URL and UI. Connected Cloudflare dashboard reports active version `d492231a` at 100% traffic; browser displays `Local only — export backup`. W006 GitHub main CI is green. D1 binding, Access, manuscript save/restore and independent backup remain unverified. W001–W003 fiction canon unchanged.
 **Repository lineage:** S000 → W001 → W002 → W003 → W004 simplified POC → W005 persistent-save protocol → W006 Cloudflare hosting implementation.
-**Next session:** [W007B — Live Cloudflare validation](../workshops/W007B_LIVE_VALIDATION_PROMPT.md) (**installed, NOT executed; account-side activation still required**). See [W007 checkpoint](../workshops/W007_PROGRESS.md).
+**Next session:** Continue W007B until real Cloudflare D1, owner protection and independent backup are proven; [W008 first writing session](../workshops/W008_FIRST_WRITING_SESSION.md) is prepared but LOCKED until those checks pass. See [W007 checkpoint](../workshops/W007_PROGRESS.md).
 
 ## Approved creative architecture
 - **W001 / DEC-0001–0010:** Vast mathematically inspired ZETA, Citadel inside wider number-theory territory (fantasy name OPEN), Topologia, Combinatorium. Minimal command “…leave The Citadel”, illustrated right-wrist choice (digit→draft page 102, knot/interlocking form→203, binomial mark→304); each different reason ends ONLY “Turn to page 2”; all join common Act I and mark persists as determinant of Act II destination without branching shared Act I. Three acts ~one third each; Act III returns to Citadel.
@@ -39,3 +39,9 @@
 **W007B** resumes the incomplete Cloudflare activation: retain confirmed live domain, verify Worker build root, provision/verify D1 migration, Access and secret, then prove cross-device manuscript durability and independent backup. W005A's Vercel/Neon setup is superseded. A green deployment alone does not prove any of these gates; no paid resources without explicit approval.
 
 References: [W004 closeout](../workshops/W004_CLOSEOUT.md) · [W005 prompt](../workshops/W005_PROMPT.md) · [Decisions](DECISIONS.md) · [Open Questions](OPEN_QUESTIONS.md).
+
+## W007B execution checkpoint — 29 October 2026
+- GitHub PR #7 (preview/name configuration) remains open and has not been deployed to production. Its configured production D1 database UUID remains **all zeroes**. Do not merge while the UUID remains a placeholder.
+- GitHub PR #8 stacks transactional revision safety and verifiable independent backup on #7; testing is in progress. This is code hardening, **not a verified cloud save**. No public novel manuscript was added.
+- The connected Cloudflare dashboard shows the existing production Worker is active; no credentials or account mutation capability is available to this session. Remote D1, authentication, production write/read, independent private GitHub backup, and cross-browser recovery all remain outstanding owner-side validation.
+- W008 is not authorized for real prose until W007B's live durability and backup gates pass.

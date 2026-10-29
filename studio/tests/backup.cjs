@@ -7,7 +7,7 @@ const baseEnv={
  GITHUB_BACKUP_TOKEN:"sample-test-token",
  GITHUB_BACKUP_REPO:"example/zeta-private"
 };
-function mockServer(document){
+function mockServer(document,{large=false}={}){
  let stored=null,reads=0,writes=0,changed=false;
  const api="https://api.github.com/repos/example/zeta-private";
  const target=api+"/contents/revisions/revision-00000004.json";
@@ -22,8 +22,10 @@ function mockServer(document){
    reads++;
    if(stored===null)return {status:404,ok:false};
    const actual=changed?Buffer.from('{"tampered":true}').toString("base64"):stored;
-   return {status:200,ok:true,json:async()=>({encoding:"base64",content:actual})};
+   return {status:200,ok:true,json:async()=>large?{encoding:"none",sha:"a".repeat(40)}:{encoding:"base64",content:actual}};
   }
+  if(url===api+"/git/blobs/"+"a".repeat(40))
+   return {status:200,ok:true,json:async()=>({encoding:"base64",content:stored})};
   throw Error("Unexpected fetch "+url);
  }
  return {fetcher,metrics:()=>({writes,reads}),tamper:()=>{changed=true}};
@@ -46,4 +48,11 @@ test("private GitHub backup is written, independently read back and never overwr
  assert.equal(server.metrics().writes,1);
  server.tamper();
  await assert.rejects(archive(baseEnv,server.fetcher),/verification failed/);
+});
+
+test("backup readback supports manuscripts exceeding GitHub Contents 1 MiB inline limit",async()=>{
+ const doc={text:"A".repeat(1_100_000)};
+ const server=mockServer(doc,{large:true});
+ const saved=await archive(baseEnv,server.fetcher);
+ assert.deepEqual(saved,{created:true,verified:true,revision:4});
 });

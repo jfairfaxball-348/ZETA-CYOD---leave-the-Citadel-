@@ -35,7 +35,14 @@ async function archive(env=process.env,fetcher=fetch){
  // including on repeat runs. Never overwrite or silently accept a collision.
  const verify=async response=>{
   if(!response.ok)throw Error("Cannot read back private backup (HTTP "+response.status+")");
-  const item=await response.json();
+  let item=await response.json();
+  // GitHub's Contents API omits inline base64 for files over 1 MiB.
+  // Retrieve their immutable Git blob and verify exactly the same bytes.
+  if(item.encoding!=="base64" && /^[a-f0-9]{40}$/i.test(item.sha||"")){
+   const blob=await fetcher(api+"/git/blobs/"+item.sha,{headers});
+   if(!blob.ok)throw Error("Cannot read private backup Git blob");
+   item=await blob.json();
+  }
   if(item.encoding!=="base64"||typeof item.content!=="string"||
      Buffer.from(item.content.replace(/\s/g,""),"base64").toString("utf8")!==content)
    throw Error("Private backup verification failed: stored snapshot differs from server revision "+latest.revision);
