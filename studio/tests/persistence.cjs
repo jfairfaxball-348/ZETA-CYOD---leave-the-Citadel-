@@ -79,3 +79,10 @@ test("reject invalid imports, oversize bodies and unknown requests without mutat
  await assert.rejects(processRequest(req("DELETE"),db,env),{status:405});
  assert.equal((await db.load()),null);
 });
+
+test("backup skips absent credentials and refuses public destinations before querying data",async()=>{
+ const {archive}=require("../scripts/private-backup.cjs");
+ assert.deepEqual(await archive({}),{skipped:true});
+ await assert.rejects(archive({DATABASE_URL:"postgresql://not-used",GITHUB_BACKUP_TOKEN:"x",GITHUB_BACKUP_REPO:"example/public"},
+  async()=>({ok:true,json:async()=>({private:false})})),/private/);
+});

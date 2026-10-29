@@ -4,7 +4,7 @@
   "version": "0.2.0",
   "description": "Durable Writing Studio",
   "scripts": {
-    "test": "node --check app.js && node --check cloud.js && node --check api/manuscript.js && node --check lib/repository.cjs && node --test tests/persistence.cjs && node tests/smoke.cjs && node tests/cloud-browser.cjs"
+    "test": "node --check app.js && node --check cloud.js && node --check scripts/private-backup.cjs && node --check api/manuscript.js && node --check lib/repository.cjs && node --test tests/persistence.cjs && node tests/smoke.cjs && node tests/cloud-browser.cjs"
   },
   "devDependencies": {
     "jsdom": "^27.0.0"
