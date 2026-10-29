@@ -26,3 +26,10 @@ Do not merge while database ID is placeholder. Do not mark W007B closed until au
 - Cloudflare preview build still reports failure. Its actual build root/branch preview account configuration must be inspected and corrected in Cloudflare. The existing main production Worker was not redeployed.
 - All-zero production D1 UUID, remote migration, owner secret, Access, live cross-browser saves, offsite backup and independent recovery are still outstanding.
 **SAFE RELEASE DECISION:** Hold PR #7 open and keep main at `b48db88d3a131ec54d6a97f18f79ffdff6774691` until owner-only Cloudflare activation and live checks pass.
+
+## Owner-provided D1 identifier — 29 October 2026 follow-up
+- Owner supplied database UUID `3ab9afed-9fe2-4c05-99e8-162c3d1cc5f2` for the intended `zeta-manuscript` D1 database. `studio/wrangler.jsonc` now records this identifier in the **staging branch only**. This is a nonsensitive identifier; Cloudflare account ownership, database name mapping, and live schema still require remote verification.
+- The `DB` binding configuration is declared but **not demonstrated attached to the live Worker**. No remote migration or manuscript save was run by this repository update.
+- GitHub config regression checks now reject all-zero/invalid UUIDs, and prohibit preview bindings from referring to the production D1 resource. Empty `previews: {}` means Preview receives no D1 binding, which is deliberate until a separate staging D1 is provisioned; its manuscript API must remain unavailable.
+- Safe next owner actions: apply `studio/migrations/0001_manuscript.sql` to the existing D1 database (ideally `npx wrangler d1 migrations apply zeta-manuscript --remote`), attach that database under the exact Worker binding name `DB`, and set the encrypted `STUDIO_OWNER_TOKEN` directly in Cloudflare. Keep production deployment unchanged until these are verified.
+- The independent private GitHub backup and authenticated cross-browser D1 round-trip remain outstanding. W008 is still locked.

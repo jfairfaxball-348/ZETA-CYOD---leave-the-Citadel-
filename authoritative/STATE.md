@@ -41,7 +41,7 @@
 References: [W004 closeout](../workshops/W004_CLOSEOUT.md) · [W005 prompt](../workshops/W005_PROMPT.md) · [Decisions](DECISIONS.md) · [Open Questions](OPEN_QUESTIONS.md).
 
 ## W007B execution checkpoint — 29 October 2026
-- GitHub PR #7 (preview/name configuration) remains open and has not been deployed to production. Its configured production D1 database UUID remains **all zeroes**. Do not merge while the UUID remains a placeholder.
+- GitHub PR #7 (preview/name configuration) remains open and has not been deployed to production. Its staged `studio/wrangler.jsonc` now has owner-supplied D1 UUID `3ab9afed-9fe2-4c05-99e8-162c3d1cc5f2` (previously all zeroes), but remote migration, binding and manuscript read/write remain UNVERIFIED. Do not merge until live security and durability checks pass.
 - GitHub PR #8 (transactional revision integrity and verifiable backup) merged into PR #7's staging branch only; GitHub CI passed on the implementation, including real *local* Wrangler/D1 HTTP save, read, stale conflict and restore. This is code hardening, **not a verified cloud save**. No public novel manuscript was added.
 - The connected Cloudflare dashboard shows the existing production Worker is active; no credentials or account mutation capability is available to this session. Remote D1, authentication, production write/read, independent private GitHub backup, and cross-browser recovery all remain outstanding owner-side validation.
 - W008 is not authorized for real prose until W007B's live durability and backup gates pass.

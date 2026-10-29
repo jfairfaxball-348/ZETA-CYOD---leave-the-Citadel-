@@ -14,4 +14,8 @@ test("Cloudflare Preview configuration exists and targets existing Worker",()=>{
  assert.equal(config.assets.binding,"ASSETS");
  assert.ok(config.assets.run_worker_first.includes("/api/*"));
  assert.equal(config.d1_databases[0].binding,"DB");
+ assert.equal(config.d1_databases[0].database_name,"zeta-manuscript");
+ assert.match(config.d1_databases[0].database_id,/^[0-9a-f]{8}-(?:[0-9a-f]{4}-){3}[0-9a-f]{12}$/i);
+ assert.notEqual(config.d1_databases[0].database_id,"00000000-0000-0000-0000-000000000000");
+ assert.equal(config.previews.d1_databases,undefined,"Previews must not inherit the production manuscript database");
 });

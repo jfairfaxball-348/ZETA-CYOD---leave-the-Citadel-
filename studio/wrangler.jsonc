@@ -16,7 +16,7 @@
     {
       "binding": "DB",
       "database_name": "zeta-manuscript",
-      "database_id": "00000000-0000-0000-0000-000000000000",
+      "database_id": "3ab9afed-9fe2-4c05-99e8-162c3d1cc5f2",
       "migrations_dir": "migrations"
     }
   ]
