@@ -1,9 +1,9 @@
 # ZETA — Current project state
 
 **As of:** 2026-10-29
-**Latest executed workshop:** W006 — migration to Cloudflare Workers + D1 **implemented and CI tested; live Cloudflare account, D1 and deployment remain OPEN**. W001–W003 fiction canon unchanged.
+**Latest invoked workshop:** W007B — **Cloudflare saving hardening in progress; account-side activation required and real D1 persistence UNVERIFIED**. W007 confirmed the production URL and UI. Connected Cloudflare dashboard reports active version `d492231a` at 100% traffic; browser displays `Local only — export backup`. W006 GitHub main CI is green. D1 binding, Access, manuscript save/restore and independent backup remain unverified. W001–W003 fiction canon unchanged.
 **Repository lineage:** S000 → W001 → W002 → W003 → W004 simplified POC → W005 persistent-save protocol → W006 Cloudflare hosting implementation.
-**Next session:** [W007 — Activate Cloudflare Writing Studio](../workshops/W007_CLOUDFLARE_ACTIVATION.md) (**prepared, NOT executed; owner Cloudflare account / secrets required**).
+**Next session:** Continue W007B until real Cloudflare D1, owner protection and independent backup are proven; [W008 first writing session](../workshops/W008_FIRST_WRITING_SESSION.md) is prepared but LOCKED until those checks pass. See [W007 checkpoint](../workshops/W007_PROGRESS.md).
 
 ## Approved creative architecture
 - **W001 / DEC-0001–0010:** Vast mathematically inspired ZETA, Citadel inside wider number-theory territory (fantasy name OPEN), Topologia, Combinatorium. Minimal command “…leave The Citadel”, illustrated right-wrist choice (digit→draft page 102, knot/interlocking form→203, binomial mark→304); each different reason ends ONLY “Turn to page 2”; all join common Act I and mark persists as determinant of Act II destination without branching shared Act I. Three acts ~one third each; Act III returns to Citadel.
@@ -26,7 +26,7 @@
 ## W006 executed at Cloudflare migration-code scope, not live activation
 - **Owner instruction:** Vercel is optional; owner chose an alternative. The target is now **Cloudflare Workers with D1 SQLite storage**, using one hosting provider. Source: [W006 record](../workshops/W006_CLOUDFLARE_MIGRATION.md) and [studio deployment guide](../studio/README.md).
 - **Built:** Worker implementation of the existing authenticated manuscript API, D1 transactional revision history and restore, Wrangler configuration, SQL migration, safe client-only static bundle, remote-API private-backup workflow, tests and local migration/dry-run checks.
-- **Not deployed:** No Cloudflare service, D1 UUID, secret, Access policy, offsite backup credentials or real-browser end-to-end test. No new payment commitments. The previous Vercel project and legacy code remain rollback-only.
+- **At W006 closeout:** No Cloudflare service, D1 UUID, secret, Access policy, offsite backup credentials or real-browser end-to-end test. **W007 update:** owner subsequently reported a green Cloudflare deployment of `zeta-cyod---leave-the-citadel`; live production URL and correct static editor have since been verified via the connected browser. Live D1 durability, Access protection and offsite backup remain unproven. The previous Vercel project and legacy code remain rollback-only.
 - **Safe interim rule:** Export browser manuscript JSON before substantial prose. The cloud "Saved" indicator must not appear without a real server-confirmed revision.
 
 ## Status boundaries
@@ -36,6 +36,15 @@
 - **OPEN COSMOLOGY:** Whether agency constraints exist; simulation is not fact; later π discovery is speculative.
 
 ## Next work and permissions
-**W007** is the future Cloudflare account/D1/Access activation and real durability/backup-verification session. W005A's former Vercel/Neon provider setup is superseded. No backend is live until owner setup and tests pass; no paid resource may be provisioned without explicit approval.
+**W007B** resumes the incomplete Cloudflare activation: retain confirmed live domain, verify Worker build root, provision/verify D1 migration, Access and secret, then prove cross-device manuscript durability and independent backup. W005A's Vercel/Neon setup is superseded. A green deployment alone does not prove any of these gates; no paid resources without explicit approval.
 
 References: [W004 closeout](../workshops/W004_CLOSEOUT.md) · [W005 prompt](../workshops/W005_PROMPT.md) · [Decisions](DECISIONS.md) · [Open Questions](OPEN_QUESTIONS.md).
+
+## W007B execution checkpoint — 29 October 2026
+- GitHub PR #7 (preview/name configuration) remains open and has not been deployed to production. Its staged `studio/wrangler.jsonc` now has owner-supplied D1 UUID `3ab9afed-9fe2-4c05-99e8-162c3d1cc5f2` (previously all zeroes), but remote migration, binding and manuscript read/write remain UNVERIFIED. Do not merge until live security and durability checks pass.
+- GitHub PR #8 (transactional revision integrity and verifiable backup) merged into PR #7's staging branch only; GitHub CI passed on the implementation, including real *local* Wrangler/D1 HTTP save, read, stale conflict and restore. This is code hardening, **not a verified cloud save**. No public novel manuscript was added.
+- The connected Cloudflare dashboard shows the existing production Worker is active; no credentials or account mutation capability is available to this session. Remote D1, authentication, production write/read, independent private GitHub backup, and cross-browser recovery all remain outstanding owner-side validation.
+- W008 is not authorized for real prose until W007B's live durability and backup gates pass.
+
+## 2026-10-29 D1 SQL activation update
+The owner ran the existing migration SQL in Cloudflare's D1 Console for `zeta-manuscript` (`3ab9afed-9fe2-4c05-99e8-162c3d1cc5f2`); the connected Cloudflare console displays `This query successfully executed`. Schema SQL is therefore reported/accepted, but a direct read of both tables is pending. Wrangler remote migration tracking may not have been created because SQL was entered manually. **No live Worker DB binding, owner secret, production release, remote manuscript save or private backup has been verified**. See [W007B progress](../workshops/W007B_PROGRESS.md).

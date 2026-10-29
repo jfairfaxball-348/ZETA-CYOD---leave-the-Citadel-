@@ -18,6 +18,7 @@ jobs:
           node-version: '24'
       - name: Read authenticated cloud manuscript and archive to private repository
         env:
+          ZETA_BACKUP_REQUIRED: '1'
           STUDIO_URL: ${{ secrets.ZETA_BACKUP_STUDIO_URL }}
           STUDIO_OWNER_TOKEN: ${{ secrets.ZETA_BACKUP_OWNER_TOKEN }}
           GITHUB_BACKUP_TOKEN: ${{ secrets.ZETA_BACKUP_GITHUB_TOKEN }}

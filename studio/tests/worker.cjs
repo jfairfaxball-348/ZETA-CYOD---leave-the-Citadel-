@@ -30,7 +30,7 @@ function database(){
      const changes=head.revision===expected?1:0;
      if(changes)head={revision:head.revision+1,document,updated_at:time};
      result.push({meta:{changes}});
-    }else if(st.sql.startsWith("INSERT OR IGNORE INTO zeta_revision")){
+    }else if(st.sql.startsWith("INSERT INTO zeta_revision")){
      const [restoredFrom,revision]=st.args;
      const changes=head.revision===revision&&!history.has(revision)?1:0;
      if(changes)history.set(revision,{revision,document:head.document,created_at:head.updated_at,restored_from:restoredFrom});

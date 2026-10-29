@@ -33,6 +33,9 @@ async function flush(){
  const snapshot=JSON.stringify(editor.getDoc()),serial=changes,expectedRevision=revision;
  try{
   const saved=await request("POST","",{action:"save",expectedRevision,document:JSON.parse(snapshot)});
+  // A 200 with an invalid acknowledgement is not proof of a committed revision.
+  if(!Number.isSafeInteger(saved.revision)||saved.revision!==expectedRevision+1||
+     typeof saved.updatedAt!=="string")throw Error("INVALID_SAVE_ACK");
   revision=saved.revision;
   if(serial===changes && JSON.stringify(editor.getDoc())===snapshot){pending=false;buffer(editor.getDoc(),false);status("✓ Saved");}
   else {pending=true;buffer(editor.getDoc(),true);status("Saving…");}
