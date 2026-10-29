@@ -1,7 +1,7 @@
 # ZETA — Current project state
 
 **As of:** 2026-10-29
-**Latest invoked workshop:** W007B — **Cloudflare saving hardening in progress; account-side activation required and real D1 persistence UNVERIFIED**. W007 confirmed the production URL and UI. Connected Cloudflare dashboard reports active version `d492231a` at 100% traffic; browser displays `Local only — export backup`. W006 GitHub main CI is green. D1 binding, Access, manuscript save/restore and independent backup remain unverified. W001–W003 fiction canon unchanged.
+**Latest invoked workshop:** W007B — **production D1 manuscript revision 1 VERIFIED; cross-browser recovery, owner-only Access and private backup remain OPEN**. W007 confirmed the production URL and UI. Connected Cloudflare dashboard reports active version `d492231a` at 100% traffic; browser displays `Local only — export backup`. W006 GitHub main CI is green. D1 binding, Access, manuscript save/restore and independent backup remain unverified. W001–W003 fiction canon unchanged.
 **Repository lineage:** S000 → W001 → W002 → W003 → W004 simplified POC → W005 persistent-save protocol → W006 Cloudflare hosting implementation.
 **Next session:** Continue W007B until real Cloudflare D1, owner protection and independent backup are proven; [W008 first writing session](../workshops/W008_FIRST_WRITING_SESSION.md) is prepared but LOCKED until those checks pass. See [W007 checkpoint](../workshops/W007_PROGRESS.md).
 
@@ -48,3 +48,6 @@ References: [W004 closeout](../workshops/W004_CLOSEOUT.md) · [W005 prompt](../w
 
 ## 2026-10-29 D1 SQL activation update
 The owner ran the existing migration SQL in Cloudflare's D1 Console for `zeta-manuscript` (`3ab9afed-9fe2-4c05-99e8-162c3d1cc5f2`); the connected Cloudflare console displays `This query successfully executed`. Schema SQL is therefore reported/accepted, but a direct read of both tables is pending. Wrangler remote migration tracking may not have been created because SQL was entered manually. **No live Worker DB binding, owner secret, production release, remote manuscript save or private backup has been verified**. See [W007B progress](../workshops/W007B_PROGRESS.md).
+
+## Latest verified cloud persistence milestone — 29 October 2026
+Live D1 `zeta-manuscript` returned `book-one` revision 1, last updated `2026-10-29T18:45:15.234Z`, document size 5159 bytes, with the Writing Studio showing Saved. W007 PR #7 has merged to main; production Cloudflare build succeeded. Older historical checkpoints above may predate this result. Do not declare W008 ready until recovery in a separate browser, revision restore, Access restriction and independent private backup are verified.
