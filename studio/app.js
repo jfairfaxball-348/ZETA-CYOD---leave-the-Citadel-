@@ -36,12 +36,12 @@ function seed(){
  return {version:1,title:"Leave the Citadel",start:"P-0001",sequence:10,edgeSequence:13,sceneSequence:6,acts,scenes,passages};
 }
 function valid(d){return !!(d&&d.version===1&&Array.isArray(d.acts)&&Array.isArray(d.scenes)&&Array.isArray(d.passages)&&typeof d.start==="string"&&typeof d.sequence==="number"&&d.acts.length>0&&d.scenes.length>0&&d.passages.length>0&&d.passages.every(p=>p.id&&p.scene&&Array.isArray(p.edges)));}
-function load(){try{const raw=localStorage.getItem(KEY);if(raw){const d=JSON.parse(raw);if(valid(d))return d;}}catch(err){console.warn("Could not restore studio data",err);}return seed();}
+function load(){try{const recovery=JSON.parse(localStorage.getItem("zeta-studio-w005-recovery-v1")||"null");if(recovery&&valid(recovery.document))return recovery.document;const raw=localStorage.getItem(KEY);if(raw){const d=JSON.parse(raw);if(valid(d))return d;}}catch(err){console.warn("Could not restore studio data",err);}return seed();}
 let doc=load(),selection=null,activeSceneId=null,view={x:20,y:40,z:.65},drag=null,reading=null,toastTimer=0;
 function scene(id){return doc.scenes.find(x=>x.id===id);}
 function passage(id){return doc.passages.find(x=>x.id===id);}
 function act(id){return doc.acts.find(x=>x.id===id);}
-function persist(){try{localStorage.setItem(KEY,JSON.stringify(doc));$("saveIndicator").textContent="● Saved on this device";}catch(err){$("saveIndicator").textContent="Save failed — export a backup";console.warn(err);}}
+function persist(){window.ZetaCloud.persist(doc);}
 function toast(message){const node=$("toast");node.textContent=message;node.classList.add("visible");clearTimeout(toastTimer);toastTimer=setTimeout(()=>node.classList.remove("visible"),2600);}
 function posStyle(o){return "left:"+o.x+"px;top:"+o.y+"px;width:"+o.w+"px;height:"+o.h+"px";}
 function sel(type,id){selection={type,id};render();}
@@ -161,7 +161,7 @@ function renderInspector(){
  const area=$("inspectorContent");
  document.body.classList.toggle("editor-open",!!selection);
  $("drawerBackdrop").hidden=!selection;
- if(!selection){area.innerHTML='<div class="inspector-empty"><span class="empty-symbol">✎</span><h2>The page is yours.</h2><p>Select a passage on the canvas to begin writing.</p><p class="muted">Your changes are saved only in this browser.</p></div>';return;}
+ if(!selection){area.innerHTML='<div class="inspector-empty"><span class="empty-symbol">✎</span><h2>The page is yours.</h2><p>Select a passage on the canvas to begin writing.</p><p class="muted">Until connected, drafts stay only on this device.</p></div>';return;}
  if(selection.type==="scene"){
   const s=scene(selection.id);if(!s){selection=null;renderInspector();return;}
   area.innerHTML='<div class="inspector-head"><div class="path">SCENE · '+html(act(s.act)?.title||"")+'</div><h2>'+html(s.title)+'</h2><p>Group and plan passages here.</p></div><div class="inspector-body"><label class="field"><span>Scene title</span><input id="sceneTitle" value="'+html(s.title)+'"></label><label class="field"><span>Act</span><select id="sceneAct">'+doc.acts.map(a=>'<option value="'+html(a.id)+'"'+(a.id===s.act?" selected":"")+'>'+html(a.title)+"</option>").join("")+'</select></label><label class="field"><span>Purpose and notes</span><textarea class="notes" id="sceneNotes">'+html(s.notes||"")+'</textarea></label><p class="smallcopy">'+doc.passages.filter(p=>p.scene===s.id).length+' passages · '+(s.collapsed?"Collapsed":"Expanded")+'</p><button class="secondary-button" id="sceneToggle">'+(s.collapsed?"Expand":"Collapse")+' this scene</button> <button class="secondary-button" id="sceneAdd">+ Add passage</button><div class="notice">Scene cards are planning containers, not printed pages. Move them on the graph without changing the reading order.</div></div>';
@@ -314,7 +314,7 @@ function exportData(){
 }
 function importData(file){if(!file)return;const reader=new FileReader();reader.onload=()=>{
  try{const parsed=JSON.parse(String(reader.result));if(!valid(parsed))throw Error("Unrecognised studio JSON version/schema");
-  if(!confirm("Import this manuscript? It will replace the current browser copy. Export a backup first if needed."))return;
+  if(!confirm("Import this manuscript? Export the current draft first if needed.")||!window.ZetaCloud.confirmImport())return;
   doc=parsed;selection=null;activeSceneId=null;persist();render();toast("Manuscript imported");
  }catch(err){alert("Import failed: "+err.message);}
  };reader.readAsText(file);}
@@ -341,7 +341,7 @@ function install(){
  const release=()=>{pan=null;viewport.classList.remove("grabbing");};
  viewport.addEventListener("pointerup",release);viewport.addEventListener("pointercancel",release);
  window.addEventListener("keydown",e=>{if(e.key==="Escape"&&$("modalRoot").innerHTML){$("modalRoot").innerHTML="";reading=null;}});
- render();persist();
+ render();window.ZetaCloud.init({getDoc:()=>doc,setDoc:next=>{doc=next;selection=null;activeSceneId=null;render();},valid});
 }
 install();
 })();

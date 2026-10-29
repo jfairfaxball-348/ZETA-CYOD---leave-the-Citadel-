@@ -10,6 +10,7 @@ const { window: w } = dom;
 w.requestAnimationFrame = fn => fn();
 w.confirm = () => true;
 w.prompt = () => "New test scene";
+w.eval(fs.readFileSync(path.join(root, "cloud.js"), "utf8"));
 w.eval(fs.readFileSync(path.join(root, "app.js"), "utf8"));
 const $ = selector => w.document.querySelector(selector);
 function click(selector) {
@@ -46,7 +47,7 @@ assert.ok(w.document.body.classList.contains("editor-open"));
 const title = $("#passageTitle");
 title.value = "Edited opening";
 title.dispatchEvent(new w.Event("input", {bubbles:true}));
-assert.match(w.localStorage.getItem("zeta-studio-w004-poc-v1"), /Edited opening/);
+assert.match(w.localStorage.getItem("zeta-studio-w005-recovery-v1"), /Edited opening/);
 click("#closeEditor");
 assert.ok(!w.document.body.classList.contains("editor-open"));
 click("#addPassageBtn");
