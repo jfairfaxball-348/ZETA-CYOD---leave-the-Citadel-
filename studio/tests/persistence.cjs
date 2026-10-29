@@ -80,9 +80,11 @@ test("reject invalid imports, oversize bodies and unknown requests without mutat
  assert.equal((await db.load()),null);
 });
 
-test("backup skips absent credentials and refuses public destinations before querying data",async()=>{
+test("backup skips absent credentials and refuses public destinations",async()=>{
  const {archive}=require("../scripts/private-backup.cjs");
  assert.deepEqual(await archive({}),{skipped:true});
- await assert.rejects(archive({DATABASE_URL:"postgresql://not-used",GITHUB_BACKUP_TOKEN:"x",GITHUB_BACKUP_REPO:"example/public"},
-  async()=>({ok:true,json:async()=>({private:false})})),/private/);
+ await assert.rejects(archive({
+  STUDIO_URL:"https://studio.example.workers.dev",STUDIO_OWNER_TOKEN:"a".repeat(40),
+  GITHUB_BACKUP_TOKEN:"x",GITHUB_BACKUP_REPO:"example/public"
+ },async()=>({ok:true,json:async()=>({private:false})})),/private/);
 });
