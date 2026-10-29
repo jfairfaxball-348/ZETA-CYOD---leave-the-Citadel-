@@ -1,28 +1,28 @@
 # ZETA — Internal World Bible
 
-**Purpose:** An evolving, authoritative *internal* ledger for a fictional universe across multiple potential works. It is not a manuscript for independent publication. Interpret all entries via the [canon policy](../authoritative/CANON_POLICY.md).
+**Purpose:** An internal cross-work continuity ledger, not an independent book. Every claim is scoped by the [canon policy](../authoritative/CANON_POLICY.md) and [DECISIONS](../authoritative/DECISIONS.md).
 
-## Scope and established identities
-- **CANON — DEC-0001:** ZETA names the wider fictional world/universe.
-- **CANON — DEC-0002:** The Citadel is a part of ZETA, not synonymous with all of it.
-- **PROVISIONAL:** The intended creative character is immense, mathematically inspired, mysterious, with fantasy, science-fiction, philosophy, AI and exploration.
-- **PROVISIONAL:** Distinct places or civilizations may give fictional expression to different mathematical traditions, without being simple textbook allegories.
-- **OPEN:** What ZETA ultimately is, where its boundaries lie, what inhabitants believe, and which observations are reliable.
+## Established foundation
+- **CANON — DEC-0001/0002:** ZETA is the wider universe; the Citadel is one place within it.
+- **CANON (creative design) — DEC-0004:** Regions may be dramatically dissimilar, almost separate worlds in experience, geography, culture, and aesthetic. This does **not** itself establish distinct literal physical laws.
+- **CANON (emotional intent) — DEC-0010:** Encounters should foster unsettling doubt about what the protagonist was taught.
+- **CANON (Book One geography only) — DEC-0005:** The Citadel is within the number-theory territory, one of three Act II regions; the others are Topologia and the Combinatorium. The territory's final fantasy name is OPEN.
+- **PROVISIONAL:** Vast, transcendent, philosophical mathematics; fantasy beauty and science-fiction awe; mathematical traditions as lived culture, not lessons.
+- **PROPOSAL:** A simulation-like explanation of the larger mystery—never assert it is true. Alternate explanations must remain possible.
+- **OPEN:** What the universe ultimately is, whether world-laws truly vary by region, where civilizations came from, whether observations are reliable, origins of intelligence and AI, and the wider chronology.
 
-## Lore ledgers
-| Domain | Canon / current content | Working reference |
+## Domain register
+
+| Domain | Status and known constraints | Reference |
 | --- | --- | --- |
-| Cosmology and world-laws | **OPEN** — no physics/metaphysics established | [Foundational laws](FOUNDATIONAL_LAWS.md) |
-| Regions and spatial relations | Citadel part of ZETA (**CANON**); other locations undecided | [Geography](GEOGRAPHY.md) |
-| Mathematical traditions | **PROVISIONAL** framework; manifestations not fixed | [Traditions](MATHEMATICAL_TRADITIONS.md) |
-| History, chronology and ages | **OPEN** | This section (future detail only after workshop) |
-| Peoples, cultures and civilizations | **OPEN** | This section |
-| Institutions, factions, governance | **OPEN** | This section |
-| Technology, AI and supernatural-seeming phenomena | **OPEN** | [Foundational laws](FOUNDATIONAL_LAWS.md) |
-| Larger connective mystery | Design constraints defined; answer **OPEN** | [Overarching mystery](OVERARCHING_MYSTERY.md) |
-| Contradictions and epistemic limits | **OPEN**; maintain differences between facts, beliefs and withheld knowledge | [Open questions](../authoritative/OPEN_QUESTIONS.md) |
+| Cosmology/world-laws | OPEN, including how to explain differing regional experiences | [Laws](FOUNDATIONAL_LAWS.md) |
+| Book One regions | CANON at three-region identity/scope only | [Geography](GEOGRAPHY.md) |
+| Mathematical traditions | PROVISIONAL creative influences; exact manifestations OPEN | [Traditions](MATHEMATICAL_TRADITIONS.md) |
+| Peoples, history, politics, faith, technology and AI | OPEN | Future ledgers |
+| Overarching mystery | OPEN answer; simulation a PROPOSAL | [Mystery](OVERARCHING_MYSTERY.md) |
+| What readers may learn in Book One | Partially structured; exact reveals OPEN | [Revelation budget](../story/REVELATION_BUDGET.md) |
 
-## Continuity and reveal discipline
-For every later entry, record: status; DEC-ID if canon; what is objectively true in-world versus what a viewpoint character believes; chronology; source; contradictions; and how much Book One can reveal. The reader's knowledge need not equal the creator's knowledge.
+## Continuity discipline
+Distinguish actual in-world facts, local cultural explanations, narrator claims and protagonist knowledge. In particular, **three route-specific explanations for leaving** are approved as a *story mechanism*, not approved as three objectively true mathematical laws.
 
-Book One's boundaries live in [Revelation Budget](../story/REVELATION_BUDGET.md); its planned story lives in [Book One](../story/BOOK_ONE.md). Keep the mystery unresolved at its core.
+Future region descriptions must show human lives, humor, priorities, tensions and values independently of their mathematics. Preserve enormous unseen parts of ZETA outside Book One.

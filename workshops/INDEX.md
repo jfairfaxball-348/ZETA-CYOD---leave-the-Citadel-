@@ -1,14 +1,10 @@
 # ZETA — Workshop index
 
-Workshops are owner-led, discussion-first creative sessions. An agenda is not authorization to run a session or promote any suggestion to CANON.
+Owner-led, conversation-first design. An installed agenda alone does not authorize execution.
 
-| ID | Date prepared | State | Objective | Record |
+| ID | Date | State | Objective | Record |
 | --- | --- | --- | --- | --- |
-| W001 | 2026-10-29 | **PREPARED — NOT EXECUTED** | Opening: the nature of ZETA and Book One's creative promise | [W001 Opening](W001_OPENING.md) |
+| W001 | 2026-10-29 | **CLOSED — foundation frozen** | Identity, Book One destinations/acts, opening wrist/loop mechanism; major story questions remain open | [W001 closeout](W001_CLOSEOUT.md) |
+| W002 | 2026-10-29 (prepared) | **FUTURE — NOT EXECUTED** | Explore why protagonist must leave: three mathematical compulsions, whose command, their narrative cohesion | [Authoritative W002 prompt](W002_PROMPT.md) |
 
-## Workshop lifecycle
-**Prepared** → **Owner-invoked / in discussion** → **Decisions requested** → **Decisions recorded where approved** → **Closed**. In-progress status alone never implies approval.
-
-For every future workshop retain alternatives, trade-offs, explicit owner feedback, DEC-IDs (when authorized), OPEN questions left untouched, edited files and live commit/PR evidence.
-
-Start every workshop with [START_HERE](../authoritative/START_HERE.md) and the [AI guidelines](../AGENTS.md). Update [STATE](../authoritative/STATE.md) after execution, not in anticipation.
+Refer to [START_HERE](../authoritative/START_HERE.md), [DECISIONS](../authoritative/DECISIONS.md) and [OPEN_QUESTIONS](../authoritative/OPEN_QUESTIONS.md). Do not convert proposals into canon without explicit owner approval or run future work automatically.

@@ -1,24 +1,26 @@
 # Book One — *Leave the Citadel* (working title)
 
-**CANON — DEC-0003:** The first planned ZETA fiction uses branching reader choices (CYOD). **PROVISIONAL:** *Leave the Citadel* is the working title; the first book should establish the wider world while standing as a satisfying novel in its own right.
+**CANON — DEC-0003:** First ZETA work uses Choose Your Own Destiny (CYOD) reader choices.
+**CANON (design) — DEC-0006–0010:** W001 freezes the act-level structure and delayed wrist-mark mechanism below; not prose, final pagination, character traits, exact lore or endings.
 
-## Editorial intent (provisional)
-- Put character, emotion, consequence and conflict ahead of mathematical exposition.
-- Use choices to invite genuine exploration of ZETA, not to deliver a textbook tour.
-- Give Book One its own satisfying narrative arc while feeding a much larger mythology.
-- Show just enough of the setting that mysteries remain tantalising, not opaque.
+## Opening
+- Absolutely minimal pre-choice context: an instruction beginning **“...leave The Citadel”** and a look down at the protagonist's **right wrist**; then **three illustrated options**. No introductory worldbuilding or descriptive option labels are required.
+- Illustrations: single digit → draft page **102**; topologically suggestive knot or interlocking surface → **203**; binomial symbol `\\binom{n}{k}` → **304**. These are temporary *page destinations*, not final node numbers.
+- Each choice passage delivers one **different mathematically grounded reason** departure is obligatory, then its only option is **turn to page 2**.
+- The protagonist departs the Citadel; the converged story begins Act I. Who speaks, how reasons function, what the exact marks are and what each passage says are **OPEN**.
 
-## Uncommitted creative fields
-| Field | Status | Current position |
-| --- | --- | --- |
-| Premise and inciting event | OPEN | W001 discussion; no event selected |
-| Protagonist and point of view | OPEN | No character accepted |
-| Motivation to leave the Citadel | OPEN | The meaning and cost must emerge collaboratively |
-| Central conflict, stakes and tone | OPEN | Not yet agreed |
-| Story sequence, chapter prose and ending(s) | OPEN | No drafts or endings established |
-| Alternative exploratory concepts | PROPOSAL | Prior bridge/cartographer/AI/faction/three-route examples carry no approval |
-| Title | PROVISIONAL | *Leave the Citadel*, not final |
+## Three-act story
+| Act | Approximately | Approved architecture | Still open |
+| --- | --- | --- | --- |
+| **I — Departure and shared journey** | 0–1/3 | Out of the Citadel and initially within the number-theory territory; shared narrative journey introducing the world, stakes and people; not deep exploration of NT; follows page-2 convergence. | Road, encounters, choices, items, companions, specific plot beats. |
+| **II — Regional experience** | 1/3–2/3 | A substantial, distinct arc set in **one** of three regions: number-theory territory (beyond Citadel), Topologia or the Combinatorium. The opening wrist selection determines this arc, not a fresh late choice. | Character/plot/world differences, reveal timing, pacing, scenes. |
+| **III — Return to the Citadel** | 2/3–end | The story returns to the Citadel with a broadly converging central destination and **route-conditioned conclusions**, preserving consequences from Act II. | Exact conflicts, revelations, ending count and form. |
 
-Development belongs in [Characters](CHARACTERS.md) and [Plot and Themes](PLOT_AND_THEMES.md); architectural structure in [Story Graph](../cyod/STORY_GRAPH.md). World-building commitments are governed by [World Bible](../lore/WORLD_BIBLE.md) and [Revelation Budget](REVELATION_BUDGET.md).
+## Creative promise
+- **CANON — DEC-0010:** The dominant emotional experience begins as unsettling suspicion that the protagonist's accepted worldview may be wrong.
+- Mathematical ideas underpin lived fiction rather than provide lessons or clichés.
+- The three regions can feel deeply unlike one another, while the wider ZETA mythology connects them in ways not yet resolved.
+- **OPEN:** Protagonist's name, appearance, gender, role, personhood, agency, relationships and personal stakes.
+- **PROPOSAL only:** Mathematical balance, proof, contradiction, constraint and simulation theory as possible explanatory inspirations; no specific mechanism accepted.
 
-Next: [W001 Opening](../workshops/W001_OPENING.md), requiring a separate owner instruction.
+See [Opening mechanism](../cyod/OPENING_MECHANISM.md), [Story graph](../cyod/STORY_GRAPH.md), [Plot and themes](PLOT_AND_THEMES.md), [Revelation budget](REVELATION_BUDGET.md) and [W001 freeze](../workshops/W001_CLOSEOUT.md).

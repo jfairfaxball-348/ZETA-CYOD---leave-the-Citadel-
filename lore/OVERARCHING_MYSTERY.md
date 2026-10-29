@@ -1,24 +1,20 @@
 # ZETA — Overarching mystery (restricted design ledger)
 
-**Underlying answer: OPEN (Q-0007).** Do not solve, prefigure a specific solution as fact, or smuggle a supposedly definitive answer into other files.
+**Underlying answer: OPEN (Q-0007). Do not solve it in the current workshop.**
 
-## Owner-approved design requirements
-- Transcend any individual mathematical tradition, problem or symbol, including the Riemann Hypothesis, infinity and pi.
-- Connect otherwise disparate regions and traditions of ZETA.
-- Sustain multiple independent novels and potentially games.
-- Raise philosophical/existential questions about the nature of reality.
-- Permit meaningful partial discoveries that do **not** force an early final explanation.
-- In Book One, the reader may encounter **effects** but must not receive its ultimate explanation.
+## Approved narrative constraints
+- Reach beyond any single mathematical problem (including RH, infinity or pi), region or symbol.
+- Connect contrasting cultures/regions and support multiple works over time.
+- Raise philosophical questions about mathematics, reality, intelligence, knowledge and consciousness.
+- Permit clues and partial discoveries without a definitive explanation in Book One.
+- Favor reader uncertainty that accepted truths may be incomplete or mistaken (DEC-0010).
 
-## Information boundaries (framework, not revelations)
-| Layer | Status | Constraint |
+## Interpretation register
+| Possible interpretation | Status | Boundary |
 | --- | --- | --- |
-| Actual underlying cause/nature | OPEN | No author-approved answer |
-| Local clues, effects and testimonies | OPEN | Future proposals must preserve ambiguity |
-| Interpretations by different communities | OPEN | Beliefs must not be mistaken for narrator-certified facts |
-| Cross-book progressive understanding | PROVISIONAL | Plan a long arc without requiring fixed sequencing now |
-| Book One finale | OPEN | May satisfy its own plot without settling ZETA's mystery |
+| ZETA is a simulation (or contains simulations) | **PROPOSAL** voiced in W001 as a promising underlying suspicion | **Not established** as true; not a reveal or destination for Book One |
+| Mathematics constitutes rather than merely describes reality | PROVISIONAL thematic interest | No world-law or ontology approved |
+| Regions experience fundamentally different realities | CANON as **aesthetic/experiential intent**; actual differing physical law OPEN | No forced explanation |
+| Final nature, origin and cause | OPEN | Owner-led separate future design |
 
-Future workshops should test candidates for scale, originality, coherence, dramatic utility and reveal resilience; compare alternatives before approval. Do not publish spoilers in a supposed reader-facing reference.
-
-See [World Bible](WORLD_BIBLE.md), [foundational laws](FOUNDATIONAL_LAWS.md), [Book One reveal budget](../story/REVELATION_BUDGET.md), and [open questions](../authoritative/OPEN_QUESTIONS.md).
+Distinguish local testimony, character belief, apparently objective effects, and the final answer; they are not equivalent. See [World Bible](WORLD_BIBLE.md) and [revelation budget](../story/REVELATION_BUDGET.md).

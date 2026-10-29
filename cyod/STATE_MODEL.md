@@ -1,17 +1,19 @@
 # CYOD — Reader state and consequences
 
-**OPEN:** It is undecided whether Book One needs persistent reader state at all. No inventory system, counters, statistics, rules engine or state variables are approved.
+**CANON (design) — DEC-0007/0008:** Book One has **one obligatory persistent discriminant**: the *opening right-wrist choice* determining the Act II region. No numeric game stats, inventory engine or additional persistent flags are approved.
 
-## Technology-neutral options for later comparison
-| Option | Status | Benefit / trade-off |
-| --- | --- | --- |
-| Stateless choices | PROPOSAL | Simple for print; fewer persistent consequences |
-| Knowledge and relationship flags | PROPOSAL | Memory of discoveries/relationships; more continuity checks |
-| Rich persistent state | PROPOSAL | Supports complex variation; raises authoring and validation costs |
-| Hybrid route markers | PROPOSAL | Selective memory; requires disciplined definition of flags |
+## Minimal logical model (specification only; not code)
+- Conceptual state key: `opening_mark` (field name PROPOSAL).
+- Allowed values: `number`, `topological_form`, `binomial_symbol` (internal labels PROPOSAL).
+- Set by first choice only; remembered through all of common Act I.
+- Read at start of Act II; route to number-theory region, Topologia or the Combinatorium respectively.
+- Act I content and route do **not** branch on this choice.
+- Act III must preserve genuine route-conditioned consequences.
+- The protagonist can potentially meet people, acquire things and make other decisions in Act I, but whether these need additional persistent variables is **OPEN**.
 
-If introduced, each state variable should specify stable name, allowed values, initial condition, changing choices, guard conditions, visibility to reader, and narrative justification. Consider whether choices can be physical, ethical, emotional or epistemic without becoming numerical scores.
+## Publication design OPEN
+How to retain the choice on paper (visible wrist mark, a modest reader note or other device); whether it is a tattoo, brand or other reality; what state is necessary for later discoveries, inventory and relationships; whether other conditions create different endings.
 
-Any implemented precondition/consequence must be checked across convergence points and against the [revelation budget](../story/REVELATION_BUDGET.md). Avoid locking into software until publication and experience goals are discussed.
+Never equate draft page numbers 102/203/304/2 with actual node IDs or final pagination. Keep the design engine neutral; validate convergence, branch reachability and revelation consistency once prose/graph exists.
 
-Related: [Node Schema](NODE_SCHEMA.md), [Story Graph](STORY_GRAPH.md), [Book One](../story/BOOK_ONE.md), [Open Questions](../authoritative/OPEN_QUESTIONS.md).
+Related: [Opening mechanism](OPENING_MECHANISM.md), [Story graph](STORY_GRAPH.md), [Book One](../story/BOOK_ONE.md).

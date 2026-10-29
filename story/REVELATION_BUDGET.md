@@ -1,17 +1,15 @@
 # Book One — Revelation budget
 
-**Purpose:** A planning boundary between what the author knows, what viewpoint characters know and what a reader encounters. It must not prematurely invent lore.
+This document distinguishes approved narrative placement from any unapproved content of revelations.
 
-| Knowledge category | Status | Book One guidance |
+| Reader knowledge / beat | Status | Boundary |
 | --- | --- | --- |
-| ZETA extends beyond the Citadel | CANON (DEC-0002) | May be foundational context; narrative timing OPEN |
-| Other traditions and places | PROVISIONAL | Introduce only when dramatically useful; exact places OPEN |
-| Immediate personal stakes and local conflicts | OPEN | Should be sufficiently legible for a satisfying self-contained story |
-| Observable effects of wider mystery | PROVISIONAL design requirement | Encounter effects; mechanisms and specifics OPEN |
-| Ultimate explanation of overarching mystery | OPEN, **withheld** | Explicitly **not** to be resolved in Book One |
-| Wider chronology, laws and cross-book answers | OPEN | Retain space for later novels and games |
+| Book begins with command to leave and unexplained right-wrist illustration | **CANON — DEC-0007** | No preceding exposition. Exact final phrasing/image OPEN. |
+| Immediately selected choice passage tells **one mathematically framed reason** departure is obligatory | **CANON — DEC-0008** | The reasons themselves and whether they are true in-world OPEN. |
+| Three opening paths converge at draft page 2 | **CANON — DEC-0008** | Shared Act I is not rewritten three times. |
+| Act I gradually broadens awareness of ZETA, meeting stakes/people | **CANON (direction) — DEC-0006/0009** | Specific revelations OPEN. |
+| Original wrist choice returns as Act II destination constraint | **CANON — DEC-0008** | Which mark corresponds to which region is approved; precise reason why still OPEN. |
+| Act III returns to the Citadel with knowledge/consequence differences | **CANON — DEC-0006** | Exact truths and endings OPEN. |
+| Ultimate underlying mystery explanation | **OPEN; intentionally withheld** | Simulation hypothesis is PROPOSAL, not the authorial answer. |
 
-## Future reveal entry template
-Record proposed revelation ID; true in-world fact versus belief; node(s) where readers can learn it; prerequisite knowledge; effects on other routes; status; and DEC-ID on approval.
-
-Revisit this budget whenever story choices expose supposedly secret information or lore changes alter continuity. Related: [Mystery](../lore/OVERARCHING_MYSTERY.md), [World Bible](../lore/WORLD_BIBLE.md), [Book One](BOOK_ONE.md), [State Model](../cyod/STATE_MODEL.md).
+Keep separate columns for actual world facts, in-world testimony and reader understanding when specific reveals are later written. Future revelation IDs and concrete story nodes remain unassigned.

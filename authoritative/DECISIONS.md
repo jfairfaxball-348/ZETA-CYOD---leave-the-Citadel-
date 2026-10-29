@@ -1,21 +1,21 @@
 # ZETA — Decision register
 
-Only explicit owner decisions are entered as approvals. Every substantive entry has a permanent `DEC-####` ID, UTC date, precise scope, rationale, affected files and supersession history. The status describes the **specific claim**, not every possible elaboration.
+Only explicit owner commitments are CANON; approved **structural design** is not a claim that unexplained in-world causes are objectively true. Stable IDs are never recycled. Details outside a row's precise scope remain OPEN or PROVISIONAL. See [CANON_POLICY](CANON_POLICY.md).
 
-| ID | Date (UTC) | Status | Owner-authorized decision | Rationale / scope | Affected references | Superseded by |
+| ID | Date (UTC) | Status | Owner-authorized decision | Scope / rationale | Affected references | Superseded by |
 | --- | --- | --- | --- | --- | --- | --- |
-| DEC-0001 | 2026-10-29 | CANON | **ZETA** is the name for the wider fictional world/universe. | Explicit founding designation; says nothing definitive about cosmology or physics. | [World Bible](../lore/WORLD_BIBLE.md), [Book One](../story/BOOK_ONE.md) | — |
-| DEC-0002 | 2026-10-29 | CANON | **The Citadel** is a part of ZETA, not the whole universe. | Explicit spatial/narrative distinction; exact nature, size and internal contents remain subject to development. | [Geography](../lore/GEOGRAPHY.md), [World Bible](../lore/WORLD_BIBLE.md) | — |
-| DEC-0003 | 2026-10-29 | CANON | The first planned ZETA work uses reader choices and branching narrative (CYOD). | Approved format direction, not approval of particular nodes, mechanics, choices or routes. | [Book One](../story/BOOK_ONE.md), [Story graph](../cyod/STORY_GRAPH.md) | — |
+| DEC-0001 | 2026-10-29 | CANON | **ZETA** is the wider fictional world/universe. | Name only; cosmology still open. | [World Bible](../lore/WORLD_BIBLE.md) | — |
+| DEC-0002 | 2026-10-29 | CANON | **The Citadel** belongs within ZETA and is not the whole universe. | Its origin, extent, governance and laws open. | [Geography](../lore/GEOGRAPHY.md) | — |
+| DEC-0003 | 2026-10-29 | CANON | Book One is a reader-choice narrative (CYOD). | Engine, particular earlier speculative routes and endings not approved. | [Book One](../story/BOOK_ONE.md) | — |
+| DEC-0004 | 2026-10-29 | CANON (design) | Regions of ZETA should feel **starkly different**, potentially as though entering different worlds; mathematical inspiration is philosophical and lived, not textbook-like. | Creative directive, **not** evidence of literally incompatible physical laws; wonder, science fiction and fantasy all available. | [World Bible](../lore/WORLD_BIBLE.md) | — |
+| DEC-0005 | 2026-10-29 | CANON (Book One design) | The three Act II regional destinations are the **number-theory territory**, **Topologia**, and **the Combinatorium**. The Citadel stands within the number-theory territory but is not identical to it. | Names Topologia/Combinatorium accepted for the working book geography; fantasy name of NT remains OPEN (Arithen is PROPOSAL). | [Geography](../lore/GEOGRAPHY.md), [Book One](../story/BOOK_ONE.md) | — |
+| DEC-0006 | 2026-10-29 | CANON (Book One structure) | Three broad acts of approximately one third each: (I) immediate departure and broadly shared journey; (II) substantial experience in one of three regions; (III) return to the Citadel. | Act III broadly prescribed in destination/central arc but varied by Act II knowledge, relationships and consequences. No fixed final scenes or endings. | [Book One](../story/BOOK_ONE.md), [Story graph](../cyod/STORY_GRAPH.md) | — |
+| DEC-0007 | 2026-10-29 | CANON (opening design) | The first words are the instruction **“...leave The Citadel”** (exact final punctuation/case open). Before any exposition the protagonist looks at their **right wrist** and reader selects among **three depicted marks**: a single digit (→ draft page 102); a knot/interlocking topological form (→ 203); a binomial symbol `\\binom{n}{k}` (→ 304). | Marks must be **shown visually**, not described as option prose in the finished book. Digit identity, topological rendering, and final page numbers are not fixed. | [Opening mechanism](../cyod/OPENING_MECHANISM.md), [Book One](../story/BOOK_ONE.md) | — |
+| DEC-0008 | 2026-10-29 | CANON (CYOD mechanism) | Each of the three short opening choice passages supplies a **different mathematically motivated reason why departure is compulsory**, then has **one continuation to draft page 2**, converging into a common Act I. The initial wrist choice is remembered and determines the Act II region. | A delayed-payoff choice: it does **not** fork the common Act I story. Exact mechanisms/causes/wording unknown. Printed page references are provisional pointers distinct from node IDs. | [Opening mechanism](../cyod/OPENING_MECHANISM.md), [Story graph](../cyod/STORY_GRAPH.md), [State model](../cyod/STATE_MODEL.md) | — |
+| DEC-0009 | 2026-10-29 | CANON (Book One design) | Common Act I occurs **outside the Citadel**, initially in the number-theory territory, and serves to carry the story towards Act II rather than substantially exploring that region. | A road, companions, choices, inventory and meetings are possible (PROPOSAL); exact event list and further flags OPEN. | [Book One](../story/BOOK_ONE.md), [Plot and themes](../story/PLOT_AND_THEMES.md) | — |
+| DEC-0010 | 2026-10-29 | CANON (narrative promise) | The intended initial emotional response is **unsettling suspicion that everything the protagonist learned about reality might be wrong**. | Does not certify which beliefs are false; simulation is only a speculative candidate. | [World Bible](../lore/WORLD_BIBLE.md), [Book One](../story/BOOK_ONE.md) | — |
 
-**Scope note:** S000 describes several broader ideas as *agreed in principle*. These are **PROVISIONAL design foundations**, not fully settled fictional detail. They are documented in their stream registers, not misrepresented as frozen canon. This register also does not equate an infrastructure decision with an immutable fictional world-law.
+## Explicitly not canonized
+The ultimate mystery, including **simulation theory**; the specific mathematics/reasons for forced departure (balance, contradiction, proof, constraints were discussed as proposals); a named/male/female protagonist; a numeral such as 7; the exact topological object; permanent branding/tattoo vs other physical representation; any particular road scenes, factions, nations, laws, endings, final printing page numbers, or full story-node implementation.
 
-## Adding or changing a decision
-1. Capture the owner's explicit authorization and the exact assertion.
-2. Assign the next unused sequential ID; never recycle IDs.
-3. Record YYYY-MM-DD (UTC), one of the [five statuses](CANON_POLICY.md), rationale, affected file links and any superseded ID.
-4. Update dependent files without changing the meaning or silently broadening approval.
-5. For a replacement, retain the earlier row and append `Superseded by DEC-...`; document the new interpretation.
-6. Keep rejected proposals identifiable; do not delete their historical record.
-
-See [canon policy](CANON_POLICY.md), [open questions](OPEN_QUESTIONS.md) and [state](STATE.md).
+When changing an approved item, add a new DEC-ID, preserve this record, annotate supersession and reconcile story/lore/CYOD references.

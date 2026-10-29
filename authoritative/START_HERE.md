@@ -1,21 +1,20 @@
 # START HERE — ZETA authority and navigation
 
-**Current phase:** S000 repository bootstrap installed on a review branch; W001 prepared, **not executed**. This file is the default entry point for every new session.
+**Current phase:** S000 archive scaffold and W001 agreed creative foundations, recorded on `main` (2026-10-29). **W002 prepared, not executed.** This is the default entry point for subsequent sessions.
 
-1. Read [STATE](STATE.md) for the live work position and scope.
-2. Read [CANON_POLICY](CANON_POLICY.md) before interpreting fictional claims.
-3. Consult [DECISIONS](DECISIONS.md) for specific approved commitments, and [OPEN_QUESTIONS](OPEN_QUESTIONS.md) for unresolved items.
-4. Enter the relevant stream: [Story](../story/BOOK_ONE.md), [CYOD architecture](../cyod/NODE_SCHEMA.md), or [World Bible](../lore/WORLD_BIBLE.md).
-5. For workshopping, check [the index](../workshops/INDEX.md) and [W001 agenda](../workshops/W001_OPENING.md).
+1. Read [STATE](STATE.md) for the live working position.
+2. Read [CANON_POLICY](CANON_POLICY.md), [DECISIONS](DECISIONS.md) and [OPEN_QUESTIONS](OPEN_QUESTIONS.md) before asserting fictional facts.
+3. Read the [World Bible](../lore/WORLD_BIBLE.md), [Book One](../story/BOOK_ONE.md) and [Opening Choice](../cyod/OPENING_MECHANISM.md), as relevant.
+4. Read the [W001 freeze](../workshops/W001_CLOSEOUT.md) for provenance and [W002 prompt](../workshops/W002_PROMPT.md) before resuming the creative workshop.
 
 ## Authority order
-- Direct, explicit owner decision, recorded with scope and date in DECISIONS.
-- Canon-bearing decisions reflected accurately in relevant stream references.
-- Owner-affirmed provisional foundations, explicitly labelled.
-- Proposals, workshop explorations and past AI examples (never default canon).
+- Direct owner approvals at their precise scope, logged as DEC-IDs.
+- Consistent canon-bearing stream records.
+- Owner-affirmed PROVISIONAL ideas, explicitly labelled.
+- PROPOSAL explorations, not canon; OPEN questions, not answers.
 
-When files conflict, flag the discrepancy and seek the owner's decision. Do not silently resolve a canon contradiction. The creative programme is **human-led**.
+The premise is human-led, and publication is not authorized by a workshop freeze. **The overarching mystery is not solved.** Simulation theory is a speculative hypothesis, not the explanation of ZETA.
 
-**No present commitment** to character identity, opening events, chapter prose, route count, endings, game mechanics or underlying mystery solution.
+Never treat print page references (102/203/304/2) as final pagination or numeric node IDs. Do not accidentally canonize an individual protagonist, illustration, explanation of necessity, specific ending or physical world-law.
 
-Related: [README](../README.md), [AI instructions](../AGENTS.md).
+Related: [README](../README.md), [AI instructions](../AGENTS.md), [Workshop index](../workshops/INDEX.md).

@@ -1,20 +1,41 @@
 # CYOD — Story graph and route registry
 
-**Current state: EMPTY.** No opening node, canonical route, choice edge or ending has been approved or assigned.
+**Status: High-level topology frozen in W001 (DEC-0006–0009), but **no actual story nodes/edges or stable N-/C- IDs allocated**.**
 
-| Register | Status | Value |
-| --- | --- | --- |
-| Start node | OPEN | Unassigned |
-| Story nodes | OPEN | None |
-| Choice edges | OPEN | None |
-| Route convergence / divergence | OPEN | Unspecified |
-| Endings | OPEN | None |
-| Graph validation | Not applicable | Awaiting actual nodes |
+## Approved architecture (schematic only)
+```text
+FIRST STORY TEXT: "...leave The Citadel"
+              |
+       Right-wrist mark choice
+          /       |       \
+      digit     knot     (n choose k)
+       |         |         |
+   print 102  print 203  print 304
+       |         |         |
+   different mathematically grounded explanations
+       \         |         /
+      ONLY CONTINUATION: print page 2
+                    |
+         SHARED ACT I (outside Citadel,
+           within number-theory territory)
+                    |
+      Act II location keyed by opening mark
+           /         |          \
+ number-theory    Topologia   Combinatorium
+    territory       |           |
+           \         |          /
+         ACT III RETURN TO CITADEL
+    (route-conditioned knowledge/consequences)
+```
 
-**Do not interpret an empty graph as a linear story or as a three-route design.** Previous three-route suggestions are **PROPOSAL** only.
+## Important invariants
+1. **Print 102/203/304/2 are draft page jumps**, **not N-#### node IDs**.
+2. The initial mark selection persists; there is no free Act II destination vote in the first version of the structure.
+3. Initial choice **does not alter shared Act I's text/route**; it may shape what the character already knows from their initial explanatory paragraph.
+4. Shared Act I may contain additional genuine choices (exact consequences remain OPEN), and must serve character, story and discovery.
+5. Act II is three substantial different experiences; Act III returns to the Citadel but need not be identical across routes.
 
-When the owner approves a structure, maintain one stable entry per node/choice with IDs from [Node Schema](NODE_SCHEMA.md), conditions from [State Model](STATE_MODEL.md), and a link to the applicable [story outline](../story/PLOT_AND_THEMES.md). Validate reachability, termination (or intentional cycles), continuity and revelation sequencing.
+## Not yet authored
+No opening narrative paragraphs, edges with actual stable IDs, choices beyond the initial one, graph validations, endings, or state implementation. Earlier empty-graph language is superseded **only at architecture level**; no false claims of a completed graph.
 
-No Mermaid diagram is included at bootstrap because drawing one would imply unapproved narrative nodes or edges. A later diagram must accurately reflect approved or explicitly labelled proposed graph data.
-
-Related: [Book One](../story/BOOK_ONE.md), [Revelation Budget](../story/REVELATION_BUDGET.md).
+See [Opening mechanism](OPENING_MECHANISM.md), [Node Schema](NODE_SCHEMA.md), [State Model](STATE_MODEL.md).
