@@ -21,7 +21,7 @@ Cloudflare Access can require your email/sign-in to reach both preview and produ
 
 ## First deployment — owner controls the Cloudflare account
 
-The live Worker and static UI are **confirmed working**, but there is no authorised read of its full live D1/secret/Access configuration here. The D1 UUID in the committed configuration is still a placeholder; the real D1 binding, owner secret, Access policy and remote manuscript durability are **not yet verified**. No extra spend or manuscript import has been undertaken in this session.
+The live Worker and static UI are **confirmed working**, but there is no authorised read of its full live D1/secret/Access configuration here. The D1 UUID is now set in PR #7 (staging), but GitHub `main` still contains the old Worker name and all-zero D1 UUID. The live Worker is **static-assets-only**; the script, owner secret, Access policy and remote manuscript durability are not yet verified. No extra spend or manuscript import has been undertaken in this session.
 
 1. Sign up for or sign into [Cloudflare Dashboard](https://dash.cloudflare.com/), and select the **Free** Workers plan; do not choose an upgrade unless you separately approve the cost.
 2. For an existing Worker, **do not create another**: verify the GitHub repository `jfairfaxball-348/ZETA-CYOD---leave-the-Citadel-` is connected to that service, with **Root Directory: `studio`**, **Build command: `npm run build`**, and **Deploy command: `npx wrangler deploy`**. Reconcile the service name with `wrangler.jsonc` before deploying again. For a brand-new installation only, use **Workers & Pages → Create → Import Git repository**.
@@ -69,3 +69,17 @@ PR #8 (merged into PR #7's staging branch only; main unchanged) hardens transact
 `studio/wrangler.jsonc` on W007 PR #7 now uses `3ab9afed-9fe2-4c05-99e8-162c3d1cc5f2` for `zeta-manuscript` rather than a placeholder. This identifies the *intended* remote database; it does **not** create the tables, attach the binding to an active Worker, configure the encrypted owner token, or prove a live save. Keep PR #7 open and main/production unchanged until these actions and private offsite recovery have been independently checked.
 
 Cloudflare Worker Previews are configured as `previews: {}`: they intentionally have no `DB` binding. Do not attach the production manuscript D1 database to any Preview; create a separate preview-only D1 before testing manuscript writes on a Preview. Cloudflare dashboard build root must still be checked separately (root: `studio`).
+
+## Assets-only Worker: resolve the Cloudflare binding restriction
+If Settings → Bindings displays **"Bindings cannot be added to a Worker that only has static assets"**, do **not** attempt to add `DB` in the dashboard. It means the currently deployed Worker has no script. The intended Worker source already exists in `src/worker.mjs` and its production `DB` binding is declared in `wrangler.jsonc` (on the staging PR branch).
+
+The fix is deploying this source **as a Worker script plus assets**, not creating another service. On the existing Worker, check **Settings → Builds → Build configuration**:
+- Root directory: `studio`
+- Build: `npm run build`
+- Production deploy: `npx wrangler deploy`
+- Preview: `npx wrangler preview`
+- Production branch: `main`
+
+**Important:** GitHub `main` still has an obsolete Worker name and all-zero D1 UUID. Do not click Redeploy/Retry on production until PR #7's corrected configuration has been merged into main. After that, deployment of `studio/wrangler.jsonc` automatically attaches the `DB` binding to the scripted Worker. You can then configure the runtime encrypted owner key in Settings → Variables and Secrets; verify Cloudflare Access and real saves separately. If changing build settings is impossible, use an authenticated local Wrangler deployment from `studio` after checking out the corrected branch: `npm install && npm run cf:deploy`. Never paste Cloudflare credentials or owner key into chat.
+
+Cloudflare references: https://developers.cloudflare.com/workers/static-assets/binding/ and https://developers.cloudflare.com/workers/ci-cd/builds/troubleshoot/ .
