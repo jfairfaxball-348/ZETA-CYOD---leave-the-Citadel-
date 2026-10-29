@@ -36,7 +36,10 @@ From draft page **2**, Act I is a shared adventure outside the Citadel. The sele
 - **No real node graph is yet authored.** This is an architectural sketch; exact node IDs, intermediate links, page count, unreachable-page testing and implementation are future work.
 - The reader must be able to remember the initial mark; the physical wrist depiction may itself serve as the visible reminder, with more explicit print tracking considered only if useful.
 
+## W010 approved staging refinement (DEC-0021–0023)
+The instruction is **remembered speech** from Chapter Elder Luiz, the approximately 25-year-old apprentice player's mentor. The mark choice selects one of three **recollections of Luiz's explanation**; it does not mean that a new voice speaks at the gate. All three versions return to the same present-day exit scene: the player alone at the Citadel's outermost door, unable to return through the shut inner door, with an open doorway leading out into the surrounding number-theory territory. Narration is second person and briskly descriptive. These refinements change no existing printed placeholder destinations or Act II-routing design.
+
 ## What remains OPEN
-Whether the opening choice **reveals** a pre-existing alleged necessity or **causes** its institutional enforcement; the command speaker; what specifically compels departure despite the false claim; the object's reality, possible changing marks, which assumptions fail, and how three regional traditions relate. In particular, never infer that the single digit is **7** or the geometric image is a mere polyhedron.
+Whether the opening choice **reveals** a pre-existing alleged necessity or **causes** its institutional enforcement; the details of Luiz's earlier conversation; what specifically compels departure despite the false claim; the object's reality, possible changing marks, which assumptions fail, and how three regional traditions relate. In particular, never infer that the single digit is **7** or the geometric image is a mere polyhedron.
 
 See [Book One](../story/BOOK_ONE.md), [Story Graph](STORY_GRAPH.md), [State Model](STATE_MODEL.md), [W002 prompt](../workshops/W002_PROMPT.md).
