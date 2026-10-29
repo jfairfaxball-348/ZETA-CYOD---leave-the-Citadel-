@@ -1,0 +1,53 @@
+name: ZETA private manuscript bridge
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'requests/*.json'
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'Sync private manuscript index, or apply pending approved passage edits'
+        required: true
+        default: sync
+        type: choice
+        options: [sync, apply]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: zeta-manuscript-bridge-main
+  cancel-in-progress: false
+
+jobs:
+  manuscript:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - id: checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - id: process
+        name: Apply approved passage edits or sync private snapshot
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          ZETA_STUDIO_OWNER_TOKEN: ${{ secrets.ZETA_STUDIO_OWNER_TOKEN }}
+          ZETA_CF_ACCESS_CLIENT_ID: ${{ secrets.ZETA_CF_ACCESS_CLIENT_ID }}
+          ZETA_CF_ACCESS_CLIENT_SECRET: ${{ secrets.ZETA_CF_ACCESS_CLIENT_SECRET }}
+          RUN_MODE: ${{ github.event_name == 'push' && 'apply' || inputs.mode }}
+        run: node scripts/bridge.cjs "$RUN_MODE"
+      - name: Commit private receipts and snapshot
+        if: always() && steps.checkout.outcome == 'success'
+        shell: bash
+        run: |
+          git config user.name 'zeta-bridge[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A -- results/ snapshot/
+          if ! git diff --cached --quiet; then
+            git commit -qm 'W009: private passage receipts and cloud snapshot'
+            git pull --rebase -q origin main
+            git push -q origin HEAD:main
+          fi
