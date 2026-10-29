@@ -210,7 +210,7 @@ function beginDrag(event,type,id){
  drag={type,id,x:event.clientX,y:event.clientY,baseX:Number(object.x)||0,baseY:Number(object.y)||0,moved:false};
  window.addEventListener("pointermove",onDrag);
  window.addEventListener("pointerup",endDrag,{once:true});
- if(type==="scene"){selection={type,id};renderInspector();renderOutline();}
+ // Dragging a scene should not automatically open its editor.
 }
 function onDrag(event){
  if(!drag)return;
