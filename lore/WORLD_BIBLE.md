@@ -11,6 +11,12 @@
 - **PROPOSAL:** A simulation-like explanation of the larger mystery—never assert it is true. Alternate explanations must remain possible.
 - **OPEN:** What the universe ultimately is, whether world-laws truly vary by region, where civilizations came from, whether observations are reliable, origins of intelligence and AI, and the wider chronology.
 
+## Book One's new thematic anchor (W002)
+- **CANON (narrative design) — DEC-0011–0013:** The Citadel exiles the protagonist under three alternative mathematical claims; in each selected route, its judgement is ultimately wrong. Those responsible are antagonists knowingly involved in the unjustified judgement. Their precise identities, motives and explanations remain OPEN.
+- **CANON (mystery architecture) — DEC-0014/0015:** Most antagonists believe they act freely; some may suspect something strange. One unmistakable but unexplained incident in Act III hints that an antagonist's choice may not have been free. Whether that is true is **OPEN**, not a world-law.
+- **PROPOSAL, NOT CANON:** A later π-related computational pattern discovery that appears linked to future decisions. Do not treat apparently structured digits as proof of a simulated reality or borrow the plot of the 1998 film *Pi*.
+- The Citadel's false claims are **in-world institutional errors/deceptions**; they are not assertions that rigorous real-world mathematics fails.
+
 ## Domain register
 
 | Domain | Status and known constraints | Reference |

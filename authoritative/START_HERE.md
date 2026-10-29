@@ -1,20 +1,20 @@
 # START HERE — ZETA authority and navigation
 
-**Current phase:** S000 archive scaffold and W001 agreed creative foundations, recorded on `main` (2026-10-29). **W002 prepared, not executed.** This is the default entry point for subsequent sessions.
+**Current phase:** W002 story workshop closed and frozen on `main` (2026-10-29); **W003 structural CYOD workshop prepared, NOT executed**.
 
-1. Read [STATE](STATE.md) for the live working position.
-2. Read [CANON_POLICY](CANON_POLICY.md), [DECISIONS](DECISIONS.md) and [OPEN_QUESTIONS](OPEN_QUESTIONS.md) before asserting fictional facts.
-3. Read the [World Bible](../lore/WORLD_BIBLE.md), [Book One](../story/BOOK_ONE.md) and [Opening Choice](../cyod/OPENING_MECHANISM.md), as relevant.
-4. Read the [W001 freeze](../workshops/W001_CLOSEOUT.md) for provenance and [W002 prompt](../workshops/W002_PROMPT.md) before resuming the creative workshop.
+1. Read [STATE](STATE.md), [CANON_POLICY](CANON_POLICY.md), [DECISIONS](DECISIONS.md) and [OPEN_QUESTIONS](OPEN_QUESTIONS.md).
+2. Read the [World Bible](../lore/WORLD_BIBLE.md), [Book One](../story/BOOK_ONE.md), [Opening Choice](../cyod/OPENING_MECHANISM.md), and [Story Graph](../cyod/STORY_GRAPH.md).
+3. Read [W001 freeze](../workshops/W001_CLOSEOUT.md), [W002 freeze](../workshops/W002_CLOSEOUT.md) and the [W003 prompt](../workshops/W003_PROMPT.md) before W003.
+4. Inspect latest live GitHub `main`; repository documents are an archive, not an excuse to auto-execute the next session.
 
 ## Authority order
-- Direct owner approvals at their precise scope, logged as DEC-IDs.
+- Explicit owner approvals at their precise scope, recorded as DEC-IDs.
 - Consistent canon-bearing stream records.
-- Owner-affirmed PROVISIONAL ideas, explicitly labelled.
-- PROPOSAL explorations, not canon; OPEN questions, not answers.
+- Owner-affirmed PROVISIONAL ideas, clearly labelled.
+- PROPOSAL explorations; OPEN questions remain unanswered.
 
-The premise is human-led, and publication is not authorized by a workshop freeze. **The overarching mystery is not solved.** Simulation theory is a speculative hypothesis, not the explanation of ZETA.
+**W002 thematic boundary:** All three exile judgements are false. Antagonists knowingly deceive, but their own freedom of action is an unresolved higher-level question; an Act III anomaly foreshadows this. Neither simulation nor predetermination is established. A future π discovery is a PROPOSAL only.
 
-Never treat print page references (102/203/304/2) as final pagination or numeric node IDs. Do not accidentally canonize an individual protagonist, illustration, explanation of necessity, specific ending or physical world-law.
+Never treat printed references (102/203/304/2) as fixed pagination or internal node IDs; never equate mathematics with unbounded magic. Neither a final protagonist, physical explanation, actual random-walk mechanic nor substantive story graph has been approved. W003 focuses on structural design and printed-book usability.
 
-Related: [README](../README.md), [AI instructions](../AGENTS.md), [Workshop index](../workshops/INDEX.md).
+See [README](../README.md), [AGENTS](../AGENTS.md), [Workshop index](../workshops/INDEX.md).
