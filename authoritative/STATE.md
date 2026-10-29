@@ -1,9 +1,9 @@
 # ZETA — Current project state
 
 **As of:** 2026-10-29
-**Latest invoked workshop:** W008 — **ACTUAL WRITING ACTIVE by owner decision**. Production D1 save and independent Safari recovery VERIFIED; optional Access, history restore and external backup remain open. W007 confirmed the production URL and UI. Connected Cloudflare dashboard reports active version `d492231a` at 100% traffic; browser displays `Local only — export backup`. W006 GitHub main CI is green. D1 binding, Access, manuscript save/restore and independent backup remain unverified. W001–W003 fiction canon unchanged.
+**Latest invoked workshop:** W009 — **PRIVATE AI AUTHORING BRIDGE IMPLEMENTATION**. W008 real writing remains active; production D1 save and independent Safari retrieval were demonstrated earlier. W009 bridge code and tests are ready, but its separate private repository, Actions secret, and live ChatGPT-originated D1 write are NOT configured or verified. Cloudflare Access, history restore and independent recovery remain optional/open. W001–W003 creative canon is unchanged.
 **Repository lineage:** S000 → W001 → W002 → W003 → W004 simplified POC → W005 persistent-save protocol → W006 Cloudflare hosting implementation.
-**Current stage:** [W008 — actual writing](../workshops/W008_FIRST_WRITING_SESSION.md). Optional [W009 AI cloud-writing bridge](../workshops/W009_AI_WRITING_BRIDGE.md) is designed but not installed. See [W007 checkpoint](../workshops/W007_PROGRESS.md).
+**Current stage:** [W008 — actual writing](../workshops/W008_FIRST_WRITING_SESSION.md) remains active. [W009 private authoring bridge](../workshops/W009_AI_WRITING_BRIDGE.md) is implemented and locally tested, awaiting private repo creation, connected GitHub app access, private Actions secret and a verified live write. See [W007 checkpoint](../workshops/W007_PROGRESS.md).
 
 ## Approved creative architecture
 - **W001 / DEC-0001–0010:** Vast mathematically inspired ZETA, Citadel inside wider number-theory territory (fantasy name OPEN), Topologia, Combinatorium. Minimal command “…leave The Citadel”, illustrated right-wrist choice (digit→draft page 102, knot/interlocking form→203, binomial mark→304); each different reason ends ONLY “Turn to page 2”; all join common Act I and mark persists as determinant of Act II destination without branching shared Act I. Three acts ~one third each; Act III returns to Citadel.
@@ -57,3 +57,6 @@ The owner wrote and saved a disposable `TEST` passage in one browser. Opening ZE
 
 ## W008 owner authorisation (29 October 2026)
 Author explicitly ends the extra persistence-test gate and starts prose drafting. A live D1 document was retrieved in Safari from a blank state after saving in another browser. Manual JSON export remains a prudent backup, not a blocking prerequisite. Manuscript prose stays in the private Writing Studio, not the public code repository. A cloud ChatGPT-to-D1 writer is not yet connected; see W009.
+
+## W009 bridge implementation checkpoint, 2026-10-29
+The public [bridge-template](../bridge-template/README.md) and secret-free template-test CI were implemented. It uses a private-only repo guard, per-passage author approval, D1 revision and old-body-hash conditions, read-back verification and metadata-only receipts. There are no public unpublished manuscript texts or credentials. The separate private repo and GitHub Actions secret have not yet been installed; no remote authoring bridge save can be claimed. W008 browser writing continues. Older infrastructure checkpoints above are retained as historical evidence and superseded by later D1 milestones where contradictory.
