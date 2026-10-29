@@ -1,0 +1,4 @@
+studio/dist/
+studio/.wrangler/
+studio/.dev.vars*
+studio/node_modules/
