@@ -1,48 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#0c1220">
-  <title>ZETA — Writing Studio</title>
-  <link rel="stylesheet" href="./styles.css">
-  <script defer src="./app.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f8f7f2">
+<title>Leave the Citadel — Writing Studio</title>
+<link rel="stylesheet" href="./styles.css">
+<script defer src="./app.js"></script>
 </head>
 <body>
-  <div class="app">
-    <header class="topbar">
-      <div class="brand"><span class="sigil">Ζ</span><div><span class="brand-label">ZETA / AUTHOR'S WORKSPACE</span><strong>Leave the Citadel</strong></div></div>
-      <div class="top-meta"><span class="pill small-pill">W004 · PROOF OF CONCEPT</span><span class="save-indicator" id="saveIndicator">● Saved in this browser</span></div>
-      <nav class="toolbar">
-        <button class="tool-button" id="addSceneBtn" title="Add scene">＋ Scene</button>
-        <button class="tool-button" id="addPassageBtn" title="Add passage">＋ Passage</button>
-        <button class="tool-button" id="auditBtn" title="Audit links">◇ Check</button>
-        <button class="tool-button primary" id="playBtn">▶ Read</button>
-      </nav>
-    </header>
-    <main class="workspace">
-      <aside class="sidebar">
-        <div class="sidehead"><span class="eyebrow">MANUSCRIPT MAP</span><h2>Story outline</h2><p>Three acts. One underlying graph.</p></div>
-        <div class="outline" id="outline"></div>
-        <div class="side-bottom">
-          <div class="storage-note"><span class="note-icon">i</span><div><strong>Local prototype</strong><p>Your writing saves in this browser only. Export a backup before switching devices.</p></div></div>
-          <div class="file-actions"><button id="exportBtn">↓ Export JSON</button><button id="importBtn">↑ Import</button><input type="file" id="importFile" accept=".json,application/json" hidden></div>
-        </div>
-      </aside>
-      <section class="canvas-shell" aria-label="Interactive story graph canvas">
-        <div class="canvas-head"><div><span class="eyebrow">LIVE CANVAS</span><h2 id="canvasTitle">The whole journey</h2></div><span class="canvas-hint">Drag background to pan · Scroll to zoom · Select a passage to write</span></div>
-        <div class="viewport" id="viewport">
-          <div class="world" id="world"></div>
-        </div>
-        <div class="canvas-tools"><button id="zoomOutBtn" title="Zoom out">−</button><span id="zoomLabel">100%</span><button id="zoomInBtn" title="Zoom in">＋</button><button id="fitBtn" title="Fit all">Fit all</button></div>
-        <div class="canvas-legend"><span><i class="legend-dot drafted"></i>Draft</span><span><i class="legend-dot planned"></i>Planned</span><span><i class="legend-dot reviewed"></i>Reviewed</span></div>
-      </section>
-      <aside class="inspector" id="inspector">
-        <div class="inspector-empty"><span class="empty-symbol">✎</span><h2>The page is yours.</h2><p>Select a passage on the canvas to start writing, or select a scene to plan its purpose.</p><p class="muted">The nodes shown here are structural working placeholders, not approved new story canon.</p></div>
-      </aside>
-    </main>
-  </div>
-  <div id="modalRoot"></div>
-  <div id="toast" role="status" aria-live="polite"></div>
+<div class="app">
+  <header class="topbar">
+    <div class="identity"><span class="emblem" aria-hidden="true">Ζ</span><div><span class="eyebrow">ZETA · THE WRITING ROOM</span><strong>Leave the Citadel</strong></div></div>
+    <div class="top-actions"><span id="saveIndicator" class="save-state">Saved on this device</span><button class="button-light" id="playBtn">▶ Read</button><details class="more-menu"><summary>•••</summary><div class="menu-popover">
+      <button id="addSceneBtn">＋ New scene</button>
+      <button id="auditBtn">Check links</button>
+      <button id="exportBtn">Export manuscript</button>
+      <button id="importBtn">Import manuscript</button>
+      <input id="importFile" type="file" accept=".json,application/json" hidden>
+      <p>Experimental writing is saved in this browser. Export to keep a backup.</p>
+    </div></details></div>
+  </header>
+  <main class="stage">
+    <div class="stage-heading">
+      <button id="backBtn" class="back-button" hidden>← All acts</button>
+      <div><span id="stageKicker" class="eyebrow">YOUR STORY</span><h1 id="canvasTitle">Where would you like to write?</h1><p id="stageHint">Choose a scene. Open its passages. Write one at a time.</p></div>
+      <button id="addPassageBtn" class="button-dark" hidden>＋ Passage</button>
+    </div>
+    <div id="overview" class="overview"></div>
+    <div id="viewport" class="viewport" hidden aria-label="Drag to pan and scroll to zoom the story graph">
+      <div id="world" class="world"></div>
+    </div>
+    <div id="canvasTools" class="canvas-tools" hidden>
+      <button id="zoomOutBtn" aria-label="Zoom out">−</button>
+      <span id="zoomLabel">100%</span>
+      <button id="zoomInBtn" aria-label="Zoom in">+</button>
+      <button id="fitBtn">Fit scene</button>
+    </div>
+    <div id="outline" hidden></div>
+  </main>
+</div>
+<div id="drawerBackdrop" class="drawer-backdrop" hidden></div>
+<aside id="inspector" class="inspector" aria-label="Passage writing editor">
+  <div class="drawer-top"><span class="eyebrow">WRITING DESK</span><button id="closeEditor" aria-label="Close editor">✕</button></div>
+  <div id="inspectorContent"></div>
+</aside>
+<div id="modalRoot"></div>
+<div id="toast" role="status" aria-live="polite"></div>
 </body>
 </html>
