@@ -61,6 +61,6 @@ The former Vercel API and Neon-oriented source files remain archived under `api/
 **Status (W007 checkpoint):** production URL, correct static UI and active Cloudflare production version are verified. D1 migration/secret/Access configuration, real cross-device persistence and independent offsite restore remain unverified. Browser banner is `Local only — export backup`. Do not write valuable prose without exporting JSON first.
 
 ## W007B engineering checkpoint — do not confuse with cloud activation
-PR #8 (stacked on #7) hardens transactional history writes, rejects incomplete save acknowledgements, and makes scheduled backup failure visible. It also verifies private GitHub snapshots by reading stored bytes back, including Git blobs for files above 1 MiB. Local/CI tests are not production durability tests.
+PR #8 (merged into PR #7's staging branch only; main unchanged) hardens transactional history writes, rejects incomplete save acknowledgements, and makes scheduled backup failure visible. It also verifies private GitHub snapshots by reading stored bytes back, including Git blobs for files above 1 MiB. Local/CI tests are not production durability tests.
 
 **Release safety:** do not merge PR #7 or #8 and auto-deploy until the all-zero D1 database ID in `studio/wrangler.jsonc` has been replaced with a real Cloudflare D1 UUID and remote migration/owner secret/Access have been independently verified. Never deploy a config pointing at a placeholder D1 ID. W008 remains blocked until live recovery and private offsite backup pass.

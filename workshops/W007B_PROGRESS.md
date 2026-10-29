@@ -19,3 +19,10 @@
 
 ## Release / writing gate
 Do not merge while database ID is placeholder. Do not mark W007B closed until authenticated live D1 saving, revision restore and independent private backup recovery are *all* demonstrated. The [W008 first writing session](W008_FIRST_WRITING_SESSION.md) is prepared but locked pending these checks.
+
+## W007B code verification closeout (same day)
+- [PR #8](https://github.com/jfairfaxball-348/ZETA-CYOD---leave-the-Citadel-/pull/8) **merged into the W007 staging branch**, not main, as merge commit `bd12c98c0904141eda90771ac7b1512ac5358d9d`.
+- GitHub smoke workflow succeeded on the W007B implementation: 13 Node tests passed; browser mock integration passed; local Wrangler D1 migration, dry-run bundle and **real local HTTP/D1 save, read, 409 conflict, historical restore** passed. This is not production proof.
+- Cloudflare preview build still reports failure. Its actual build root/branch preview account configuration must be inspected and corrected in Cloudflare. The existing main production Worker was not redeployed.
+- All-zero production D1 UUID, remote migration, owner secret, Access, live cross-browser saves, offsite backup and independent recovery are still outstanding.
+**SAFE RELEASE DECISION:** Hold PR #7 open and keep main at `b48db88d3a131ec54d6a97f18f79ffdff6774691` until owner-only Cloudflare activation and live checks pass.

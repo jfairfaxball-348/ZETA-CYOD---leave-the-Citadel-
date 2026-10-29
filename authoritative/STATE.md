@@ -42,6 +42,6 @@ References: [W004 closeout](../workshops/W004_CLOSEOUT.md) · [W005 prompt](../w
 
 ## W007B execution checkpoint — 29 October 2026
 - GitHub PR #7 (preview/name configuration) remains open and has not been deployed to production. Its configured production D1 database UUID remains **all zeroes**. Do not merge while the UUID remains a placeholder.
-- GitHub PR #8 stacks transactional revision safety and verifiable independent backup on #7; testing is in progress. This is code hardening, **not a verified cloud save**. No public novel manuscript was added.
+- GitHub PR #8 (transactional revision integrity and verifiable backup) merged into PR #7's staging branch only; GitHub CI passed on the implementation, including real *local* Wrangler/D1 HTTP save, read, stale conflict and restore. This is code hardening, **not a verified cloud save**. No public novel manuscript was added.
 - The connected Cloudflare dashboard shows the existing production Worker is active; no credentials or account mutation capability is available to this session. Remote D1, authentication, production write/read, independent private GitHub backup, and cross-browser recovery all remain outstanding owner-side validation.
 - W008 is not authorized for real prose until W007B's live durability and backup gates pass.
