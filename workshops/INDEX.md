@@ -1,12 +1,13 @@
 # ZETA — Workshop index
 
-Owner-led, conversation-first design. An installed agenda alone does not authorize execution.
+Owner-led creative design and authorised implementation. An installed agenda alone does not authorise execution.
 
 | ID | Date | State | Objective | Record |
 | --- | --- | --- | --- | --- |
 | W001 | 2026-10-29 | **CLOSED — foundation frozen** | Identity, destinations, acts, wrist mark/delayed choice | [W001 closeout](W001_CLOSEOUT.md) |
-| W002 | 2026-10-29 | **CLOSED — narrative freeze** | Wrongful mathematical exile on all routes; exploration/evidence; return/vindication; antagonist agency mystery | [W002 closeout](W002_CLOSEOUT.md) · [archived prompt](W002_PROMPT.md) |
-| W003 | 2026-10-29 | **CLOSED — navigational design frozen** | River + Atlas + Living Book; authored hybrid print navigation; guided discovery; no combat RPG or explicit disciplinary wording in novel | [W003 closeout](W003_CLOSEOUT.md) · [archived prompt](W003_PROMPT.md) |
-| W004 | Future, owner invocation required | **PREPARED — NOT EXECUTED** | Practical workflow for actually writing branching fiction: scenes, graphs, drafting passes, small vertical slice, print and playtest | [W004 prompt](W004_PROMPT.md) |
+| W002 | 2026-10-29 | **CLOSED — narrative freeze** | Three unjustified exiles, regional evidence, return/vindication, agency mystery | [W002 closeout](W002_CLOSEOUT.md) · [archived prompt](W002_PROMPT.md) |
+| W003 | 2026-10-29 | **CLOSED — navigational design frozen** | River + Atlas + Living Book, print navigation, choice-led novel | [W003 closeout](W003_CLOSEOUT.md) · [archived prompt](W003_PROMPT.md) |
+| W004 | 2026-10-29 | **CLOSED AT WORKFLOW/POC SCOPE** | Iterative vertical slices; collapsible-scene graph; greatly simplified writing studio | [W004 closeout](W004_CLOSEOUT.md) · [archived prompt](W004_PROMPT.md) · [studio](../studio/README.md) |
+| W005 | Future, separate owner invocation | **PREPARED — NOT EXECUTED** | Secure durable manuscript persistence, author auth, autosave, revisions, backup/restore, migration and verification | [W005 prompt](W005_PROMPT.md) |
 
-Use [START_HERE](../authoritative/START_HERE.md), [DECISIONS](../authoritative/DECISIONS.md) and [OPEN_QUESTIONS](../authoritative/OPEN_QUESTIONS.md). Exact rules, Collatz scene, graph nodes, actual prose and mystery interpretations remain NON-CANON until expressly approved.
+See [START_HERE](../authoritative/START_HERE.md), [DECISIONS](../authoritative/DECISIONS.md), [OPEN_QUESTIONS](../authoritative/OPEN_QUESTIONS.md). The editor is an implementation and workflow choice, not fiction canon. No new accusations, exact book nodes, publication pagination or cosmological facts have been ratified.
