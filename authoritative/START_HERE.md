@@ -1,6 +1,6 @@
 # START HERE — ZETA authority and navigation
 
-**Current phase (2026-10-30):** W010 opening prose saved privately (D1 revision 9); W011 post-gate branch and three-memory return puzzle **design closed**; [W012 four-branch writing workshop](../workshops/W012_FOUR_FIRST_CLUE_BRANCHES.md) is **installed next**. Earlier W006/W007 deployment milestones below are historical and have been superseded by verified live Cloudflare D1 authoring.
+**Current phase (2026-10-30):** W010 opening prose saved privately (D1 revision 9); W011 post-gate puzzle design closed; **W012 four first-letter paths are now author-approved at prose scope, but NOT live in D1**; [W013 two local convergences](../workshops/W013_TWO_LOCAL_CONVERGENCES.md) is **installed next**. Earlier W006/W007 deployment milestones below are historical and have been superseded by verified live Cloudflare D1 authoring.
 
 1. Read [STATE](STATE.md), [CANON_POLICY](CANON_POLICY.md), [DECISIONS](DECISIONS.md) and [OPEN_QUESTIONS](OPEN_QUESTIONS.md).
 2. Read [World Bible](../lore/WORLD_BIBLE.md), [Book One](../story/BOOK_ONE.md), [Opening Choice](../cyod/OPENING_MECHANISM.md) and [Story Graph](../cyod/STORY_GRAPH.md).
@@ -24,3 +24,7 @@ See [README](../README.md), [AGENTS](../AGENTS.md), [Workshop index](../workshop
 
 ## Latest design freeze
 See [W011 closeout](../workshops/W011_CLOSEOUT.md), [three-memory return puzzle](../cyod/THREE_MEMORY_RETURN_PUZZLE.md) and [W012 prose session](../workshops/W012_FOUR_FIRST_CLUE_BRANCHES.md). The working numeric answer **475 is a paragraph label, not a physical page**. No post-gate graph or new prose was published during W011.
+
+
+## Latest editorial checkpoint — 30 October 2026
+W012 closed at prose approval scope: road D/K and wall R/Y now fixed editorially, both with narrative seals and separate Journal prompt. Full road draft is archived privately; only a wall approval receipt/initial excerpts are verified private, not complete wall R/Y body. The old P-0005 → P-0006 studio link is still the last verified graph; **do not claim the approved route is in live D1**. See [W012 closeout](../workshops/W012_CLOSEOUT.md) and [W013 next](../workshops/W013_TWO_LOCAL_CONVERGENCES.md).
