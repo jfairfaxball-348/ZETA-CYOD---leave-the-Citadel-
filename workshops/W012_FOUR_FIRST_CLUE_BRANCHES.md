@@ -1,6 +1,6 @@
 # ZETA — W012: Write the Four First-Clue Branches
 
-**State: INSTALLED — next owner-invoked creative prose workshop (not executed).**
+**State: IN PROGRESS — road encounter and D/K outcome prose OWNER-APPROVED; footsteps R/Y DRAFTING.**
 **Book:** *Leave The Citadel* · **Mode:** Character- and scene-led second-person writing, revision and owner approval, with private manuscript publication when technically feasible.
 **Source:** [W011 closeout](W011_CLOSEOUT.md), [three-memory puzzle](../cyod/THREE_MEMORY_RETURN_PUZZLE.md), [W010 approved opening](W010_CLOSEOUT.md).
 
@@ -24,7 +24,7 @@ Write the **four complete letter-clue branch chunks**, two on the road and two a
                       shared continuation
 ```
 
-D/K under road and R/Y under footprints are **working placement**, adjustable in workshop while preserving one of D/K/R/Y per route. This is occasion one of **three** four-choice clue encounters; later occasions dispense one number and one colour. Opening wrist mark cannot alter this shared-Act-I structure.
+D/K under road are now **owner-approved prose placements** (DEC-0029); R/Y for footprints remain the agreed working destinations, with prose to be approved. This is occasion one of **three** four-choice clue encounters; later occasions dispense one number and one colour. Opening wrist mark cannot alter this shared-Act-I structure.
 
 ## Writing requirements
 
@@ -49,4 +49,13 @@ D/K under road and R/Y under footprints are **working placement**, adjustable in
 
 Four meaningful branch chunks drafted and ideally author-approved, with a crisp eventual convergence. Save only complete owner-approved prose to valid private nodes. Record node IDs, statuses, receipts and separate unresolved graph work honestly.
 
-**Start when owner says “Run next session.”**
+**Started on owner request 2026-10-30.** This workshop remains open for footsteps R/Y writing and subsequent approval.
+
+
+## 2026-10-30 W012 active checkpoint — road prose frozen
+
+- Owner explicitly approved the road traveller and **nine deliveries versus eight official entries**, two resulting choices, and both **D** / **K** narrative endings. Citadel document seals show the branch-specific letter. The traveller recounts seeing a keeper ask a returning person for a letter; **this is reported observation, not established gate magic or a complete unlocking method**.
+- Owner explicitly approved an in-story letter discovery followed by a **separate CYOD Journal instruction**; exact physical journal page pending.
+- Full approved combined prose is stored only in the **PRIVATE** `jfairfaxball-348/ZETA-private-authoring/approved/w012-road-letter-branches.md`. Do not reproduce unpublished text in this public repository.
+- Last verified D1 snapshot **revision 9**; new road nodes and edges **do not exist yet**. The body-only W009 bridge cannot create them. Private GitHub document preservation is not D1 publication.
+- Next creative work: draft and seek owner approval of the **footprints/wall R/Y branches**, keeping the same narrator/Journal principle without asserting a supernatural seal rule. Then local and shared reconvergences.
