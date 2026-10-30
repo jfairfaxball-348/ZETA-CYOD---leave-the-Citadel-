@@ -1,6 +1,6 @@
 # W013 — Two Local Convergences: After the Four Letter Paths
 
-**Status: INSTALLED NEXT — awaiting fresh owner request.**
+**Status: INSTALLED NEXT — awaiting fresh owner request; W012 published in D1 revision 10.**
 **Book:** *Leave the Citadel*. **Mode:** Collaborative second-person narrative workshop.
 **Prior:** [W012 prose closeout](W012_CLOSEOUT.md) · [approved design](../cyod/THREE_MEMORY_RETURN_PUZZLE.md) · [W012 original workshop](W012_FOUR_FIRST_CLUE_BRANCHES.md).
 
@@ -34,6 +34,6 @@ The private writing bridge can update an **existing passage body**. After the ow
 
 Do not mark the entire Act I complete: the shared P-0019 body and later number/colour memory gates have not been written. Final printed paragraph addresses remain unset.
 
-## Completion
+## Live node IDs for the next session\n\nRoad join **P-0017** and wall join **P-0018** are existing **UNWRITTEN** placeholder passages. Each leads to **P-0019**, also unwritten, and then the pre-existing P-0006 deferred Act-I gateway. Writing W013's two approved joins only requires safe body edits to P-0017 and P-0018 via W009's private bridge, checking fresh D1 revision and body hashes; do not preemptively publish unapproved prose or rebuild the graph.\n\n## Completion
 
 Two approved convergence chunks; continuity checked across all four histories; if live publication succeeds, report exact revision, node IDs and verification. If not, keep the technical blocker explicit. On final author approval, install the following session to draft the shared Act-I continuation and next clue occasion.
