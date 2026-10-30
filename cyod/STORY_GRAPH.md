@@ -1,6 +1,6 @@
 # CYOD — Story graph and route registry
 
-**Status:** High-level topology frozen in W001–W003 (DEC-0006–0009, 0016–0017); **no actual story nodes/edges or stable N-/C- IDs allocated**.
+**Status:** High-level topology frozen in W001–W003 (DEC-0006–0009, 0016–0017); **W012 first-letter nodes and edges now live at D1 revision 10; earlier no-node notes below are historical**.
 
 ## Approved architecture (schematic only)
 ```text
@@ -64,3 +64,7 @@ Reader-visible numbers are now **paragraph labels** for the calculated return, n
 
 ## W012 completed prose approval, unpublished graph
 The main-road traveller encounter → D (confide) / K (investigate) and outer-wall ex-surveyor encounter → R (stonework) / Y (documents) are now **approved prose** (DEC-0029/0030), all four with a separate Journal reminder. D/K later rejoin locally; R/Y rejoin locally; those **two convergence chunks are W013's task**, then one shared Act-I continuation. Neither this document nor approval creates Studio nodes. As of last verified private snapshot the existing P-0005 → P-0006 link remains; **D1 node/edge publication is outstanding**. Character anecdotes about gatekeepers requesting a letter are not established universal gate mechanics.
+
+
+## Live W012 letter fork (D1 revision 10)
+P-0005 goes to P-0011 road and P-0014 footprints. Road branches to P-0012 (D) / P-0013 (K), then joins at unwritten P-0017. Wall branches to P-0015 (R) / P-0016 (Y), then joins at unwritten P-0018. Both lead to unwritten P-0019, which still connects to the pre-existing P-0006 gateway with unchanged wrist-mark routes. Six approved bodies and all Journal clues verified in the private D1 snapshot. The number and colour clue events are NOT yet authored; current graph is provisional beyond W012.
