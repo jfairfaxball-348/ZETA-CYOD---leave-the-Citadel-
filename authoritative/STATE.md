@@ -91,3 +91,7 @@ Owner approved the first road encounter (delivery records: nine observed, eight 
 
 ## W012 full prose approval — 2026-10-30
 Road D/K and outer-wall R/Y encounters and outcomes are OWNER-APPROVED (DEC-0029, DEC-0030). Separate story-grounded letter seals and Journal instructions are approved; gate magic is not proven. Private GitHub contains full road prose, a wall approval record and portions of the wall scene; full wall prose is preserved in seven private approved segment files; cloud D1 publication remains blocked. No Studio nodes or edges were created; last verified D1 revision is 9, P-0005 still points to P-0006. The W009 private bridge handles existing bodies only. Next: W013 local road and wall convergence writing. See [W012 closeout](../workshops/W012_CLOSEOUT.md).
+
+
+## Verified W012 D1 save — 2026-10-30
+Private workflow receipt `publish/w012-result.json` reports applied at revision **10**, 2026-10-30T12:31:26.530Z. Independent private snapshot revision **10** has **19 passages**: new P-0011–P-0016 contain all six approved road/wall prose chunks, and P-0017/P-0018/P-0019 are unwritten convergence/continuation placeholders. P-0005's edges point to P-0011/P-0014, while P-0006's original wrist-mark gateway links are unchanged. Journal reminders D/K/R/Y verified in four corresponding passage bodies. Previous revision-9/no-new-nodes status entries are historical; the W012 live save is now complete. [Closeout](../workshops/W012_CLOSEOUT.md); [next W013](../workshops/W013_TWO_LOCAL_CONVERGENCES.md).
