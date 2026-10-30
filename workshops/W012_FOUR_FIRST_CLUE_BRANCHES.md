@@ -1,6 +1,6 @@
 # ZETA — W012: Write the Four First-Clue Branches
 
-**State: IN PROGRESS — road encounter and D/K outcome prose OWNER-APPROVED; footsteps R/Y DRAFTING.**
+**State: CLOSED — all six W012 prose chunks owner-approved and published at D1 revision 10.**
 **Book:** *Leave The Citadel* · **Mode:** Character- and scene-led second-person writing, revision and owner approval, with private manuscript publication when technically feasible.
 **Source:** [W011 closeout](W011_CLOSEOUT.md), [three-memory puzzle](../cyod/THREE_MEMORY_RETURN_PUZZLE.md), [W010 approved opening](W010_CLOSEOUT.md).
 
@@ -59,3 +59,7 @@ Four meaningful branch chunks drafted and ideally author-approved, with a crisp 
 - Full approved combined prose is stored only in the **PRIVATE** `jfairfaxball-348/ZETA-private-authoring/approved/w012-road-letter-branches.md`. Do not reproduce unpublished text in this public repository.
 - Last verified D1 snapshot **revision 9**; new road nodes and edges **do not exist yet**. The body-only W009 bridge cannot create them. Private GitHub document preservation is not D1 publication.
 - Next creative work: draft and seek owner approval of the **footprints/wall R/Y branches**, keeping the same narrator/Journal principle without asserting a supernatural seal rule. Then local and shared reconvergences.
+
+
+## Final verified W012 result — supersedes earlier checkpoints
+The owner approved the wall R/Y prose after the road D/K pieces. The complete approved copy is in the private authoring repo. A private guarded workflow published six complete prose nodes P-0011–P-0016 and three explicitly unwritten future nodes P-0017–P-0019 into Cloudflare D1 **revision 10**. Fresh snapshot confirms 19 total passages, all D/K/R/Y Journal cues, P-0005's two route edges, and untouched P-0006 gateway. No paragraph numbers finalized. Proceed to [W013](W013_TWO_LOCAL_CONVERGENCES.md) for the two local joins.

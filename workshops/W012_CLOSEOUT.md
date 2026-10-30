@@ -1,6 +1,6 @@
 # W012 closeout — four first-letter clue outcomes approved
 
-**Date:** 2026-10-30. **Status:** CLOSED AT PROSE APPROVAL SCOPE; **cloud/manuscript-node publication INCOMPLETE**. See [W013](W013_TWO_LOCAL_CONVERGENCES.md).
+**Date:** 2026-10-30. **Status:** CLOSED — AUTHOR APPROVED AND PUBLISHED TO LIVE CLOUDFLARE D1 (REVISION 10). See [W013](W013_TWO_LOCAL_CONVERGENCES.md).
 
 ## Owner approval
 
@@ -12,13 +12,15 @@ The author has now approved all four first-letter branch endings, including thei
 - Letters are encountered as actual story details; a separately printed **CYOD instruction** tells readers to **record that single letter in their Journal**. Journal physical page remains unassigned. No mandatory inventory/stat mechanics.
 - The D/K pair and R/Y pair each need **one local reconvergence**. Both will subsequently meet at a shared Act I continuation. The opening wrist mark remains independent and controls Act-II territory.
 
-## Publication reality
+## Live publication verified — 30 October 2026
 
-- Last verified live Cloudflare D1 authoring snapshot: **revision 9**, P-0001–P-0005 saved, P-0005 still has one existing edge to deferred P-0006.
-- No new road/wall passage node or link creation, no uploaded six approved chunks, no new production D1 revision, and no confirmed browser publication in W012. **Do not call the new material live in Writing Studio.**
-- Existing W009 private GitHub bridge is **body-only** for an already existing passage. A separately authorized graph create/edit path or direct Studio editing is needed, followed by full-revision/read-back verification.
-- Existing public repo holds structure/decision metadata only; never publish the unpublished prose here. The existing private road archive is preserved.
+- Private GitHub Actions one-time publisher saved the author-approved W012 slice to Cloudflare D1 as **revision 10**, updated at **2026-10-30T12:31:26.530Z**. The private receipt `publish/w012-result.json` reports `status: applied`, and a refreshed independent snapshot shows revision **10** and **19 passages** (previously 9 / 10).
+- Existing **P-0005** now routes main road → **P-0011**, footprints → **P-0014**. Existing **P-0006** retains its original three wrist-mark-dependent Act II destinations.
+- Six owner-approved prose nodes were created: **P-0011** road encounter; **P-0012** D; **P-0013** K; **P-0014** footprints; **P-0015** R; **P-0016** Y.
+- Three intentionally **unwritten placeholders** were created and connected: **P-0017** road join (D/K), **P-0018** wall join (R/Y), **P-0019** shared continuation, currently leading into deferred gateway P-0006. These are future writing slots, not finished prose or a completed shared Act I.
+- D, K, R and Y each had the correct Journal letter instruction verified in the private read-back; node IDs, outgoing graph links and unchanged P-0006 routing were inspected individually. The one-time publisher uses a hard expected revision 9 and read-back comparison; a future re-run cannot safely overwrite revision 10.
+- Full unpublished text and publishing receipt reside in the PRIVATE authoring repository. The public repository records metadata only. Final printed paragraph numbers and Journal page remain pending.
 
 ## Handoff
 
-Next [W013](W013_TWO_LOCAL_CONVERGENCES.md) authors the road-local convergence (after either D or K) and wall-local convergence (after either R or Y). Draft and owner-approve the two chunks, then design a common bridge if necessary; keep each convergence valid without knowledge of the other branch. Cloud publication remains a separate outstanding execution obligation, not silently waived.
+Next [W013](W013_TWO_LOCAL_CONVERGENCES.md) authors the road-local convergence (after either D or K) and wall-local convergence (after either R or Y). Draft and owner-approve the two chunks, then design a common bridge if necessary; keep each convergence valid without knowledge of the other branch. Live publishing of W012 is verified at D1 revision 10. W013 can fill existing P-0017 and P-0018 bodies via the private body-only bridge after explicit approval.
