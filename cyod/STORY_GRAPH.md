@@ -60,3 +60,7 @@ See [Opening mechanism](OPENING_MECHANISM.md), [Node Schema](NODE_SCHEMA.md), [S
 At end of **Act II**, one of three entrances: solve 475 (ordinary), rare common region-accessible cheat code (advantage), or always available fallback (disadvantage). All proceed into Act III. Actual secret destination, fallback paragraph, nodes, edges, position of later clue gates and manuscript prose are OPEN. Existing private P-0005 still has the pre-existing single edge to P-0006 until authoring tools add the real branches; this document is **not** an executable graph.
 
 Reader-visible numbers are now **paragraph labels** for the calculated return, not page numbers. Historical opening “page” labels remain print-development placeholders until separately reconciled.
+
+
+## W012 completed prose approval, unpublished graph
+The main-road traveller encounter → D (confide) / K (investigate) and outer-wall ex-surveyor encounter → R (stonework) / Y (documents) are now **approved prose** (DEC-0029/0030), all four with a separate Journal reminder. D/K later rejoin locally; R/Y rejoin locally; those **two convergence chunks are W013's task**, then one shared Act-I continuation. Neither this document nor approval creates Studio nodes. As of last verified private snapshot the existing P-0005 → P-0006 link remains; **D1 node/edge publication is outstanding**. Character anecdotes about gatekeepers requesting a letter are not established universal gate mechanics.

@@ -1,9 +1,9 @@
 # ZETA — Current project state
 
 **As of:** 2026-10-30
-**Latest executed:** W012 **IN PROGRESS**: owner-approved road encounter and D/K outcomes archived in private GitHub; wall R/Y still to be written. W011 design closed; W010 five opening chunks P-0001–P-0005 remain at verified D1 **revision 9**, with no new road nodes or D1 edits. W008 authoring and W009 private GitHub→D1 existing-body bridge remain available. Legacy checkpoints later in this file are historical.
+**Latest executed:** W012 **CLOSED AT PROSE APPROVAL SCOPE**: road D/K and outer-wall R/Y encounter chunks approved; full wall prose not yet archived privately or published to D1. Next: W013 two local convergence chunks. W011 design closed; W010 five opening chunks P-0001–P-0005 remain at verified D1 **revision 9**, with no new road nodes or D1 edits. W008 authoring and W009 private GitHub→D1 existing-body bridge remain available. Legacy checkpoints later in this file are historical.
 **Repository lineage:** S000 → W001 → W002 → W003 → W004 simplified POC → W005 persistent-save protocol → W006 Cloudflare hosting implementation.
-**Current stage:** [W011 design closeout](../workshops/W011_CLOSEOUT.md) and [W012 active prose workshop](../workshops/W012_FOUR_FIRST_CLUE_BRANCHES.md). [W008 writing](../workshops/W008_FIRST_WRITING_SESSION.md) remains active; [W009 private authoring bridge](../workshops/W009_AI_WRITING_BRIDGE.md) edits **existing passage bodies only**. New route nodes and edges still require the Studio UI. Earlier checkpoints below are archival.
+**Current stage:** [W012 closeout](../workshops/W012_CLOSEOUT.md) and [W013 next writing workshop](../workshops/W013_TWO_LOCAL_CONVERGENCES.md). [W008 writing](../workshops/W008_FIRST_WRITING_SESSION.md) remains active; [W009 private authoring bridge](../workshops/W009_AI_WRITING_BRIDGE.md) edits **existing passage bodies only**. New route nodes and edges still require the Studio UI. Earlier checkpoints below are archival.
 
 ## Approved creative architecture
 - **W001 / DEC-0001–0010:** Vast mathematically inspired ZETA, Citadel inside wider number-theory territory (fantasy name OPEN), Topologia, Combinatorium. Minimal command “…leave The Citadel”, illustrated right-wrist choice (digit→draft page 102, knot/interlocking form→203, binomial mark→304); each different reason ends ONLY “Turn to page 2”; all join common Act I and mark persists as determinant of Act II destination without branching shared Act I. Three acts ~one third each; Act III returns to Citadel.
@@ -80,3 +80,14 @@ Owner approved the 2→4→2→1 post-gate first clue structure; three four-choi
 
 ## W012 approved road prose checkpoint — 2026-10-30
 Owner approved the first road encounter (delivery records: nine observed, eight official), the disclosure-vs-investigation choice, the D/K outcomes, story-grounded Citadel letter seals and a separate CYOD Journal recording instruction (DEC-0029). Exact prose was committed to **PRIVATE** `jfairfaxball-348/ZETA-private-authoring/approved/w012-road-letter-branches.md`. The alleged letter request at a gate is a character report, **not an established magical law**. Journal page number remains open. This archive is **not a live D1 write**: no new passage nodes or edges were created, P-0005's prior edge to P-0006 remains, and the last verified D1 revision stays **9**. Next W012 activity is drafting the footsteps/wall **R/Y** branches for explicit owner approval.
+
+
+## W012 completed prose scope and W013 installed — 2026-10-30
+- Owner explicitly approved the existing road traveller/D-K outcomes AND all outer-wall former-surveyor/R-Y outcomes (DEC-0029/0030), including in-story seal-letter discoveries and separate Journal recording instructions.
+- Private GitHub holds full approved road copy, wall-approval metadata and initial wall excerpt files. Tool restrictions prevented verifying a **complete** wall-body private archive. Do not infer that all wall text has been uploaded from metadata alone. The complete wall draft is approved in the immediately preceding conversation.
+- **No live Studio graph changes or D1 publication verified.** Last known D1 revision **9**, with P-0005 still linked to P-0006 (deferred gateway). The private W009 bridge is body-only and cannot create the six new passages. Public repository contains decisions only, not unpublished prose.
+- W013 installed to write exactly two local joins: road after D/K and outer wall after R/Y; then eventual shared Act I. Follow [W012 closeout](../workshops/W012_CLOSEOUT.md) and [W013 prompt](../workshops/W013_TWO_LOCAL_CONVERGENCES.md).
+
+
+## W012 full prose approval — 2026-10-30
+Road D/K and outer-wall R/Y encounters and outcomes are OWNER-APPROVED (DEC-0029, DEC-0030). Separate story-grounded letter seals and Journal instructions are approved; gate magic is not proven. Private GitHub contains full road prose, a wall approval record and portions of the wall scene; full wall prose is still present in the author-approved chat but private full-body archival was blocked. No Studio nodes or edges were created; last verified D1 revision is 9, P-0005 still points to P-0006. The W009 private bridge handles existing bodies only. Next: W013 local road and wall convergence writing. See [W012 closeout](../workshops/W012_CLOSEOUT.md).
