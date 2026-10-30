@@ -37,3 +37,10 @@ See [Opening mechanism](../cyod/OPENING_MECHANISM.md), [Story graph](../cyod/STO
 
 ## W010 completed opening slice (2026-10-29)
 Five author-approved opening passage bodies (P-0001–P-0005) have been saved and verified privately, D1 revision 4 → 9. Their branch structure remains opening mark → one remembered judgement → shared draft page 2; the three remembered speeches end with “...leave The Citadel.” The first shared gate proposes main road versus outer-wall footprints. **Its two new route nodes and page targets are not yet implemented.** See [W010 closeout](../workshops/W010_CLOSEOUT.md) and [W011 installed workshop](../workshops/W011_BEYOND_THE_GATE_WRITING_WORKSHOP.md); do not place unpublished passage text in this public file.
+
+
+## W011 / 2026-10-30 — owner-approved three-memory mechanism
+
+After P-0005's **road or outer-wall footprints** choice, each path forks once more into two, yielding four first-clue routes; locally rejoin two, then reconverge on common Act I. This provides **one remembered letter**. Two subsequent Act-I four-way gates each provide **one remembered number** and **one remembered colour**, respectively. The 12 literal tokens and accessible reconstruction procedure are fixed at the design level in [the return puzzle](../cyod/THREE_MEMORY_RETURN_PUZZLE.md) (DEC-0025–0028), with every three-clue combination giving a **working paragraph 475**, not a physical page.
+
+Act II closes with ordinary 475 reconstruction, a rare hidden alternate destination findable in all three Act-II regions (advantage), or a guaranteed fallback (disadvantage); all can reach Act III. Detailed return scenes and both effects remain OPEN. The new branches are not implemented yet; next writer's workshop is [W012](../workshops/W012_FOUR_FIRST_CLUE_BRANCHES.md). P-0005's approved body and D1 revision-9 record have not been modified.

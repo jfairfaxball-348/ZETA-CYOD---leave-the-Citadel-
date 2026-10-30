@@ -1,6 +1,6 @@
 # ZETA — W011: Beyond the Gate — Shared Act I Writing Workshop
 
-**State: INSTALLED — NEXT OWNER-INVOKED CREATIVE SESSION.**
+**State: CLOSED AT DESIGN SCOPE on 2026-10-30.** See [W011 closeout](W011_CLOSEOUT.md). No approved new prose or graph writes; [W012](W012_FOUR_FIRST_CLUE_BRANCHES.md) is the next owner-invoked prose workshop.
 **Book:** *Leave The Citadel* · **Mode:** Collaborative scene-by-scene drafting, approval and private D1 publication.
 **Dependency:** W010 approved opening chunks P-0001 through P-0005. Check the latest verified private snapshot and W010 closeout before work; never infer a completed cloud save from an approved draft alone.
 

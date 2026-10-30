@@ -51,3 +51,12 @@ FIRST STORY TEXT: "...leave The Citadel"
 No opening narrative paragraphs, edges with actual stable IDs, choices beyond the initial one, graph validations, endings, or state implementation. Earlier empty-graph language is superseded **only at architecture level**; no false claims of a completed graph.
 
 See [Opening mechanism](OPENING_MECHANISM.md), [Node Schema](NODE_SCHEMA.md), [State Model](STATE_MODEL.md).
+
+
+## W011 frozen post-gate and return architecture (2026-10-30)
+
+**CANON at structure scope — DEC-0025–0028:** From approved P-0005, road / footprints each fork again into two letter-clue endings, rejoin pairwise (two), then globally (one). This is the **first** of three distinct four-way clue occasions. Two further shared Act-I four-way occasions supply a number and a colour. Each reader gets **one of twelve possible clues per occasion**, three in total, unaffected by the dormant opening wrist mark. See [return puzzle](THREE_MEMORY_RETURN_PUZZLE.md) for exact 12 literals and proof all **64 combinations** produce **paragraph 475**.
+
+At end of **Act II**, one of three entrances: solve 475 (ordinary), rare common region-accessible cheat code (advantage), or always available fallback (disadvantage). All proceed into Act III. Actual secret destination, fallback paragraph, nodes, edges, position of later clue gates and manuscript prose are OPEN. Existing private P-0005 still has the pre-existing single edge to P-0006 until authoring tools add the real branches; this document is **not** an executable graph.
+
+Reader-visible numbers are now **paragraph labels** for the calculated return, not page numbers. Historical opening “page” labels remain print-development placeholders until separately reconciled.
