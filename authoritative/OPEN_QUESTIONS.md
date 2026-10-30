@@ -33,3 +33,6 @@ Stable IDs are retained. Resolved-at-scope questions reference the dated decisio
 | Q-0025 | OPEN | How will the Writing Studio preserve every edit, draft passage and choice securely across browsers, refreshes, devices and deployments, with safe migration, revision history and verified independent backups? Browser-local autosave is inadequate. | Infrastructure | **[W005](../workshops/W005_PROMPT.md)** |
 
 No open status is permission to infer an answer. See [W001 freeze](../workshops/W001_CLOSEOUT.md) and [W002](../workshops/W002_PROMPT.md).
+
+
+| Q-0026 | PARTIALLY ANSWERED | W011 approved three 4-way knowledge occasions, 12 fixed tokens, invariant **475**, numbered paragraph navigation, and normal/cheat/fallback return paths. Exact Act-I four-branch scenes, later encounter placements, final numbering, hidden-code destination/advantage and fallback consequence remain OPEN. | Story / CYOD | [W012](../workshops/W012_FOUR_FIRST_CLUE_BRANCHES.md), later |
