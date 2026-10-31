@@ -1,6 +1,6 @@
 # START HERE — ZETA authority and navigation
 
-**Current phase (2026-10-30):** W010 opening prose saved privately; W011 post-gate puzzle design closed; **W012 four first-letter paths are approved and published in Cloudflare D1 revision 10 with verified private read-back**; [W013 two local convergences](../workshops/W013_TWO_LOCAL_CONVERGENCES.md) is **installed next**. Earlier W006/W007 deployment milestones below are historical and have been superseded by verified live Cloudflare D1 authoring.
+**Current phase (2026-10-31):** W013 is **CLOSED**. Road and wall local convergences P-0017/P-0018 and the long approved shared passage **P-0019 — The Valley Below** are saved to live Cloudflare D1 **revision 13**, with private receipts and complete read-back. [W014 — Through the Door](../workshops/W014_THROUGH_THE_DOOR.md) is **installed next**. [W013 closeout](../workshops/W013_CLOSEOUT.md) records exact proof of publication. Earlier statements about W013 being pending or revision 10 as latest are superseded historical checkpoints.
 
 1. Read [STATE](STATE.md), [CANON_POLICY](CANON_POLICY.md), [DECISIONS](DECISIONS.md) and [OPEN_QUESTIONS](OPEN_QUESTIONS.md).
 2. Read [World Bible](../lore/WORLD_BIBLE.md), [Book One](../story/BOOK_ONE.md), [Opening Choice](../cyod/OPENING_MECHANISM.md) and [Story Graph](../cyod/STORY_GRAPH.md).
