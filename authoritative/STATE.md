@@ -1,7 +1,8 @@
 # ZETA — Current project state
 
-**As of:** 2026-10-30
-**Latest executed:** W012 **CLOSED AT PROSE APPROVAL SCOPE**: road D/K and outer-wall R/Y encounter chunks approved; full wall prose archived privately and now published to D1 revision 10. Next: W013 two local convergence chunks. W011 design closed; W010 five opening chunks P-0001–P-0005 remain preserved; D1 advanced from **revision 9 to verified revision 10**, adding nine W012 graph passages. W008 authoring and W009 private GitHub→D1 existing-body bridge remain available. Legacy checkpoints later in this file are historical.
+**As of:** 2026-10-31
+**Latest executed:** **W013 CLOSED; P-0019 “The Valley Below” saved and read-back verified.** Private D1 revision **13**, 19 passages; P-0017 (road join) published at revision 11, P-0018 (wall join) at revision 12, P-0019 (shared scenic continuation) at revision 13, with intact graph links. The author approved the exact 7,805-character literary rewrite. Next: **[W014 — Through the Door](../workshops/W014_THROUGH_THE_DOOR.md)**, installed and awaiting a fresh creative workshop. See [W013 closeout](../workshops/W013_CLOSEOUT.md). Historical revision-10, W012 and W013-pending wording below is superseded.
+
 **Repository lineage:** S000 → W001 → W002 → W003 → W004 simplified POC → W005 persistent-save protocol → W006 Cloudflare hosting implementation.
 **Current stage:** [W012 closeout](../workshops/W012_CLOSEOUT.md) and [W013 next writing workshop](../workshops/W013_TWO_LOCAL_CONVERGENCES.md). [W008 writing](../workshops/W008_FIRST_WRITING_SESSION.md) remains active; [W009 private authoring bridge](../workshops/W009_AI_WRITING_BRIDGE.md) edits **existing passage bodies only**. The standard W009 bridge edits bodies only; W012's separately authorized private graph workflow published nine nodes and edges directly via the D1 API and verified remote read-back. Earlier checkpoints below are archival.
 
