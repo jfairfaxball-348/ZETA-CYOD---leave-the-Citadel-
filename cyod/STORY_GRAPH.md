@@ -68,3 +68,26 @@ The main-road traveller encounter → D (confide) / K (investigate) and outer-wa
 
 ## Live W012 letter fork (D1 revision 10)
 P-0005 goes to P-0011 road and P-0014 footprints. Road branches to P-0012 (D) / P-0013 (K), then joins at unwritten P-0017. Wall branches to P-0015 (R) / P-0016 (Y), then joins at unwritten P-0018. Both lead to unwritten P-0019, which still connects to the pre-existing P-0006 gateway with unchanged wrist-mark routes. Six approved bodies and all Journal clues verified in the private D1 snapshot. The number and colour clue events are NOT yet authored; current graph is provisional beyond W012.
+
+## W014 — saved chess branches, D1 revision 14 (2026-11-03)
+
+The **owner-approved** scene after P-0019 is the travellers' house chess debate, with exactly three answers and different immediate consequences; see [W014 closeout](../workshops/W014_CLOSEOUT.md) and DEC-0031–0033. The private D1 publisher added P-0020–P-0033 and verified complete read-back at revision **14**, giving 33 passages:
+
+```text
+P-0019 (unchanged Valley Below body)
+  |
+P-0020 (the chess debate: working prose draft)
+  |                 |                |
+P-0021            P-0022            P-0023
+agree             "what is chess?"    "already solved"
+  /  \             /  \              /  \
+24   25           26   27            28   29    [P-0024–P-0029 unwritten]
+  \ /               \ /                \ /
+P-0030             P-0031           P-0032   [unwritten pairwise joins]
+   \                |                /
+                 P-0033                    [shared continuation unwritten]
+                   |
+                 P-0006                    [unchanged deferred mark gateway]
+```
+
+Six provisional second-choice prompts: reveal exile / keep private; square / rear passage; last discussion / decline further explanation. The three immediate outcomes are warm hospitality, back-door rejection, and an unexplained written formula retained by the couple before front-door departure. **Do not infer the paper proves a chess solution.** The prior D/K/R/Y letter clue is already complete; the number and colour memory-clue occasions remain to be written later in shared Act I. P-0033 → P-0006 is currently a safe graph scaffold only, not evidence the whole Act I has been authored. Preserve pre-existing P-0006 mark-conditioned edges.

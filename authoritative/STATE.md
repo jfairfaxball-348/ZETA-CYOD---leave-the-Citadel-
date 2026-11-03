@@ -1,5 +1,8 @@
 # ZETA — Current project state
 
+**LATEST VERIFIED — 2026-11-03:** **W014 closed at approved chess-encounter design and preserved first-scene working-draft scope.** The private additive publisher successfully saved to Cloudflare D1 **revision 14**, verified via private `publish/w014-result.json` (status `applied`, 2026-11-03T13:29:46.612Z) and refreshed `snapshot/index.json`: **33 passages** (P-0020–P-0033 newly added). P-0020 is a **draft**; P-0021–P-0033 are **UNWRITTEN placeholders**. P-0019 leads to P-0020, while P-0033 still leads to P-0006's intact wrist-mark gateway. The number and colour clue occasions remain unwritten. [W014 closeout](../workshops/W014_CLOSEOUT.md) and [W015 next](../workshops/W015_CHESS_BRANCHES.md). All W013-next/revision-13 status notes below are superseded historical checkpoints.
+
+
 **As of:** 2026-10-31
 **Latest executed:** **W013 CLOSED; P-0019 “The Valley Below” saved and read-back verified.** Private D1 revision **13**, 19 passages; P-0017 (road join) published at revision 11, P-0018 (wall join) at revision 12, P-0019 (shared scenic continuation) at revision 13, with intact graph links. The author approved the exact 7,805-character literary rewrite. Next: **[W014 — Through the Door](../workshops/W014_THROUGH_THE_DOOR.md)**, installed and awaiting a fresh creative workshop. See [W013 closeout](../workshops/W013_CLOSEOUT.md). Historical revision-10, W012 and W013-pending wording below is superseded.
 

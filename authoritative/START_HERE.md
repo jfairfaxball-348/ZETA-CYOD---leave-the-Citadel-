@@ -1,5 +1,8 @@
 # START HERE — ZETA authority and navigation
 
+**Current verified checkpoint (2026-11-03):** W014 — chess encounter is **CLOSED at approved design and first-scene working-draft scope**. Cloudflare D1 revision **14** is verified from a private publisher receipt and full snapshot (33 passages; P-0020–P-0033 added; P-0006 preserved). P-0020 is **draft**, P-0021–P-0033 are **UNWRITTEN** placeholders. [W014 closeout](../workshops/W014_CLOSEOUT.md) · [W015 installed next](../workshops/W015_CHESS_BRANCHES.md). The earlier W013/revision-13 statements below are archival checkpoints.
+
+
 **Current phase (2026-10-31):** W013 is **CLOSED**. Road and wall local convergences P-0017/P-0018 and the long approved shared passage **P-0019 — The Valley Below** are saved to live Cloudflare D1 **revision 13**, with private receipts and complete read-back. [W014 — Through the Door](../workshops/W014_THROUGH_THE_DOOR.md) is **installed next**. [W013 closeout](../workshops/W013_CLOSEOUT.md) records exact proof of publication. Earlier statements about W013 being pending or revision 10 as latest are superseded historical checkpoints.
 
 1. Read [STATE](STATE.md), [CANON_POLICY](CANON_POLICY.md), [DECISIONS](DECISIONS.md) and [OPEN_QUESTIONS](OPEN_QUESTIONS.md).
