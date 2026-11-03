@@ -1,6 +1,6 @@
 # W014 — Through the Door
 
-**Status:** INSTALLED NEXT. **Date:** 2026-10-31. **Book:** *Leave the Citadel*, Act I.
+**Status:** CLOSED — 2026-11-03. **Installed:** 2026-10-31. **Book:** *Leave the Citadel*, Act I.
 **Mode:** Collaborative creative-writing workshop; await the owner's next “Run next session” before drafting.
 
 ## Verified handoff from W013
@@ -28,3 +28,8 @@ Write expressive but disciplined second-person speculative-fantasy prose: specif
 ## Completion
 
 One approved post-door scene, continuity check, verified private publication if authorised, and W015 handoff for the next narrative device. No new story prose is approved merely by installing this workshop.
+
+
+## W014 closeout and supersession (2026-11-03)
+
+The owner expressly rejected the earlier prohibition on another puzzle-like moment. **The correct approved scene is the travellers' house chess debate**, with the earlier road traveller and her husband, three exact replies, three immediate outcomes, six second-choice routes and three local joins followed by a common continuation. The draft and graph were saved privately to Cloudflare D1 revision **14**, with complete verified read-back. P-0020 is a working draft; P-0021–P-0033 are unwritten. See [W014 closeout](W014_CLOSEOUT.md) and [W015 next](W015_CHESS_BRANCHES.md). The prior creative mission above is a superseded agenda, not the approved endpoint.
