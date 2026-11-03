@@ -19,6 +19,9 @@ Owner-led creative design and authorised implementation. An installed agenda alo
 | W010 | 2026-10-29 | **CLOSED — FIVE PRIVATE D1 CHUNKS VERIFIED** | Opening and three remembered judgements; converged shared gate; private D1 revisions 5–9 | [W010 closeout](W010_CLOSEOUT.md) · [Workshop](W010_OPENING_NARRATIVE_WORKSHOP.md) |
 | W011 | 2026-10-30 | **CLOSED — STRUCTURE AND PUZZLE LOCKED** | Two→four→two→one branch design and 3-of-12 return puzzle | [W011 closeout](W011_CLOSEOUT.md) · [Original workshop](W011_BEYOND_THE_GATE_WRITING_WORKSHOP.md) |
 | W012 | 2026-10-30 | **CLOSED — FOUR LETTER BRANCHES APPROVED, D1 PUBLISH PENDING** | Road D/K and wall R/Y prose, seals and Journal note | [W012 closeout](W012_CLOSEOUT.md) · [workshop](W012_FOUR_FIRST_CLUE_BRANCHES.md) |
-| W013 | Next owner invocation | **INSTALLED — TWO CONVERGENCES** | Write the road and wall local joins following the four letter outcomes | [W013 workshop](W013_TWO_LOCAL_CONVERGENCES.md) |
+| W013 | 2026-10-31 | **CLOSED — D1 REVISION 13 VERIFIED** | Two local joins plus approved P-0019 scenic passage | [W013 closeout](W013_CLOSEOUT.md) |
+
+| W014 | 2026-11-03 | **CLOSED — D1 REVISION 14 VERIFIED** | Chess dialogue, three answers, six-branch scaffold; P-0020 draft / other passages unwritten | [W014 closeout](W014_CLOSEOUT.md) |
+| W015 | Next owner invocation | **INSTALLED — NOT EXECUTED** | Write the three chess outcomes, six experiences and local joins | [W015 workshop](W015_CHESS_BRANCHES.md) |
 
 See [START_HERE](../authoritative/START_HERE.md), [DECISIONS](../authoritative/DECISIONS.md), [OPEN_QUESTIONS](../authoritative/OPEN_QUESTIONS.md). The editor is an implementation and workflow choice, not fiction canon. No new real-world mathematical theorem or cosmological fact has been established; the four post-gate letter outcomes and their two encounter setups have now been approved, but no live nodes/edges have been verified. The W011 twelve clue tokens and working numbered-paragraph 475 mechanism are approved at design scope.
